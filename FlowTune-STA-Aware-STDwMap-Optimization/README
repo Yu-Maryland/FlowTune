@@ -1,0 +1,6 @@
+#Reproduce STD Map opt results
+
+1) For delay, change "target=2" in run.sh
+2) For area,  change "target=3" in run.sh
+
+./run.sh

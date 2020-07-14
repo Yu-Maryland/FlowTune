@@ -1,0 +1,1 @@
+strash;resub -K 8;rewrite -z;dc2;resub -K 8;refactor -z;refactor;strash;retime;strash;ifraig;dch -f;strash;print_stats;

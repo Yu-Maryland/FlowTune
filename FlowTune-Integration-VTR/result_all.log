@@ -1,0 +1,6 @@
+./temp/bfly.odin.blif
+0,10934,0.233128, 0.141399, 0.119692, 0.141399, 0.167043, 0.197338, 
+1,10934,0.212703, 0.138563, 0.120117, 0.159842, 0.184388, 0.184388, 
+2,10934,0.199121, 0.136854, 0.136854, 0.175724, 0.175724, 0.175724, 
+Best Flow(s) (#max=5):
+strash;refactor -z;rewrite -z;rewrite -z;resub -K 8;refactor;refactor -z;refactor;rewrite;refactor -z;resub -K 8;dc2;dc2;strash;

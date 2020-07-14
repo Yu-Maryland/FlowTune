@@ -1,0 +1,1 @@
+read internal.aig;strash;resub -K 8;rewrite -z;dc2;refactor -z;refactor -z;rewrite;dc2;refactor;refactor;rewrite -z;resub -K 8;resub -K 8;strash;ifraig;dch -f;strash;print_stats;

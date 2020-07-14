@@ -1,0 +1,90 @@
+
+/usr/bin/env time -v /home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/../ODIN_II/odin_II -c odin_config.xml --adder_type default -U0
+--------------------------------------------------------------------
+Welcome to ODIN II version 0.1 - the better High level synthesis tools++ targetting FPGAs (mainly VPR)
+Email: jamieson.peter@gmail.com and ken@unb.ca for support issues
+
+Reading Configuration file
+Reading FPGA Architecture file
+--------------------------------------------------------------------
+High-level synthesis Begin
+Parser starting - we'll create an abstract syntax tree. Note this tree can be viewed using Grap Viz (see documentation)
+Adding file bfly.v to parse list
+Optimizing module by AST based optimizations
+Converting AST into a Netlist. Note this netlist can be viewed using GraphViz (see documentation)
+==========================
+Detected Top Level Module: 	bfly
+==========================
+Performing Optimizations of the Netlist
+Performing Partial Map to target device
+Outputting the netlist to the specified output format
+Successful High-level synthesis by Odin
+	Blif file available at bfly.odin.blif
+	Ran in 2.2s
+--------------------------------------------------------------------
+
+Hard Multiplier Distribution
+============================
+24 X 24 => 4
+
+
+Total # of multipliers = 4
+
+Hard adder Distribution
+============================
+
+
+Total # of chains = 84
+
+Hard adder chain Details
+============================
+
+
+The Number of Hard Block adders in the Longest Chain: 29
+
+
+The Total Number of Hard Block adders: 980
+
+
+Geometric mean adder/subtractor chain length: 9.71
+
+Hard MINUS Distribution
+============================
+
+
+Total # of chains = 148
+
+Hard sub chain Details
+============================
+
+
+The Number of Hard Block subs in the Longest Chain: 29
+
+
+The Total Number of Hard Block subs: 1404
+--------------------------------------------------------------------
+Odin ran with exit status: 0
+Odin II took 2.21 seconds (max_rss 146.2 MiB)
+	Command being timed: "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/../ODIN_II/odin_II -c odin_config.xml --adder_type default -U0"
+	User time (seconds): 2.09
+	System time (seconds): 0.12
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.22
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 149772
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 69701
+	Voluntary context switches: 1
+	Involuntary context switches: 4
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 76240
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

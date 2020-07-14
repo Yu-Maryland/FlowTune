@@ -1,0 +1,1 @@
+read benchmarks/bfly.abc.blif;strash;dc2;dc2;refactor -z;resub -K 8;rewrite -z;dc2;resub -K 8;refactor;rewrite;rewrite -z;refactor -z;refactor;strash;ifraig;dch -f;strash;print_stats;

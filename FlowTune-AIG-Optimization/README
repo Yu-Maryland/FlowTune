@@ -1,0 +1,5 @@
+## Single design ready-to-use script
+```shell
+./single_design.sh $design $filename $repeat $iteration $target $sample $stage
+e.g., ./single_design.sh bfly benchmarks/bfly.abc.blif 2 3 0 5 1
+```

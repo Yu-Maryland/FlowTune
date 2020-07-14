@@ -1,0 +1,1 @@
+read internal.blif;strash;refactor -z;rewrite -z;refactor -z;dc2;dc2;resub -K 8;rewrite -z;refactor -z;refactor;resub -K 8;refactor;rewrite;strash;ifraig;scorr;dc2;strash;dch -f;if -K 6;mfs2;lutpack -S 1;print_stats;

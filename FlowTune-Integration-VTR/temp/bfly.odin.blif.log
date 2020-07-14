@@ -1,0 +1,5 @@
+0,11760,0.226808, 0.226808, 0.0985705, 0.0834381, 0.137566, 0.226808, 
+1,11760,0.231988, 0.201105, 0.0984494, 0.0853436, 0.151126, 0.231988, 
+2,11760,0.229646, 0.202662, 0.0957307, 0.0844821, 0.157833, 0.229646, 
+Best Flow(s) (#max=5):
+strash;rewrite;dc2;refactor -z;resub -K 8;rewrite -z;refactor;rewrite;refactor;dc2;rewrite -z;resub -K 8;refactor -z;strash;
