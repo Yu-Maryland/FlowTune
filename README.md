@@ -1,6 +1,14 @@
 k## Under construction (more to come)
 
-<img src="./docs/baseline.gif" alt="Alternate Text" /></a>
+
+### bfly.v example -- Baseline (resyn applied 25+ times)
+<img src="./docs/baseline.gif" alt="bfly-baseline" /></a>
+
+### bfly.v example -- FlowTune (20% more AIG reductions compared to 25+ resyn)
+<img src="./docs/ftune.gif" alt="bfly-ftune" /></a>
+
+
+
 ## Required Packages:
 	- readline: sudo apt-get install libreadline6 libreadline6-dev (Ubuntu)
 	- readline: sudo yum install readline-devel (CentOS 7)
