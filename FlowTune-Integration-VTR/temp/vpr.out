@@ -2043,3 +2043,721 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
   20    0.2    56.2   10 1042085     259     859     179 ( 0.093%)  157943 (79.1%)   18.680 -1.089e+04    -18.680      0.000      0.000       36
   21    0.2    73.1    7 1097718     252     825     151 ( 0.078%)  158396 (79.3%)   18.680 -1.090e+04    -18.680      0.000      0.000       39
   22    0.2    95.0   11 1026066     229     800     150 ( 0.078%)  158608 (79.4%)   18.680 -1.093e+04    -18.680      0.000      0.000       42
+  23    0.2   123.5   10  821228     214     768     132 ( 0.068%)  159060 (79.7%)   18.984 -1.094e+04    -18.984      0.000      0.000       47
+  24    0.2   160.6    6  890359     421    1445     118 ( 0.061%)  159115 (79.7%)   18.729 -1.105e+04    -18.729      0.000      0.000       49
+  25    0.2   208.8    4  795064     453    1642     101 ( 0.052%)  159228 (79.7%)   18.680 -1.095e+04    -18.680      0.000      0.000       55
+  26    0.2   271.4    0  607292     280     794      93 ( 0.048%)  159467 (79.9%)   18.680 -1.091e+04    -18.680      0.000      0.000       57
+  27    0.2   352.8    4  762610     276     728      76 ( 0.039%)  159765 (80.0%)   18.853 -1.092e+04    -18.853      0.000      0.000       62
+  28    0.2   458.7    3  671696     411    1478      83 ( 0.043%)  159657 (80.0%)   18.680 -1.090e+04    -18.680      0.000      0.000       62
+  29    0.2   596.3    2  543790     250     678      72 ( 0.037%)  159581 (79.9%)   18.680 -1.094e+04    -18.680      0.000      0.000       68
+  30    0.2   775.1    2  618752     257     710      85 ( 0.044%)  159770 (80.0%)   19.579 -1.097e+04    -19.579      0.000      0.000       69
+  31    0.2  1007.7    2  591200     286     984      78 ( 0.040%)  159685 (80.0%)   18.821 -1.095e+04    -18.821      0.000      0.000       75
+  32    0.2  1310.0    1  468690     391    1430      68 ( 0.035%)  159790 (80.0%)   19.718 -1.096e+04    -19.718      0.000      0.000       79
+  33    0.1  1703.0    0  369837     235     786      54 ( 0.028%)  159787 (80.0%)   19.110 -1.094e+04    -19.110      0.000      0.000       84
+  34    0.1  2213.9    1  338654     312    1047      44 ( 0.023%)  159866 (80.1%)   19.110 -1.095e+04    -19.110      0.000      0.000       83
+  35    0.1  2878.1    2  297883     311    1047      47 ( 0.024%)  159810 (80.0%)   19.110 -1.095e+04    -19.110      0.000      0.000       81
+  36    0.1  3741.5    1  351947     329    1135      66 ( 0.034%)  159968 (80.1%)   19.255 -1.095e+04    -19.255      0.000      0.000       81
+  37    0.1  4863.9    8  393859     306    1026      50 ( 0.026%)  160015 (80.1%)   19.255 -1.095e+04    -19.255      0.000      0.000       86
+  38    0.1  6323.1    4  350828     302     998      43 ( 0.022%)  160013 (80.1%)   19.255 -1.095e+04    -19.255      0.000      0.000       88
+  39    0.1  8220.0    4  300901     288     963      37 ( 0.019%)  160045 (80.2%)   19.255 -1.095e+04    -19.255      0.000      0.000       89
+  40    0.1 10686.0    0  249029     281     938      32 ( 0.017%)  160097 (80.2%)   19.255 -1.095e+04    -19.255      0.000      0.000       88
+  41    0.1 13891.9    1  265915     288     953      32 ( 0.017%)  160158 (80.2%)   19.255 -1.095e+04    -19.255      0.000      0.000       88
+  42    0.1 18059.4    1  269674     280     948      30 ( 0.016%)  160133 (80.2%)   19.255 -1.095e+04    -19.255      0.000      0.000       88
+  43    0.1 23477.2    1  230288     290     992      31 ( 0.016%)  160160 (80.2%)   19.255 -1.095e+04    -19.255      0.000      0.000       88
+  44    0.1 30520.4    0  283999     291     995      32 ( 0.017%)  160143 (80.2%)   19.255 -1.095e+04    -19.255      0.000      0.000       89
+  45    0.1 39676.5    0  258773     280     953      33 ( 0.017%)  160173 (80.2%)   19.255 -1.095e+04    -19.255      0.000      0.000       92
+  46    0.1 51579.5    0  280129     290    1034      33 ( 0.017%)  160264 (80.3%)   19.255 -1.095e+04    -19.255      0.000      0.000       95
+  47    0.1 67053.3    1  292223     280     927      29 ( 0.015%)  160339 (80.3%)   19.255 -1.095e+04    -19.255      0.000      0.000       99
+  48    0.1 87169.3    3  239142     283     969      32 ( 0.017%)  160460 (80.4%)   19.255 -1.095e+04    -19.255      0.000      0.000      100
+  49    0.1 1.1e+05    2  244872     277     934      32 ( 0.017%)  160377 (80.3%)   19.255 -1.091e+04    -19.255      0.000      0.000      105
+  50    0.1 1.5e+05    0  200445     284     960      30 ( 0.016%)  160411 (80.3%)   19.255 -1.094e+04    -19.255      0.000      0.000      109
+Routing failed.
+Router Stats: total_nets_routed: 61309 total_connections_routed: 261016 total_heap_pushes: 36967456 total_heap_pops: 7522007
+
+Attempting to route at 128 channels (binary search bounds: [64, -1])
+## Build routing resource graph
+Warning 103: in check_rr_node: RR node: 4885 type: OPIN location: (1,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 104: in check_rr_node: RR node: 10690 type: OPIN location: (3,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 105: in check_rr_node: RR node: 14323 type: OPIN location: (4,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 106: in check_rr_node: RR node: 17956 type: OPIN location: (5,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 107: in check_rr_node: RR node: 24421 type: OPIN location: (7,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 108: in check_rr_node: RR node: 28054 type: OPIN location: (8,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 109: in check_rr_node: RR node: 31687 type: OPIN location: (9,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 110: in check_rr_node: RR node: 37492 type: OPIN location: (11,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 111: in check_rr_node: RR node: 41125 type: OPIN location: (12,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 112: in check_rr_node: RR node: 44758 type: OPIN location: (13,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 113: in check_rr_node: RR node: 51223 type: OPIN location: (15,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 114: in check_rr_node: RR node: 54856 type: OPIN location: (16,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 115: in check_rr_node: RR node: 58489 type: OPIN location: (17,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 116: in check_rr_node: RR node: 64294 type: OPIN location: (19,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 117: in check_rr_node: RR node: 67927 type: OPIN location: (20,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 118: in check_rr_node: RR node: 71560 type: OPIN location: (21,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 119: in check_rr_node: RR node: 78025 type: OPIN location: (23,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 120: in check_rr_node: RR node: 81658 type: OPIN location: (24,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 121: in check_rr_node: RR node: 85291 type: OPIN location: (25,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 122: in check_rr_node: RR node: 91096 type: OPIN location: (27,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 123: in check_rr_node: RR node: 94729 type: OPIN location: (28,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 124: in check_rr_node: RR node: 98362 type: OPIN location: (29,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 125: in check_rr_node: RR node: 104827 type: OPIN location: (31,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 126: in check_rr_node: RR node: 108460 type: OPIN location: (32,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 127: in check_rr_node: RR node: 112093 type: OPIN location: (33,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 128: in check_rr_node: RR node: 117898 type: OPIN location: (35,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 129: in check_rr_node: RR node: 121531 type: OPIN location: (36,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 130: in check_rr_node: RR node: 125164 type: OPIN location: (37,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 131: in check_rr_node: RR node: 131629 type: OPIN location: (39,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 132: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build routing resource graph took 1.23 seconds (max_rss 251.7 MiB, delta_rss +40.8 MiB)
+  RR Graph Nodes: 247257
+  RR Graph Edges: 2267115
+Confirming router algorithm: TIMING_DRIVEN.
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.3     0.0    0 1653144    7921   29929   14737 ( 5.960%)  130566 (32.7%)   18.618 -1.014e+04    -18.618      0.000      0.000      N/A
+   2    0.2     0.5   42 1453579    6168   26604    6950 ( 2.811%)  124946 (31.3%)   18.629 -1.018e+04    -18.629      0.000      0.000      N/A
+   3    0.2     0.6   12 1013235    4275   18738    5646 ( 2.283%)  125665 (31.5%)   18.620 -1.019e+04    -18.620      0.000      0.000      N/A
+   4    0.2     0.8    4  850165    3489   15973    4635 ( 1.875%)  126716 (31.7%)   18.623 -1.019e+04    -18.623      0.000      0.000      N/A
+   5    0.2     1.1    3  701367    2830   13603    3515 ( 1.422%)  128415 (32.2%)   18.625 -1.019e+04    -18.625      0.000      0.000      N/A
+   6    0.2     1.4    2  555022    2263   10905    2501 ( 1.011%)  130294 (32.6%)   18.625 -1.020e+04    -18.625      0.000      0.000      N/A
+   7    0.2     1.9    4  470193    1814    8592    1684 ( 0.681%)  131907 (33.0%)   18.625 -1.020e+04    -18.625      0.000      0.000      N/A
+   8    0.1     2.4    2  337943    1368    6321    1127 ( 0.456%)  133268 (33.4%)   18.625 -1.020e+04    -18.625      0.000      0.000      N/A
+   9    0.1     3.1    2  231864     972    4175     613 ( 0.248%)  134556 (33.7%)   18.625 -1.021e+04    -18.625      0.000      0.000      N/A
+  10    0.1     4.1    1  142672     629    2431     335 ( 0.135%)  135378 (33.9%)   18.625 -1.021e+04    -18.625      0.000      0.000       24
+  11    0.1     5.3    0   85347     421    1419     178 ( 0.072%)  135883 (34.0%)   18.625 -1.021e+04    -18.625      0.000      0.000       22
+  12    0.1     6.9    0   41295     227     625      75 ( 0.030%)  136208 (34.1%)   18.625 -1.021e+04    -18.625      0.000      0.000       21
+  13    0.1     9.0    0   17305     101     274      31 ( 0.013%)  136350 (34.1%)   18.625 -1.021e+04    -18.625      0.000      0.000       19
+  14    0.1    11.6    0    8101      49     113      19 ( 0.008%)  136408 (34.2%)   18.625 -1.021e+04    -18.625      0.000      0.000       19
+  15    0.1    15.1    0    4106      28      56      11 ( 0.004%)  136435 (34.2%)   18.625 -1.021e+04    -18.625      0.000      0.000       18
+  16    0.1    19.7    0    1749      13      23       7 ( 0.003%)  136459 (34.2%)   18.625 -1.021e+04    -18.625      0.000      0.000       18
+  17    0.1    25.6    0    1707      10      14       3 ( 0.001%)  136471 (34.2%)   18.625 -1.021e+04    -18.625      0.000      0.000       19
+  18    0.1    33.3    0     639       4       5       2 ( 0.001%)  136475 (34.2%)   18.625 -1.021e+04    -18.625      0.000      0.000       19
+  19    0.1    43.3    0     681       3       4       0 ( 0.000%)  136483 (34.2%)   18.625 -1.021e+04    -18.625      0.000      0.000       19
+Restoring best routing
+Critical path: 18.6253 ns
+Successfully routed after 19 routing iterations.
+Router Stats: total_nets_routed: 32585 total_connections_routed: 139804 total_heap_pushes: 7570114 total_heap_pops: 1245667
+
+Attempting to route at 96 channels (binary search bounds: [64, 128])
+## Build routing resource graph
+Warning 133: in check_rr_node: RR node: 4885 type: OPIN location: (1,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 134: in check_rr_node: RR node: 10690 type: OPIN location: (3,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 135: in check_rr_node: RR node: 14323 type: OPIN location: (4,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 136: in check_rr_node: RR node: 17956 type: OPIN location: (5,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 137: in check_rr_node: RR node: 24421 type: OPIN location: (7,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 138: in check_rr_node: RR node: 28054 type: OPIN location: (8,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 139: in check_rr_node: RR node: 31687 type: OPIN location: (9,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 140: in check_rr_node: RR node: 37492 type: OPIN location: (11,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 141: in check_rr_node: RR node: 41125 type: OPIN location: (12,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 142: in check_rr_node: RR node: 44758 type: OPIN location: (13,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 143: in check_rr_node: RR node: 51223 type: OPIN location: (15,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 144: in check_rr_node: RR node: 54856 type: OPIN location: (16,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 145: in check_rr_node: RR node: 58489 type: OPIN location: (17,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 146: in check_rr_node: RR node: 64294 type: OPIN location: (19,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 147: in check_rr_node: RR node: 67927 type: OPIN location: (20,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 148: in check_rr_node: RR node: 71560 type: OPIN location: (21,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 149: in check_rr_node: RR node: 78025 type: OPIN location: (23,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 150: in check_rr_node: RR node: 81658 type: OPIN location: (24,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 151: in check_rr_node: RR node: 85291 type: OPIN location: (25,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 152: in check_rr_node: RR node: 91096 type: OPIN location: (27,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 153: in check_rr_node: RR node: 94729 type: OPIN location: (28,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 154: in check_rr_node: RR node: 98362 type: OPIN location: (29,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 155: in check_rr_node: RR node: 104827 type: OPIN location: (31,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 156: in check_rr_node: RR node: 108460 type: OPIN location: (32,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 157: in check_rr_node: RR node: 112093 type: OPIN location: (33,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 158: in check_rr_node: RR node: 117898 type: OPIN location: (35,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 159: in check_rr_node: RR node: 121531 type: OPIN location: (36,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 160: in check_rr_node: RR node: 125164 type: OPIN location: (37,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 161: in check_rr_node: RR node: 131629 type: OPIN location: (39,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 162: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build routing resource graph took 0.83 seconds (max_rss 253.3 MiB, delta_rss +1.5 MiB)
+  RR Graph Nodes: 220377
+  RR Graph Edges: 1723693
+Confirming router algorithm: TIMING_DRIVEN.
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.3     0.0    0 1927145    7921   29929   15532 ( 7.048%)  134174 (44.8%)   18.764 -1.018e+04    -18.764      0.000      0.000      N/A
+   2    0.3     0.5   47 1618179    6342   26937    8248 ( 3.743%)  126803 (42.3%)   18.764 -1.022e+04    -18.764      0.000      0.000      N/A
+   3    0.2     0.6   26 1245298    4845   21067    7290 ( 3.308%)  128263 (42.8%)   18.762 -1.023e+04    -18.762      0.000      0.000      N/A
+   4    0.2     0.8    9 1147103    4128   18971    6121 ( 2.778%)  129504 (43.2%)   18.776 -1.026e+04    -18.776      0.000      0.000      N/A
+   5    0.2     1.1   16 1020288    3559   16841    4821 ( 2.188%)  131493 (43.9%)   18.776 -1.029e+04    -18.776      0.000      0.000      N/A
+   6    0.2     1.4   12  816163    2915   14218    3773 ( 1.712%)  133948 (44.7%)   18.777 -1.029e+04    -18.777      0.000      0.000      N/A
+   7    0.2     1.9    9  714912    2358   11819    2784 ( 1.263%)  136171 (45.5%)   18.780 -1.030e+04    -18.780      0.000      0.000      N/A
+   8    0.2     2.4    9  554068    1903    9540    1930 ( 0.876%)  138498 (46.2%)   18.780 -1.032e+04    -18.780      0.000      0.000      N/A
+   9    0.1     3.1    3  441634    1480    7286    1307 ( 0.593%)  140444 (46.9%)   18.780 -1.033e+04    -18.780      0.000      0.000      N/A
+  10    0.1     4.1    5  317205    1116    4945     796 ( 0.361%)  142247 (47.5%)   18.780 -1.036e+04    -18.780      0.000      0.000       31
+  11    0.1     5.3    3  214304     794    3207     441 ( 0.200%)  143493 (47.9%)   18.780 -1.036e+04    -18.780      0.000      0.000       27
+  12    0.1     6.9    1  120254     505    1733     243 ( 0.110%)  144263 (48.2%)   18.776 -1.036e+04    -18.776      0.000      0.000       26
+  13    0.1     9.0    3   67859     299     895     119 ( 0.054%)  144732 (48.3%)   18.776 -1.036e+04    -18.776      0.000      0.000       23
+  14    0.1    11.6    0   36703     182     469      67 ( 0.030%)  144913 (48.4%)   18.776 -1.036e+04    -18.776      0.000      0.000       22
+  15    0.1    15.1    0   17193      96     197      33 ( 0.015%)  145044 (48.4%)   18.776 -1.036e+04    -18.776      0.000      0.000       21
+  16    0.1    19.7    0    6568      46      88      15 ( 0.007%)  145111 (48.4%)   18.776 -1.036e+04    -18.776      0.000      0.000       21
+  17    0.1    25.6    0    3116      24      41       9 ( 0.004%)  145138 (48.5%)   18.776 -1.037e+04    -18.776      0.000      0.000       20
+  18    0.1    33.3    0    2226      14      29       6 ( 0.003%)  145146 (48.5%)   18.776 -1.037e+04    -18.776      0.000      0.000       20
+  19    0.1    43.3    0    1221       8       9       2 ( 0.001%)  145153 (48.5%)   18.776 -1.037e+04    -18.776      0.000      0.000       21
+  20    0.1    56.2    0     407       3       4       1 ( 0.000%)  145157 (48.5%)   18.776 -1.037e+04    -18.776      0.000      0.000       20
+  21    0.1    73.1    0     194       1       4       1 ( 0.000%)  145161 (48.5%)   18.776 -1.037e+04    -18.776      0.000      0.000       20
+  22    0.1    95.0    0     235       2       2       0 ( 0.000%)  145173 (48.5%)   18.776 -1.037e+04    -18.776      0.000      0.000       20
+Restoring best routing
+Critical path: 18.7763 ns
+Successfully routed after 22 routing iterations.
+Router Stats: total_nets_routed: 38541 total_connections_routed: 168231 total_heap_pushes: 10272275 total_heap_pops: 1792686
+
+Attempting to route at 80 channels (binary search bounds: [64, 96])
+## Build routing resource graph
+Warning 163: in check_rr_node: RR node: 4885 type: OPIN location: (1,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 164: in check_rr_node: RR node: 10690 type: OPIN location: (3,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 165: in check_rr_node: RR node: 14323 type: OPIN location: (4,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 166: in check_rr_node: RR node: 17956 type: OPIN location: (5,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 167: in check_rr_node: RR node: 24421 type: OPIN location: (7,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 168: in check_rr_node: RR node: 28054 type: OPIN location: (8,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 169: in check_rr_node: RR node: 31687 type: OPIN location: (9,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 170: in check_rr_node: RR node: 37492 type: OPIN location: (11,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 171: in check_rr_node: RR node: 41125 type: OPIN location: (12,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 172: in check_rr_node: RR node: 44758 type: OPIN location: (13,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 173: in check_rr_node: RR node: 51223 type: OPIN location: (15,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 174: in check_rr_node: RR node: 54856 type: OPIN location: (16,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 175: in check_rr_node: RR node: 58489 type: OPIN location: (17,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 176: in check_rr_node: RR node: 64294 type: OPIN location: (19,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 177: in check_rr_node: RR node: 67927 type: OPIN location: (20,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 178: in check_rr_node: RR node: 71560 type: OPIN location: (21,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 179: in check_rr_node: RR node: 78025 type: OPIN location: (23,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 180: in check_rr_node: RR node: 81658 type: OPIN location: (24,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 181: in check_rr_node: RR node: 85291 type: OPIN location: (25,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 182: in check_rr_node: RR node: 91096 type: OPIN location: (27,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 183: in check_rr_node: RR node: 94729 type: OPIN location: (28,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 184: in check_rr_node: RR node: 98362 type: OPIN location: (29,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 185: in check_rr_node: RR node: 104827 type: OPIN location: (31,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 186: in check_rr_node: RR node: 108460 type: OPIN location: (32,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 187: in check_rr_node: RR node: 112093 type: OPIN location: (33,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 188: in check_rr_node: RR node: 117898 type: OPIN location: (35,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 189: in check_rr_node: RR node: 121531 type: OPIN location: (36,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 190: in check_rr_node: RR node: 125164 type: OPIN location: (37,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 191: in check_rr_node: RR node: 131629 type: OPIN location: (39,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 192: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build routing resource graph took 0.66 seconds (max_rss 253.3 MiB, delta_rss +0.0 MiB)
+  RR Graph Nodes: 206937
+  RR Graph Edges: 1453365
+Confirming router algorithm: TIMING_DRIVEN.
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.2     0.0    0 1421399    7921   29929   15574 ( 7.526%)  129739 (52.0%)   18.803 -1.017e+04    -18.803      0.000      0.000      N/A
+   2    0.2     0.5   39 1328982    6474   27175    8710 ( 4.209%)  124011 (49.7%)   18.802 -1.021e+04    -18.802      0.000      0.000      N/A
+   3    0.2     0.6   17 1158446    5171   22591    7996 ( 3.864%)  125959 (50.5%)   18.802 -1.022e+04    -18.802      0.000      0.000      N/A
+   4    0.2     0.8   25 1148739    4497   20593    7051 ( 3.407%)  127715 (51.2%)   18.801 -1.026e+04    -18.801      0.000      0.000      N/A
+   5    0.2     1.1   29 1131017    3982   18928    5585 ( 2.699%)  129789 (52.0%)   18.795 -1.029e+04    -18.795      0.000      0.000      N/A
+   6    0.2     1.4   30  945357    3368   16363    4523 ( 2.186%)  132166 (53.0%)   18.802 -1.033e+04    -18.802      0.000      0.000      N/A
+   7    0.2     1.9   28  867340    2757   14163    3397 ( 1.642%)  134229 (53.8%)   18.802 -1.035e+04    -18.802      0.000      0.000      N/A
+   8    0.2     2.4   22  638875    2221   10948    2398 ( 1.159%)  136579 (54.7%)   18.802 -1.039e+04    -18.802      0.000      0.000      N/A
+   9    0.2     3.1   17  497333    1710    8351    1556 ( 0.752%)  138788 (55.6%)   18.804 -1.038e+04    -18.804      0.000      0.000      N/A
+  10    0.1     4.1    7  361803    1281    5936    1016 ( 0.491%)  140869 (56.4%)   18.812 -1.038e+04    -18.812      0.000      0.000       32
+  11    0.1     5.3    4  261846     933    4086     581 ( 0.281%)  142264 (57.0%)   18.812 -1.038e+04    -18.812      0.000      0.000       28
+  12    0.1     6.9    2  171391     599    2274     304 ( 0.147%)  143373 (57.4%)   18.812 -1.038e+04    -18.812      0.000      0.000       27
+  13    0.1     9.0    5  120609     376    1248     168 ( 0.081%)  143900 (57.7%)   18.812 -1.038e+04    -18.812      0.000      0.000       24
+  14    0.1    11.6    3   46770     205     530      78 ( 0.038%)  144297 (57.8%)   18.812 -1.039e+04    -18.812      0.000      0.000       23
+  15    0.1    15.1    2   24784     114     314      44 ( 0.021%)  144539 (57.9%)   18.812 -1.039e+04    -18.812      0.000      0.000       22
+  16    0.1    19.7    0   15029      63     159      14 ( 0.007%)  144677 (58.0%)   18.812 -1.039e+04    -18.812      0.000      0.000       22
+  17    0.1    25.6    0    3392      21      63       6 ( 0.003%)  144694 (58.0%)   18.812 -1.039e+04    -18.812      0.000      0.000       21
+  18    0.1    33.3    0    1666       8      32       2 ( 0.001%)  144706 (58.0%)   18.812 -1.039e+04    -18.812      0.000      0.000       20
+  19    0.1    43.3    0     385       3       6       1 ( 0.000%)  144714 (58.0%)   18.812 -1.039e+04    -18.812      0.000      0.000       19
+  20    0.1    56.2    0     201       2       2       1 ( 0.000%)  144714 (58.0%)   18.812 -1.039e+04    -18.812      0.000      0.000       19
+  21    0.1    73.1    0     118       1       1       1 ( 0.000%)  144718 (58.0%)   18.812 -1.039e+04    -18.812      0.000      0.000       19
+  22    0.1    95.0    0      63       1       1       0 ( 0.000%)  144718 (58.0%)   18.812 -1.039e+04    -18.812      0.000      0.000       20
+Restoring best routing
+Critical path: 18.8117 ns
+Successfully routed after 22 routing iterations.
+Router Stats: total_nets_routed: 41708 total_connections_routed: 183693 total_heap_pushes: 10145545 total_heap_pops: 1797914
+
+Attempting to route at 72 channels (binary search bounds: [64, 80])
+## Build routing resource graph
+Warning 193: in check_rr_node: RR node: 4885 type: OPIN location: (1,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 194: in check_rr_node: RR node: 10690 type: OPIN location: (3,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 195: in check_rr_node: RR node: 14323 type: OPIN location: (4,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 196: in check_rr_node: RR node: 17956 type: OPIN location: (5,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 197: in check_rr_node: RR node: 24421 type: OPIN location: (7,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 198: in check_rr_node: RR node: 28054 type: OPIN location: (8,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 199: in check_rr_node: RR node: 31687 type: OPIN location: (9,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 200: in check_rr_node: RR node: 37492 type: OPIN location: (11,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 201: in check_rr_node: RR node: 41125 type: OPIN location: (12,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 202: in check_rr_node: RR node: 44758 type: OPIN location: (13,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 203: in check_rr_node: RR node: 51223 type: OPIN location: (15,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 204: in check_rr_node: RR node: 54856 type: OPIN location: (16,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 205: in check_rr_node: RR node: 58489 type: OPIN location: (17,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 206: in check_rr_node: RR node: 64294 type: OPIN location: (19,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 207: in check_rr_node: RR node: 67927 type: OPIN location: (20,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 208: in check_rr_node: RR node: 71560 type: OPIN location: (21,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 209: in check_rr_node: RR node: 78025 type: OPIN location: (23,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 210: in check_rr_node: RR node: 81658 type: OPIN location: (24,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 211: in check_rr_node: RR node: 85291 type: OPIN location: (25,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 212: in check_rr_node: RR node: 91096 type: OPIN location: (27,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 213: in check_rr_node: RR node: 94729 type: OPIN location: (28,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 214: in check_rr_node: RR node: 98362 type: OPIN location: (29,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 215: in check_rr_node: RR node: 104827 type: OPIN location: (31,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 216: in check_rr_node: RR node: 108460 type: OPIN location: (32,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 217: in check_rr_node: RR node: 112093 type: OPIN location: (33,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 218: in check_rr_node: RR node: 117898 type: OPIN location: (35,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 219: in check_rr_node: RR node: 121531 type: OPIN location: (36,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 220: in check_rr_node: RR node: 125164 type: OPIN location: (37,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 221: in check_rr_node: RR node: 131629 type: OPIN location: (39,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 222: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build routing resource graph took 0.59 seconds (max_rss 253.3 MiB, delta_rss +0.1 MiB)
+  RR Graph Nodes: 200217
+  RR Graph Edges: 1320907
+Confirming router algorithm: TIMING_DRIVEN.
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.3     0.0    0 1596189    7921   29929   16253 ( 8.118%)  133758 (59.5%)   18.609 -1.018e+04    -18.609      0.000      0.000      N/A
+   2    0.2     0.5   51 1424142    6694   27688    9683 ( 4.836%)  126190 (56.2%)   18.609 -1.024e+04    -18.609      0.000      0.000      N/A
+   3    0.2     0.6   29 1277045    5457   23097    9067 ( 4.529%)  128265 (57.1%)   18.630 -1.026e+04    -18.630      0.000      0.000      N/A
+   4    0.2     0.8   38 1358390    4965   22062    7965 ( 3.978%)  130662 (58.2%)   18.627 -1.029e+04    -18.627      0.000      0.000      N/A
+   5    0.2     1.1   40 1388379    4385   20458    6557 ( 3.275%)  133427 (59.4%)   18.626 -1.035e+04    -18.626      0.000      0.000      N/A
+   6    0.2     1.4   56 1261482    3774   18482    5344 ( 2.669%)  135646 (60.4%)   18.633 -1.038e+04    -18.633      0.000      0.000      N/A
+   7    0.2     1.9   40 1178899    3218   15858    4264 ( 2.130%)  137821 (61.4%)   18.645 -1.041e+04    -18.645      0.000      0.000      N/A
+   8    0.2     2.4   30 1111114    2701   13624    3327 ( 1.662%)  141007 (62.8%)   18.644 -1.043e+04    -18.644      0.000      0.000      N/A
+   9    0.2     3.1   32  896384    2172   11035    2382 ( 1.190%)  143699 (64.0%)   18.644 -1.045e+04    -18.644      0.000      0.000      N/A
+  10    0.2     4.1   20  764661    1736    8813    1670 ( 0.834%)  146067 (65.0%)   18.639 -1.046e+04    -18.639      0.000      0.000       40
+  11    0.2     5.3   21  568085    1331    5975    1039 ( 0.519%)  148607 (66.2%)   18.639 -1.047e+04    -18.639      0.000      0.000       36
+  12    0.1     6.9   26  418254     980    4126     662 ( 0.331%)  150275 (66.9%)   18.639 -1.048e+04    -18.639      0.000      0.000       33
+  13    0.1     9.0    3  322935     689    2518     383 ( 0.191%)  151826 (67.6%)   18.639 -1.050e+04    -18.639      0.000      0.000       29
+  14    0.1    11.6   13  196972     441    1458     227 ( 0.113%)  152697 (68.0%)   18.639 -1.051e+04    -18.639      0.000      0.000       28
+  15    0.1    15.1    6  129763     288     826     136 ( 0.068%)  153364 (68.3%)   18.639 -1.051e+04    -18.639      0.000      0.000       26
+  16    0.1    19.7    4  115608     193     464      84 ( 0.042%)  153888 (68.5%)   18.639 -1.054e+04    -18.639      0.000      0.000       26
+  17    0.1    25.6    5   91072     137     338      62 ( 0.031%)  154316 (68.7%)   18.639 -1.055e+04    -18.639      0.000      0.000       25
+  18    0.1    33.3    6  130409     109     218      38 ( 0.019%)  154759 (68.9%)   18.639 -1.055e+04    -18.639      0.000      0.000       25
+  19    0.1    43.3    6  112316      63     170      29 ( 0.014%)  154980 (69.0%)   18.639 -1.056e+04    -18.639      0.000      0.000       25
+  20    0.1    56.2    3  143665      54     109      17 ( 0.008%)  155163 (69.1%)   18.639 -1.056e+04    -18.639      0.000      0.000       26
+  21    0.1    73.1    3   69102      31      61      10 ( 0.005%)  155204 (69.1%)   18.639 -1.056e+04    -18.639      0.000      0.000       26
+  22    0.1    95.0    2   26427      26      47       7 ( 0.003%)  155256 (69.1%)   18.639 -1.056e+04    -18.639      0.000      0.000       26
+  23    0.1   123.5    1   78207      22      56       4 ( 0.002%)  155452 (69.2%)   18.639 -1.056e+04    -18.639      0.000      0.000       26
+  24    0.1   160.6    3  117281      16      47       3 ( 0.001%)  155548 (69.2%)   18.639 -1.056e+04    -18.639      0.000      0.000       26
+  25    0.1   208.8    1   12809      14      14       2 ( 0.001%)  155582 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       26
+  26    0.1   271.4    0    7289      12      12       2 ( 0.001%)  155622 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       26
+  27    0.1   352.8    0   10165      13      24       2 ( 0.001%)  155622 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       27
+  28    0.1   458.7    0   27086      13      24       2 ( 0.001%)  155638 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       27
+  29    0.1   596.3    0   12035      12      23       2 ( 0.001%)  155638 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       28
+  30    0.1   775.1    0   12963      13      13       2 ( 0.001%)  155682 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       29
+  31    0.1  1007.7    0   41173      13      13       1 ( 0.000%)  155682 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       30
+  32    0.1  1310.0    0   13814      11      11       1 ( 0.000%)  155678 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       30
+  33    0.1  1703.0    0   18213      11      11       1 ( 0.000%)  155670 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       30
+  34    0.1  2213.9    0     881      11      11       1 ( 0.000%)  155670 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       31
+  35    0.1  2878.1    0     943      11      11       1 ( 0.000%)  155666 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       32
+  36    0.1  3741.5    0    8952      11      11       1 ( 0.000%)  155666 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       32
+  37    0.1  4863.9    0   18548      11      11       1 ( 0.000%)  155682 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       33
+  38    0.1  6323.1    0    3211      11      11       1 ( 0.000%)  155678 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       33
+  39    0.1  8220.0    0   19474      11      11       1 ( 0.000%)  155682 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       34
+  40    0.1 10686.0    0   12962      11      11       1 ( 0.000%)  155670 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       35
+  41    0.1 13891.9    0   27169      12      12       1 ( 0.000%)  155670 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       36
+  42    0.1 18059.4    0   15479      11      11       1 ( 0.000%)  155670 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       36
+  43    0.1 23477.2    0   14731      11      11       1 ( 0.000%)  155670 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       37
+  44    0.1 30520.4    0   15479      11      11       1 ( 0.000%)  155670 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       38
+  45    0.1 39676.5    0   14730      11      11       1 ( 0.000%)  155666 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       39
+  46    0.1 51579.5    0     601      10      10       0 ( 0.000%)  155666 (69.3%)   18.639 -1.056e+04    -18.639      0.000      0.000       39
+Restoring best routing
+Critical path: 18.6386 ns
+Successfully routed after 46 routing iterations.
+Router Stats: total_nets_routed: 47658 total_connections_routed: 207747 total_heap_pushes: 15085488 total_heap_pops: 2701939
+
+Attempting to route at 68 channels (binary search bounds: [64, 72])
+## Build routing resource graph
+Warning 223: in check_rr_node: RR node: 4885 type: OPIN location: (1,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 224: in check_rr_node: RR node: 10690 type: OPIN location: (3,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 225: in check_rr_node: RR node: 14323 type: OPIN location: (4,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 226: in check_rr_node: RR node: 17956 type: OPIN location: (5,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 227: in check_rr_node: RR node: 24421 type: OPIN location: (7,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 228: in check_rr_node: RR node: 28054 type: OPIN location: (8,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 229: in check_rr_node: RR node: 31687 type: OPIN location: (9,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 230: in check_rr_node: RR node: 37492 type: OPIN location: (11,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 231: in check_rr_node: RR node: 41125 type: OPIN location: (12,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 232: in check_rr_node: RR node: 44758 type: OPIN location: (13,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 233: in check_rr_node: RR node: 51223 type: OPIN location: (15,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 234: in check_rr_node: RR node: 54856 type: OPIN location: (16,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 235: in check_rr_node: RR node: 58489 type: OPIN location: (17,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 236: in check_rr_node: RR node: 64294 type: OPIN location: (19,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 237: in check_rr_node: RR node: 67927 type: OPIN location: (20,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 238: in check_rr_node: RR node: 71560 type: OPIN location: (21,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 239: in check_rr_node: RR node: 78025 type: OPIN location: (23,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 240: in check_rr_node: RR node: 81658 type: OPIN location: (24,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 241: in check_rr_node: RR node: 85291 type: OPIN location: (25,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 242: in check_rr_node: RR node: 91096 type: OPIN location: (27,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 243: in check_rr_node: RR node: 94729 type: OPIN location: (28,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 244: in check_rr_node: RR node: 98362 type: OPIN location: (29,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 245: in check_rr_node: RR node: 104827 type: OPIN location: (31,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 246: in check_rr_node: RR node: 108460 type: OPIN location: (32,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 247: in check_rr_node: RR node: 112093 type: OPIN location: (33,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 248: in check_rr_node: RR node: 117898 type: OPIN location: (35,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 249: in check_rr_node: RR node: 121531 type: OPIN location: (36,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 250: in check_rr_node: RR node: 125164 type: OPIN location: (37,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 251: in check_rr_node: RR node: 131629 type: OPIN location: (39,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 252: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build routing resource graph took 0.55 seconds (max_rss 253.3 MiB, delta_rss +0.0 MiB)
+  RR Graph Nodes: 196857
+  RR Graph Edges: 1250564
+Confirming router algorithm: TIMING_DRIVEN.
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.2     0.0    0 1492622    7921   29929   16458 ( 8.360%)  136741 (64.5%)   18.687 -1.021e+04    -18.687      0.000      0.000      N/A
+   2    0.2     0.5   46 1361687    6656   27695    9904 ( 5.031%)  128327 (60.5%)   18.674 -1.025e+04    -18.674      0.000      0.000      N/A
+   3    0.2     0.6   29 1330061    5394   23177    9237 ( 4.692%)  130438 (61.5%)   18.697 -1.029e+04    -18.697      0.000      0.000      N/A
+   4    0.3     0.8   39 1493402    4960   22583    8404 ( 4.269%)  133248 (62.8%)   18.703 -1.033e+04    -18.703      0.000      0.000      N/A
+   5    0.3     1.1   55 1532287    4381   21334    6784 ( 3.446%)  135415 (63.8%)   18.703 -1.042e+04    -18.703      0.000      0.000      N/A
+   6    0.3     1.4   54 1493974    3832   18985    5556 ( 2.822%)  137808 (65.0%)   18.705 -1.045e+04    -18.705      0.000      0.000      N/A
+   7    0.2     1.9   47 1417170    3335   16748    4480 ( 2.276%)  139916 (65.9%)   18.727 -1.046e+04    -18.727      0.000      0.000      N/A
+   8    0.2     2.4   41 1291090    2800   14240    3467 ( 1.761%)  142371 (67.1%)   18.727 -1.052e+04    -18.727      0.000      0.000      N/A
+   9    0.2     3.1   36 1245766    2328   12089    2584 ( 1.313%)  145227 (68.5%)   18.727 -1.054e+04    -18.727      0.000      0.000      N/A
+  10    0.2     4.1   34 1048474    1884    9699    1839 ( 0.934%)  147876 (69.7%)   18.727 -1.060e+04    -18.727      0.000      0.000       42
+  11    0.2     5.3   30  764088    1493    6948    1213 ( 0.616%)  150147 (70.8%)   18.727 -1.063e+04    -18.727      0.000      0.000       37
+  12    0.2     6.9   25  737964    1151    5065     794 ( 0.403%)  152327 (71.8%)   18.727 -1.064e+04    -18.727      0.000      0.000       35
+  13    0.2     9.0   19  557851     868    3450     518 ( 0.263%)  153700 (72.4%)   18.727 -1.065e+04    -18.727      0.000      0.000       31
+  14    0.2    11.6   12  576983     688    2466     355 ( 0.180%)  155074 (73.1%)   18.699 -1.065e+04    -18.699      0.000      0.000       30
+  15    0.2    15.1    9  605152     577    2020     233 ( 0.118%)  156051 (73.6%)   18.699 -1.066e+04    -18.699      0.000      0.000       29
+  16    0.2    19.7    8  525449     472    1572     174 ( 0.088%)  156448 (73.7%)   18.699 -1.066e+04    -18.699      0.000      0.000       29
+  17    0.2    25.6    6  588703     444    1466     130 ( 0.066%)  157229 (74.1%)   18.699 -1.067e+04    -18.699      0.000      0.000       29
+  18    0.2    33.3    7  601610     413    1325      97 ( 0.049%)  157439 (74.2%)   18.699 -1.072e+04    -18.699      0.000      0.000       29
+  19    0.2    43.3    1  506503     380    1272      84 ( 0.043%)  157726 (74.3%)   18.699 -1.080e+04    -18.699      0.000      0.000       30
+  20    0.2    56.2    2  504469     363    1244      68 ( 0.035%)  157835 (74.4%)   18.699 -1.081e+04    -18.699      0.000      0.000       31
+  21    0.2    73.1    3  512346     366    1164      58 ( 0.029%)  158308 (74.6%)   19.005 -1.082e+04    -19.005      0.000      0.000       32
+  22    0.2    95.0    5  518465     299     931      58 ( 0.029%)  158323 (74.6%)   18.699 -1.082e+04    -18.699      0.000      0.000       33
+  23    0.2   123.5    4  595823     361    1175      47 ( 0.024%)  158564 (74.7%)   18.699 -1.082e+04    -18.699      0.000      0.000       36
+  24    0.2   160.6    9  491328     339    1137      40 ( 0.020%)  158727 (74.8%)   18.857 -1.085e+04    -18.857      0.000      0.000       37
+  25    0.1   208.8    3  379585     319    1103      36 ( 0.018%)  158786 (74.8%)   18.699 -1.082e+04    -18.699      0.000      0.000       40
+  26    0.1   271.4    0  393448     333    1109      31 ( 0.016%)  158770 (74.8%)   18.699 -1.084e+04    -18.699      0.000      0.000       41
+  27    0.1   352.8    0  400700     370    1324      33 ( 0.017%)  158843 (74.9%)   18.804 -1.083e+04    -18.804      0.000      0.000       43
+  28    0.1   458.7    3  414490     327    1134      32 ( 0.016%)  158838 (74.9%)   19.528 -1.088e+04    -19.528      0.000      0.000       45
+  29    0.1   596.3    0  344060     257     958      27 ( 0.014%)  158839 (74.9%)   18.804 -1.083e+04    -18.804      0.000      0.000       49
+  30    0.1   775.1    1  384698     332    1188      31 ( 0.016%)  158938 (74.9%)   18.804 -1.083e+04    -18.804      0.000      0.000       50
+  31    0.1  1007.7    1  346160     327    1165      29 ( 0.015%)  158918 (74.9%)   18.804 -1.083e+04    -18.804      0.000      0.000       55
+  32    0.2  1310.0    1  517344     327    1158      29 ( 0.015%)  158963 (74.9%)   18.804 -1.083e+04    -18.804      0.000      0.000       58
+  33    0.2  1703.0    0  575759     341    1270      25 ( 0.013%)  159140 (75.0%)   18.804 -1.083e+04    -18.804      0.000      0.000       64
+  34    0.1  2213.9    7  254927     324    1148      16 ( 0.008%)  159152 (75.0%)   18.804 -1.083e+04    -18.804      0.000      0.000       66
+  35    0.1  2878.1    1  213750     328    1145      13 ( 0.007%)  159068 (75.0%)   18.814 -1.083e+04    -18.814      0.000      0.000       67
+  36    0.1  3741.5    0  211374     322    1114      14 ( 0.007%)  159080 (75.0%)   18.814 -1.083e+04    -18.814      0.000      0.000       65
+  37    0.1  4863.9    0  200007     324    1145       9 ( 0.005%)  159122 (75.0%)   18.814 -1.083e+04    -18.814      0.000      0.000       66
+  38    0.1  6323.1    1  128894     317    1101       8 ( 0.004%)  159110 (75.0%)   18.814 -1.083e+04    -18.814      0.000      0.000       63
+  39    0.1  8220.0    0  118581     314    1097       8 ( 0.004%)  159145 (75.0%)   19.093 -1.084e+04    -19.093      0.000      0.000       61
+  40    0.1 10686.0    1  150152     255     877       7 ( 0.004%)  159119 (75.0%)   18.804 -1.083e+04    -18.804      0.000      0.000       60
+  41    0.1 13891.9    1  132257     319    1134       6 ( 0.003%)  159195 (75.0%)   18.804 -1.084e+04    -18.804      0.000      0.000       59
+  42    0.1 18059.4    1  127747     318    1117       6 ( 0.003%)  159250 (75.1%)   18.804 -1.084e+04    -18.804      0.000      0.000       59
+  43    0.1 23477.2    1  104736     318    1124       4 ( 0.002%)  159249 (75.1%)   18.804 -1.084e+04    -18.804      0.000      0.000       58
+  44    0.1 30520.4    0   90279     317    1128       5 ( 0.003%)  159253 (75.1%)   18.804 -1.084e+04    -18.804      0.000      0.000       57
+  45    0.1 39676.5    0  156905     320    1148       8 ( 0.004%)  159257 (75.1%)   18.804 -1.084e+04    -18.804      0.000      0.000       57
+  46    0.1 51579.5    0  184310     323    1189      12 ( 0.006%)  159313 (75.1%)   18.804 -1.085e+04    -18.804      0.000      0.000       59
+  47    0.1 67053.3    0  239991     325    1168      12 ( 0.006%)  159273 (75.1%)   18.804 -1.085e+04    -18.804      0.000      0.000       62
+  48    0.1 87169.3    0  320235     328    1188      18 ( 0.009%)  159267 (75.1%)   18.804 -1.084e+04    -18.804      0.000      0.000       65
+  49    0.1 1.1e+05    1  320378     335    1195      16 ( 0.008%)  159356 (75.1%)   18.804 -1.084e+04    -18.804      0.000      0.000       71
+  50    0.1 1.5e+05    2  255145     327    1160      12 ( 0.006%)  159410 (75.1%)   18.804 -1.083e+04    -18.804      0.000      0.000       77
+Routing failed.
+Router Stats: total_nets_routed: 60052 total_connections_routed: 257301 total_heap_pushes: 28759179 total_heap_pops: 5590308
+
+Attempting to route at 70 channels (binary search bounds: [68, 72])
+## Build routing resource graph
+Warning 253: in check_rr_node: RR node: 4885 type: OPIN location: (1,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 254: in check_rr_node: RR node: 10690 type: OPIN location: (3,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 255: in check_rr_node: RR node: 14323 type: OPIN location: (4,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 256: in check_rr_node: RR node: 17956 type: OPIN location: (5,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 257: in check_rr_node: RR node: 24421 type: OPIN location: (7,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 258: in check_rr_node: RR node: 28054 type: OPIN location: (8,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 259: in check_rr_node: RR node: 31687 type: OPIN location: (9,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 260: in check_rr_node: RR node: 37492 type: OPIN location: (11,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 261: in check_rr_node: RR node: 41125 type: OPIN location: (12,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 262: in check_rr_node: RR node: 44758 type: OPIN location: (13,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 263: in check_rr_node: RR node: 51223 type: OPIN location: (15,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 264: in check_rr_node: RR node: 54856 type: OPIN location: (16,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 265: in check_rr_node: RR node: 58489 type: OPIN location: (17,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 266: in check_rr_node: RR node: 64294 type: OPIN location: (19,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 267: in check_rr_node: RR node: 67927 type: OPIN location: (20,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 268: in check_rr_node: RR node: 71560 type: OPIN location: (21,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 269: in check_rr_node: RR node: 78025 type: OPIN location: (23,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 270: in check_rr_node: RR node: 81658 type: OPIN location: (24,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 271: in check_rr_node: RR node: 85291 type: OPIN location: (25,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 272: in check_rr_node: RR node: 91096 type: OPIN location: (27,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 273: in check_rr_node: RR node: 94729 type: OPIN location: (28,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 274: in check_rr_node: RR node: 98362 type: OPIN location: (29,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 275: in check_rr_node: RR node: 104827 type: OPIN location: (31,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 276: in check_rr_node: RR node: 108460 type: OPIN location: (32,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 277: in check_rr_node: RR node: 112093 type: OPIN location: (33,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 278: in check_rr_node: RR node: 117898 type: OPIN location: (35,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 279: in check_rr_node: RR node: 121531 type: OPIN location: (36,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 280: in check_rr_node: RR node: 125164 type: OPIN location: (37,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 281: in check_rr_node: RR node: 131629 type: OPIN location: (39,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 282: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build routing resource graph took 0.57 seconds (max_rss 253.3 MiB, delta_rss +0.0 MiB)
+  RR Graph Nodes: 198537
+  RR Graph Edges: 1287633
+Confirming router algorithm: TIMING_DRIVEN.
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.3     0.0    0 1543932    7921   29929   16091 ( 8.105%)  134761 (61.7%)   18.837 -1.018e+04    -18.837      0.000      0.000      N/A
+   2    0.2     0.5   57 1389160    6638   27595    9599 ( 4.835%)  126807 (58.1%)   18.840 -1.024e+04    -18.840      0.000      0.000      N/A
+   3    0.2     0.6   23 1312086    5326   22965    8905 ( 4.485%)  128744 (58.9%)   18.838 -1.028e+04    -18.838      0.000      0.000      N/A
+   4    0.2     0.8   36 1417287    4801   22152    8047 ( 4.053%)  130812 (59.9%)   18.846 -1.033e+04    -18.846      0.000      0.000      N/A
+   5    0.2     1.1   35 1354606    4273   20512    6361 ( 3.204%)  132993 (60.9%)   18.848 -1.036e+04    -18.848      0.000      0.000      N/A
+   6    0.2     1.4   50 1334832    3691   18344    5254 ( 2.646%)  135422 (62.0%)   18.848 -1.039e+04    -18.848      0.000      0.000      N/A
+   7    0.2     1.9   48 1262648    3150   16192    4168 ( 2.099%)  137864 (63.1%)   18.848 -1.044e+04    -18.848      0.000      0.000      N/A
+   8    0.2     2.4   38 1104686    2655   13397    3011 ( 1.517%)  140465 (64.3%)   18.846 -1.047e+04    -18.846      0.000      0.000      N/A
+   9    0.2     3.1   42  906048    2023   10388    2103 ( 1.059%)  143265 (65.6%)   18.846 -1.049e+04    -18.846      0.000      0.000      N/A
+  10    0.2     4.1   29  717274    1614    8069    1495 ( 0.753%)  145668 (66.7%)   18.846 -1.050e+04    -18.846      0.000      0.000       37
+  11    0.2     5.3   25  495954    1258    5819     958 ( 0.483%)  147598 (67.6%)   18.846 -1.053e+04    -18.846      0.000      0.000       33
+  12    0.1     6.9   12  349147     884    3481     551 ( 0.278%)  149219 (68.3%)   18.846 -1.053e+04    -18.846      0.000      0.000       31
+  13    0.1     9.0    9  289784     618    2248     346 ( 0.174%)  150543 (68.9%)   18.846 -1.054e+04    -18.846      0.000      0.000       28
+  14    0.1    11.6    8  242243     417    1358     201 ( 0.101%)  151508 (69.4%)   18.846 -1.055e+04    -18.846      0.000      0.000       27
+  15    0.1    15.1    6  161261     274     802     117 ( 0.059%)  152072 (69.6%)   18.846 -1.055e+04    -18.846      0.000      0.000       26
+  16    0.1    19.7   10   94640     173     421      78 ( 0.039%)  152324 (69.7%)   18.846 -1.055e+04    -18.846      0.000      0.000       25
+  17    0.1    25.6    2  101065     114     303      45 ( 0.023%)  152712 (69.9%)   18.846 -1.055e+04    -18.846      0.000      0.000       25
+  18    0.1    33.3    1  121870      72     173      30 ( 0.015%)  152944 (70.0%)   18.846 -1.056e+04    -18.846      0.000      0.000       25
+  19    0.1    43.3    5  169959      48     107      21 ( 0.011%)  153277 (70.2%)   18.846 -1.067e+04    -18.846      0.000      0.000       25
+  20    0.1    56.2    3  107725      30      45      13 ( 0.007%)  153425 (70.2%)   18.846 -1.067e+04    -18.846      0.000      0.000       25
+  21    0.1    73.1    1   85215      21      36       6 ( 0.003%)  153572 (70.3%)   18.846 -1.067e+04    -18.846      0.000      0.000       25
+  22    0.1    95.0    0   51075      11      29       4 ( 0.002%)  153582 (70.3%)   18.846 -1.067e+04    -18.846      0.000      0.000       25
+  23    0.1   123.5    0   90689       9      15       3 ( 0.002%)  153671 (70.4%)   18.846 -1.067e+04    -18.846      0.000      0.000       25
+  24    0.1   160.6    2   32026       5       5       2 ( 0.001%)  153681 (70.4%)   18.846 -1.067e+04    -18.846      0.000      0.000       25
+  25    0.1   208.8    0   18351       3       3       0 ( 0.000%)  153689 (70.4%)   18.846 -1.067e+04    -18.846      0.000      0.000       25
+Restoring best routing
+Critical path: 18.846 ns
+Successfully routed after 25 routing iterations.
+Router Stats: total_nets_routed: 46029 total_connections_routed: 204388 total_heap_pushes: 14753563 total_heap_pops: 2641752
+## Build routing resource graph
+Warning 283: in check_rr_node: RR node: 4885 type: OPIN location: (1,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 284: in check_rr_node: RR node: 10690 type: OPIN location: (3,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 285: in check_rr_node: RR node: 14323 type: OPIN location: (4,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 286: in check_rr_node: RR node: 17956 type: OPIN location: (5,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 287: in check_rr_node: RR node: 24421 type: OPIN location: (7,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 288: in check_rr_node: RR node: 28054 type: OPIN location: (8,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 289: in check_rr_node: RR node: 31687 type: OPIN location: (9,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 290: in check_rr_node: RR node: 37492 type: OPIN location: (11,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 291: in check_rr_node: RR node: 41125 type: OPIN location: (12,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 292: in check_rr_node: RR node: 44758 type: OPIN location: (13,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 293: in check_rr_node: RR node: 51223 type: OPIN location: (15,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 294: in check_rr_node: RR node: 54856 type: OPIN location: (16,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 295: in check_rr_node: RR node: 58489 type: OPIN location: (17,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 296: in check_rr_node: RR node: 64294 type: OPIN location: (19,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 297: in check_rr_node: RR node: 67927 type: OPIN location: (20,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 298: in check_rr_node: RR node: 71560 type: OPIN location: (21,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 299: in check_rr_node: RR node: 78025 type: OPIN location: (23,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 300: in check_rr_node: RR node: 81658 type: OPIN location: (24,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 301: in check_rr_node: RR node: 85291 type: OPIN location: (25,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 302: in check_rr_node: RR node: 91096 type: OPIN location: (27,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 303: in check_rr_node: RR node: 94729 type: OPIN location: (28,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 304: in check_rr_node: RR node: 98362 type: OPIN location: (29,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 305: in check_rr_node: RR node: 104827 type: OPIN location: (31,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 306: in check_rr_node: RR node: 108460 type: OPIN location: (32,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 307: in check_rr_node: RR node: 112093 type: OPIN location: (33,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 308: in check_rr_node: RR node: 117898 type: OPIN location: (35,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 309: in check_rr_node: RR node: 121531 type: OPIN location: (36,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 310: in check_rr_node: RR node: 125164 type: OPIN location: (37,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 311: in check_rr_node: RR node: 131629 type: OPIN location: (39,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 312: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build routing resource graph took 0.57 seconds (max_rss 253.3 MiB, delta_rss +0.0 MiB)
+  RR Graph Nodes: 198537
+  RR Graph Edges: 1287633
+Best routing used a channel width factor of 70.
+# Routing took 42.06 seconds (max_rss 253.3 MiB, delta_rss +64.7 MiB)
+
+Checking to ensure routing is legal...
+Completed routing consistency check successfully.
+
+Serial number (magic cookie) for the routing is: 41047956
+Circuit successfully routed with a channel width factor of 70.
+
+Average number of bends per net: 2.98813  Maximum # of bends: 84
+
+Number of global nets: 17
+Number of routed nets (nonglobal): 7921
+Wire length results (in units of 1 clb segments)...
+	Total wirelength: 153689, average net length: 19.4027
+	Maximum net length: 398
+
+Wire length results in terms of physical segments...
+	Total wiring segments used: 39450, average wire segments per net: 4.98043
+	Maximum segments used by a net: 101
+	Total local nets with reserved CLB opins: 0
+
+Routing channel utilization histogram:
+[        1:      inf)    0 ( 0.0%) |
+[      0.9:        1)  140 ( 4.4%) |****
+[      0.8:      0.9)  822 (25.7%) |*************************
+[      0.7:      0.8) 1510 (47.2%) |**********************************************
+[      0.5:      0.6)  228 ( 7.1%) |*******
+[      0.4:      0.5)  154 ( 4.8%) |*****
+[      0.3:      0.4)  146 ( 4.6%) |****
+[      0.2:      0.3)   78 ( 2.4%) |**
+[      0.1:      0.2)   38 ( 1.2%) |*
+[        0:      0.1)   84 ( 2.6%) |***
+Maximum routing channel utilization:      0.96 at (11,15)
+
+X - Directed channels:   j max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0      64  40.805       70
+                         1      65  43.341       70
+                         2      61  44.927       70
+                         3      59  46.195       70
+                         4      60  47.780       70
+                         5      65  46.780       70
+                         6      58  46.854       70
+                         7      61  45.829       70
+                         8      60  45.439       70
+                         9      62  48.341       70
+                        10      63  47.537       70
+                        11      63  49.268       70
+                        12      65  50.220       70
+                        13      64  50.098       70
+                        14      64  49.049       70
+                        15      67  51.146       70
+                        16      66  49.780       70
+                        17      62  51.854       70
+                        18      67  53.756       70
+                        19      65  52.829       70
+                        20      67  50.415       70
+                        21      64  52.073       70
+                        22      65  48.780       70
+                        23      66  47.707       70
+                        24      66  49.976       70
+                        25      66  52.390       70
+                        26      63  51.146       70
+                        27      63  50.659       70
+                        28      66  50.366       70
+                        29      62  50.122       70
+                        30      61  48.780       70
+                        31      60  47.585       70
+                        32      58  46.829       70
+                        33      59  46.659       70
+                        34      60  46.317       70
+                        35      62  45.049       70
+                        36      57  40.146       70
+                        37      57  37.854       70
+                        38      59  35.049       70
+                        39      47  25.561       70
+Y - Directed channels:   i max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0      39  23.415       70
+                         1      39  26.195       70
+                         2      48  32.927       70
+                         3      56  45.390       70
+                         4      62  47.098       70
+                         5      56  41.512       70
+                         6      63  43.171       70
+                         7      65  49.561       70
+                         8      67  52.537       70
+                         9      64  46.659       70
+                        10      65  47.366       70
+                        11      66  51.171       70
+                        12      69  50.878       70
+                        13      66  48.659       70
+                        14      65  51.146       70
+                        15      70  52.707       70
+                        16      65  51.000       70
+                        17      65  47.146       70
+                        18      60  46.927       70
+                        19      64  49.756       70
+                        20      64  52.073       70
+                        21      64  48.829       70
+                        22      61  48.122       70
+                        23      67  51.976       70
+                        24      66  55.171       70
+                        25      64  49.073       70
+                        26      65  51.146       70
+                        27      64  52.829       70
+                        28      69  56.049       70
+                        29      64  49.683       70
+                        30      64  49.878       70
+                        31      66  52.683       70
+                        32      67  53.146       70
+                        33      58  44.976       70
+                        34      63  47.244       70
+                        35      63  53.268       70
+                        36      63  49.488       70
+                        37      52  37.683       70
+                        38      50  31.610       70
+                        39      42  23.073       70
+
+Total tracks in x-direction: 2800, in y-direction: 2800
+
+Logic area (in minimum width transistor areas, excludes I/Os and empty grid tiles)...
+	Total logic block area (Warning, need to add pitch of routing to blocks with height > 3): 9.52156e+07
+	Total used logic block area: 6.18924e+07
+
+Routing area (in minimum width transistor areas)...
+	Total routing area: 7.98666e+06, per logic tile: 4751.14
+
+Segment usage by type (index): type utilization
+                               ---- -----------
+                                  0       0.671
+
+Segment usage by length: length utilization
+                         ------ -----------
+                              4       0.671
+
+
+Hold Worst Negative Slack (hWNS): 0 ns
+Hold Total Negative Slack (hTNS): 0 ns
+
+Hold slack histogram:
+[  2.9e-10:  5.6e-10) 1005 (42.6%) |**********************************************
+[  5.6e-10:  8.3e-10)  299 (12.7%) |**************
+[  8.3e-10:  1.1e-09)  258 (10.9%) |************
+[  1.1e-09:  1.4e-09)  287 (12.2%) |*************
+[  1.4e-09:  1.6e-09)  208 ( 8.8%) |**********
+[  1.6e-09:  1.9e-09)  150 ( 6.4%) |*******
+[  1.9e-09:  2.2e-09)   92 ( 3.9%) |****
+[  2.2e-09:  2.5e-09)   15 ( 0.6%) |*
+[  2.5e-09:  2.7e-09)   31 ( 1.3%) |*
+[  2.7e-09:    3e-09)   14 ( 0.6%) |*
+
+Final critical path: 18.846 ns, Fmax: 53.0616 MHz
+Setup Worst Negative Slack (sWNS): -18.846 ns
+Setup Total Negative Slack (sTNS): -10667.2 ns
+
+Setup slack histogram:
+[ -1.9e-08: -1.7e-08)  116 ( 4.9%) |****
+[ -1.7e-08: -1.5e-08)   75 ( 3.2%) |**
+[ -1.5e-08: -1.3e-08)  157 ( 6.7%) |*****
+[ -1.3e-08: -1.1e-08)   92 ( 3.9%) |***
+[ -1.1e-08: -9.6e-09)   14 ( 0.6%) |
+[ -9.6e-09: -7.8e-09)  151 ( 6.4%) |*****
+[ -7.8e-09:   -6e-09)   46 ( 1.9%) |*
+[   -6e-09: -4.1e-09)   88 ( 3.7%) |***
+[ -4.1e-09: -2.3e-09)  163 ( 6.9%) |*****
+[ -2.3e-09: -4.3e-10) 1457 (61.8%) |**********************************************
+
+Timing analysis took 18.1448 seconds (15.7381 STA, 2.40678 slack) (356 full updates: 121 setup, 0 hold, 235 combined).
+VPR suceeded
+The entire flow of VPR took 88.85 seconds (max_rss 253.4 MiB)
+	Command being timed: "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/../vpr/vpr k6_frac_N10_frac_chain_mem32K_40nm.xml bfly --circuit_file bfly.pre-vpr.blif"
+	User time (seconds): 88.53
+	System time (seconds): 0.33
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:28.88
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 259460
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 182511
+	Voluntary context switches: 3
+	Involuntary context switches: 97
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 94080
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
