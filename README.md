@@ -1,6 +1,6 @@
 k## Under construction (more to come)
 
-<a href="./docs/baseline.mp4" title="Baseline-bfly.v"><img src="{image-url}" alt="Alternate Text" /></a>
+<img src="./docs/baseline.gif" alt="Alternate Text" /></a>
 ## Required Packages:
 	- readline: sudo apt-get install libreadline6 libreadline6-dev (Ubuntu)
 	- readline: sudo yum install readline-devel (CentOS 7)
