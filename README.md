@@ -7,6 +7,8 @@
 ### bfly.v example -- FlowTune (20% more AIG reductions compared to 25+ resyn)
 <img src="./docs/ftune.gif" alt="bfly-ftune" /></a>
 
+
+### Reference
 ```shell
 @inproceedings{yu-mab-iccad2020,
 title={Practical Multi-armed Bandits in Boolean Optimization},
