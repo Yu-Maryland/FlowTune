@@ -1,6 +1,6 @@
 ## FlowTune (Under construction more to come)
 
-<img src="./docs/overview.pdf" alt="flowtune" /></a>
+<img src="./docs/overview.png" alt="FlowTune Overview" /></a>
 
 ## What FlowTune does?
 
