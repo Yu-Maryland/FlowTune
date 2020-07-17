@@ -1,19 +1,41 @@
 ## FlowTune (Under construction more to come)
 
+<img src="./docs/overview.pdf" alt="flowtune" /></a>
 
-### bfly.v example -- Baseline (resyn applied 25+ times)
-<img src="./docs/baseline.gif" alt="bfly-baseline" /></a>
+## What FlowTune does?
 
-### bfly.v example -- FlowTune (20% more AIG reductions compared to 25+ resyn)
-<img src="./docs/ftune.gif" alt="bfly-ftune" /></a>
+- Efficiently explore ABC synthesis flows (sequential decision making)
+
+- Push-button tool/script for various QoR metrics are included
+
+	- #AIG minimization 
+	- #LUT minimization (ABC LUT mapper "if -K")
+	- STD Technology mapping Delay and Area optimization
+	- STA-Aware STD Technology mapping Delay optimization
+	- SAT-CNF minimization (#clauses)
+
+## What is included in this repo?
+
+- FlowTune framework (implemented in <a href="https://github.com/berkeley-abc/abc">ABC</a>; Thanks @Alan Mishchenko)
+
+- A set of seqeuntial FPU benchmarks in BLIF (original benchmarks from <a href="https://github.com/verilog-to-routing/vtr-verilog-to-routing">VTR 8.0</a> Thanks!@VTR Team)
+
+- Push-button FlowTune for AIG, LUT, STD mapping optimizations (within ABC) are included.
+
+- FlowTune push-button integration with <a href="https://github.com/verilog-to-routing/vtr-verilog-to-routing">VTR 8.0</a>. End-to-end evaluation of FlowTune till post-PnR stage is included.
+
+- FlowTune push-button integration with <a href="https://github.com/YosysHQ/yosys">Yosys</a> (Thanks! @Yosys Team)
+
+- FlowTune Vivado demo is included.
 
 
-### Reference
+
+### Reference 
 ```shell
 @inproceedings{yu-mab-iccad2020,
 title={Practical Multi-armed Bandits in Boolean Optimization},
 author={Cunxi Yu},
-booktitle={ICCAD 2020},
+booktitle={2020 International Conference On Computer Aided Design (ICCAD'20)},
 year={2020},
 }
 ```
@@ -29,8 +51,10 @@ year={2020},
 	- export "abc" and "yosys" PATH TO .bashrc to have a global access
 		- Instruction:  echo "export PATH=$(pwd):\${PATH}" >> ~/.bashrc; source ~/.bashrc
 		- Testing : If PATH added succesfully, you should be able to type "abc" and "yosys" at any location of your LINUX system 
-	
-## "ftune" implemented in ABC
+
+
+
+## FlowTune implementation in ABC
 
 	abc 01> ftune -h
 	usage: ftune [drtfpihSL]
@@ -61,65 +85,36 @@ year={2020},
 		    -S 1 : Using Softmax()
 		    -S 2 : Using LogSoftmax()
 	-L    : Liberty or GENLIB file. Required for Technology mapping tuning (t=2,3,8,9) 
-## VTR (vtr-verilog-to-routing) Integration
+	
+## FlowTune Demos
+
+### (a) -- AIG Node Minimization 
+	Design: bfly.v
+	Baseline: resyn (default abc flow) applied 25 times
+	Result: FlowTune provides 20%+ more AIG reduction compared to resyn*25 
+	(see video below)
+	
+#### Baseline 
+
+<img src="./docs/baseline.gif" alt="bfly-baseline" /></a>
+
+#### FlowTune (20% more AIG reductions compared to 25+ resyn)
+
+<img src="./docs/ftune.gif" alt="bfly-ftune" /></a>
+
+### (b) -- VTR (vtr-verilog-to-routing) Integration
+
 See <b><i>./FlowTune-Integration-VTR/ftune_vtr_flow.pl</i></b> for details
 
-### Comparisons between default VTR vs FTune VTR using "bfly.v" (Architecture = k6\_frac\_N10\_frac\_chain\_mem32K\_40nm")
+#### Comparisons between default VTR vs FTune VTR 
+	Design: bfly.v
+	FPGA Architecture = k6_frac_N10_frac_chain_mem32K_40nm
+	Result: 15% area/block reductions at Post-PnR stage, with 13% #Nets reductions.
 
-```
-
-```
+<img src="./docs/vtr-integration-demo.png" alt="bfly-ftune" /></a>
 
 
-<b>Post Place-and-Route</b> Circuit Statistics with FlowTune: 
-```
-./ftune_vtr_flow.pl bfly.v k6_frac_N10_frac_chain_mem32K_40nm.xml 
-```
-
-```
-  Blocks: 11877
-    .input  :     193
-    .latch  :    2296
-    .output :      64
-    0-LUT   :      15
-    6-LUT   :    8285
-    adder   :    1020
-    multiply:       4
-  Nets  : 12861
-    Avg Fanout:     3.4
-    Max Fanout:  2296.0
-    Min Fanout:     1.0
-  Netlist Clocks: 1
- Build Timing Graph
-  Timing Graph Nodes: 56537
-  Timing Graph Edges: 98892
-  Timing Graph Levels: 116
-```
-
-<b>Post Place-and-Route</b> Circuit Statistics without FlowTune: 
-```
-./run_vtr_flow.pl bfly.v k6_frac_N10_frac_chain_mem32K_40nm.xml
-```
-
-```
-  Blocks: 13921
-    .input  :     193
-    .latch  :    2296
-    .output :      64
-    0-LUT   :      15
-    6-LUT   :   10329
-    adder   :    1020
-    multiply:       4
-  Nets  : 14905
-    Avg Fanout:     3.7
-    Max Fanout:  2296.0
-    Min Fanout:     1.0
-  Netlist Clocks: 1
-# Build Timing Graph
-  Timing Graph Nodes: 70763
-  Timing Graph Edges: 123256
-  Timing Graph Levels: 112
-```
+### (c) -- More can be found in the listed folders in this repo.
 
 
 
