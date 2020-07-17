@@ -1,4 +1,4 @@
-k## Under construction (more to come)
+## FlowTune (Under construction more to come)
 
 
 ### bfly.v example -- Baseline (resyn applied 25+ times)
@@ -7,7 +7,14 @@ k## Under construction (more to come)
 ### bfly.v example -- FlowTune (20% more AIG reductions compared to 25+ resyn)
 <img src="./docs/ftune.gif" alt="bfly-ftune" /></a>
 
-
+```shell
+@inproceedings{yu-mab-iccad2020,
+title={Practical Multi-armed Bandits in Boolean Optimization},
+author={Cunxi Yu},
+booktitle={ICCAD 2020},
+year={2020},
+}
+```
 
 ## Required Packages:
 	- readline: sudo apt-get install libreadline6 libreadline6-dev (Ubuntu)
