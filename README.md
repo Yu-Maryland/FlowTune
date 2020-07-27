@@ -1,4 +1,4 @@
-## FlowTune (Under construction more to come)
+## FlowTune (Under construction more to come; source code is coming soon)
 
 <img src="./docs/overview.png" alt="FlowTune Overview" width="450" class="center" /></a>
 
