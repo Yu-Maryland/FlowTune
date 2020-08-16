@@ -46,6 +46,10 @@ do
 done
 
 cp internal.aig $design.ftune.aig
+RED='\033[0;31m'
+NC='\033[0m'
+echo -e "********************************************************\n${RED} Final design produced by FlowTune: $design.ftune.aig$NC\n********************************************************"
+rm internal.*
 #rm result_all.log
 #echo $design >> result_all.log 
 #cat internal.aig.log >> result_all.log
