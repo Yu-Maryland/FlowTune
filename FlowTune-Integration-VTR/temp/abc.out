@@ -1,263 +1,44 @@
 
 /usr/bin/time -v /home/cunxi/cunxi/FreeTune-abc/abc -c 
-	echo '';
-	echo 'Load Netlist';
-	echo '============';
-	read bfly.odin.blif.ftune.blif;
-	time;
-
-	echo 'Load FTune Flow';
-	echo '==========';
-	read bfly.odin.blif.ftune.blif;
-	echo '';
-	echo 'Circuit Info';
-	echo '==========';
-	print_stats;
-	print_latch;
-	time;
-
-	echo '';
-	echo 'LUT Costs';
-	echo '=========';
-	print_lut;
-	time;
-
-	echo '';
-	echo 'Techmap';
-	echo '===================';
-	strash;
-	ifraig -v;
-	scorr -v;
-	dc2 -v;
-	dch -f;
-	if -K 6 -v;
-	mfs2 -v;
-	mfs2 -v;
-	print_stats;
-	time;
-
-	echo '';
-	write_hie bfly.odin.blif bfly.raw.abc.blif;
-	echo 'Output Netlist';
-	echo '==============';
-	time;
+echo '';
+echo 'Load Netlist';
+echo '============';
+time;
 
 ABC command line: "
-	echo '';
-	echo 'Load Netlist';
-	echo '============';
-	read bfly.odin.blif.ftune.blif;
-	time;
-
-	echo 'Load FTune Flow';
-	echo '==========';
-	read bfly.odin.blif.ftune.blif;
-	echo '';
-	echo 'Circuit Info';
-	echo '==========';
-	print_stats;
-	print_latch;
-	time;
-
-	echo '';
-	echo 'LUT Costs';
-	echo '=========';
-	print_lut;
-	time;
-
-	echo '';
-	echo 'Techmap';
-	echo '===================';
-	strash;
-	ifraig -v;
-	scorr -v;
-	dc2 -v;
-	dch -f;
-	if -K 6 -v;
-	mfs2 -v;
-	mfs2 -v;
-	print_stats;
-	time;
-
-	echo '';
-	write_hie bfly.odin.blif bfly.raw.abc.blif;
-	echo 'Output Netlist';
-	echo '==============';
-	time;
+echo '';
+echo 'Load Netlist';
+echo '============';
+time;
 ".
 
  
 Load Netlist 
 ============ 
-elapse: 0.14 seconds, total: 0.14 seconds
-Load FTune Flow 
-========== 
- 
-Circuit Info 
-========== 
-[1;37mbfly                          :[0m i/o = 5250/ 4107  lat = 2296  nd = 31047  edge =  59347  cube = 31031  lev = 59
-Total latches =  2296. Init0 = 2296. Init1 = 0. InitDC = 0. Const data = 1.
-elapse: 0.14 seconds, total: 0.28 seconds
- 
-LUT Costs 
-========= 
-# The area/delay of k-variable LUTs:
-# k    area     delay
-1      1.00      1.00
-2      1.00      1.00
-3      1.00      1.00
-4      1.00      1.00
-elapse: 0.00 seconds, total: 0.28 seconds
- 
-Techmap 
-=================== 
-SimWords = 32. Rounds = 294. Mem = 5.16 MB.  Classes: Beg = 564. End = 339.
-Proof = 298. Counter-example = 264. Fail = 0. FailReal = 0. Zero = 104.
-Final = 27757. Miter = 28267. Total = 28316. Mux = 0. (Exor = 0.) SatVars = 9338.
-starts        :              504
-conflicts     :              789
-decisions     :           163838
-propagations  :          1286085
-AIG simulation   =     0.42 sec
-AIG traversal    =     0.00 sec
-SAT solving      =     0.13 sec
-    Unsat        =     0.00 sec
-    Sat          =     0.13 sec
-    Fail         =     0.00 sec
-Class refining   =     0.01 sec
-TOTAL RUNTIME    =     0.88 sec
-Allocated 1.27 MB to store simulation information.
-Initial simulation of 4 frames with 2 words.     Time =     0.00 sec
-Collecting candidate equivalence classes.        Time =     0.00 sec
-Simulation of 4 frames with 2 words (15 rounds). Time =     0.04 sec
-Before BMC: Equiv classes: Const1 =   382. Class =   629. Lit =  1449.
-After  BMC: Equiv classes: Const1 =   382. Class =   629. Lit =  1449.
-  0 : C =     29. Cl =     15. LR =  1025. NR = 54890. F =    0. - T =     1.87 sec
-  1 : C =      0. Cl =      4. LR =    15. NR = 55350. F =    0. - T =     0.09 sec
-  2 : C =      0. Cl =      0. LR =     3. NR = 55395. F =    0. - T =     0.03 sec
-  3 : C =      0. Cl =      0. LR =     0. NR = 55396. F =    0. - T =     0.01 sec
-Parameters: F = 1. AddF = 2. C-lim = 1000. Constr = 0. MaxLev = 0. Mem = 1.91 MB.
-AIG       : PI = 5250. PO = 4107. Latch = 2296. Node = 27757.  Ave SAT vars = 0.
-SAT calls : Proof = 4. Cex = 538. Fail = 0. Lits proved = 0.
-SAT solver: Vars max = 30491. Calls max = 516. Recycles = 0. Sim rounds = 0.
-NBeg = 27757. NEnd = 27757. (Gain =   0.00 %).  RBeg = 2296. REnd = 2296. (Gain =   0.00 %).
-BMC         =     0.00 sec (  0.04 %)
-Spec reduce =     0.04 sec (  1.86 %)
-Mark cones  =     0.00 sec (  0.00 %)
-Sim SAT     =     0.99 sec ( 49.55 %)
-SAT solving =     0.91 sec ( 45.15 %)
-  unsat     =     0.00 sec (  0.03 %)
-  sat       =     0.90 sec ( 45.14 %)
-  undecided =     0.00 sec (  0.00 %)
-Other       =     0.07 sec (  3.41 %)
-TOTAL       =     2.00 sec (100.00 %)
-Starting:  bfly            : pi =  5250  po =  4107  lat =  2296  and =   27757  lev =  58
-Rewrite:   bfly            : pi =  5250  po =  4107  lat =  2296  and =   25973  lev =  55
-Refactor:  bfly            : pi =  5250  po =  4107  lat =  2296  and =   25884  lev =  55
-Balance:   bfly            : pi =  5250  po =  4107  lat =  2296  and =   25800  lev =  49
-Rewrite:   bfly            : pi =  5250  po =  4107  lat =  2296  and =   25632  lev =  50
-RewriteZ:  bfly            : pi =  5250  po =  4107  lat =  2296  and =   25495  lev =  58
-RefactorZ: bfly            : pi =  5250  po =  4107  lat =  2296  and =   25382  lev =  56
-RewriteZ:  bfly            : pi =  5250  po =  4107  lat =  2296  and =   25270  lev =  61
-K = 6. Memory (bytes): Truth =    0. Cut =   56. Obj =  136. Set =  600. CutMin = no
-Node =   44388.  Ch =  3626.  Total mem =    8.46 MB. Peak cut mem =    0.80 MB.
-P:  Del =   14.00.  Ar =   11547.0.  Edge =    51071.  Cut =   708305.  T =     0.12 sec
-P:  Del =   14.00.  Ar =    9814.0.  Edge =    48085.  Cut =   541489.  T =     0.11 sec
-P:  Del =   14.00.  Ar =    9661.0.  Edge =    43739.  Cut =   704974.  T =     0.13 sec
-F:  Del =   14.00.  Ar =    8440.0.  Edge =    40494.  Cut =   509181.  T =     0.10 sec
-A:  Del =   14.00.  Ar =    8158.0.  Edge =    36031.  Cut =   542938.  T =     0.17 sec
-A:  Del =   14.00.  Ar =    8100.0.  Edge =    35879.  Cut =   532639.  T =     0.17 sec
-Total time =     0.81 sec
-Duplicated 2715 gates to decouple the CO drivers.
-Performing MFS with 7546 PIs, 6403 POs, 10831 nodes (10831 flexible, 0 fixed, 0 empty).
-Nodes = 10831. Try = 8257. Resub = 157. Div = 1260805 (ave = 152). SAT calls = 152391. Timeouts = 0. MaxDivs = 2494.
-Attempts :   Remove    132 out of  34180 (  0.39 %)   Resub      25 out of   4376 (  0.57 %)   
-Reduction:   Nodes      26 out of  10815 (  0.24 %)   Edges     230 out of  38593 (  0.60 %)   
-Win =     0.08 sec (  3.10 %)
-Div =     0.11 sec (  3.93 %)
-Cnf =     0.37 sec ( 13.63 %)
-Sat =     2.11 sec ( 78.08 %)
-Oth =     0.03 sec (  1.26 %)
-ALL =     2.70 sec (100.00 %)
-The network has 128 nodes changed by "mfs".
-Performing MFS with 7546 PIs, 6403 POs, 10805 nodes (10805 flexible, 0 fixed, 0 empty).
-Nodes = 10805. Try = 8083. Resub = 9. Div = 1236838 (ave = 153). SAT calls = 149271. Timeouts = 0. MaxDivs = 2484.
-Attempts :   Remove      7 out of  33765 (  0.02 %)   Resub       2 out of   4328 (  0.05 %)   
-Reduction:   Nodes       2 out of  10789 (  0.02 %)   Edges      13 out of  38363 (  0.03 %)   
-Win =     0.08 sec (  3.11 %)
-Div =     0.10 sec (  3.97 %)
-Cnf =     0.36 sec ( 13.78 %)
-Sat =     2.05 sec ( 77.88 %)
-Oth =     0.03 sec (  1.27 %)
-ALL =     2.63 sec (100.00 %)
-The network has 7 nodes changed by "mfs".
-[1;37mbfly                          :[0m i/o = 5250/ 4107  lat = 2296  nd = 10803  edge =  38350  cube = 19955  lev = 14
-elapse: 13.11 seconds, total: 13.40 seconds
- 
-Hierarchy writer reintroduced 2388 instances of blackboxes.
-Output Netlist 
-============== 
-elapse: 0.23 seconds, total: 13.63 seconds
+elapse: 0.00 seconds, total: 0.00 seconds
 	Command being timed: "/home/cunxi/cunxi/FreeTune-abc/abc -c 
-	echo '';
-	echo 'Load Netlist';
-	echo '============';
-	read bfly.odin.blif.ftune.blif;
-	time;
-
-	echo 'Load FTune Flow';
-	echo '==========';
-	read bfly.odin.blif.ftune.blif;
-	echo '';
-	echo 'Circuit Info';
-	echo '==========';
-	print_stats;
-	print_latch;
-	time;
-
-	echo '';
-	echo 'LUT Costs';
-	echo '=========';
-	print_lut;
-	time;
-
-	echo '';
-	echo 'Techmap';
-	echo '===================';
-	strash;
-	ifraig -v;
-	scorr -v;
-	dc2 -v;
-	dch -f;
-	if -K 6 -v;
-	mfs2 -v;
-	mfs2 -v;
-	print_stats;
-	time;
-
-	echo '';
-	write_hie bfly.odin.blif bfly.raw.abc.blif;
-	echo 'Output Netlist';
-	echo '==============';
-	time;
+echo '';
+echo 'Load Netlist';
+echo '============';
+time;
 "
-	User time (seconds): 13.71
-	System time (seconds): 0.77
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:14.48
+	User time (seconds): 0.05
+	System time (seconds): 0.00
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.06
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 56268
+	Maximum resident set size (kbytes): 3952
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 46058
+	Minor (reclaiming a frame) page faults: 1201
 	Voluntary context switches: 1
-	Involuntary context switches: 18
+	Involuntary context switches: 1
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 2792
+	File system outputs: 0
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0

@@ -568,7 +568,7 @@ if (    $starting_stage <= $stage_idx_abc
     #   (5) no need to run"dc2" if "dch -f" is used, alternatively run "dc2; dch -f" (this will take more runtime but may not improve quality)
     #   (6) the only place to run "strash" is after technology mapping (if the script is run more than once - can improve quality)
     # On 2019/07/10 Cunxi Yu added "ftune" OPTIONS
-    system("./single_design_run.sh ./temp/$odin_output_file_name 3 5");
+    system("./single_design_run.sh ./temp/$odin_output_file_name 3 20");
     my $abc_ftune_commands="
 echo '';
 echo 'Load Netlist';

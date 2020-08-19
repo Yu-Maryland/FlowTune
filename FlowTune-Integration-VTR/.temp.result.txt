@@ -1,40 +1,40 @@
-(Warning)Mean : 11164.6; best : 10934; size : 36stdev: 132.787
-0: mean=11078.3; stdev=87.9747; current_epoch_win_rate : 0.833333
-1: mean=11156.8; stdev=98.6364; current_epoch_win_rate : 0.333333
-2: mean=11322.2; stdev=184.279; current_epoch_win_rate : 0.166667
-3: mean=11155.7; stdev=107.995; current_epoch_win_rate : 0.333333
-4: mean=11156.8; stdev=63.8238; current_epoch_win_rate : 0.5
-5: mean=11118; stdev=63.1585; current_epoch_win_rate : 0.666667
+(Warning)Mean : 9703.22; best : 9533; size : 36stdev: 66.7013
+0: mean=9720.5; stdev=40.652; current_epoch_win_rate : 0.5
+1: mean=9716.83; stdev=53.3242; current_epoch_win_rate : 0.333333
+2: mean=9697.17; stdev=38.4942; current_epoch_win_rate : 0.5
+3: mean=9724.5; stdev=42.2325; current_epoch_win_rate : 0.166667
+4: mean=9632; stdev=89.8425; current_epoch_win_rate : 0.5
+5: mean=9728.33; stdev=64.6907; current_epoch_win_rate : 0.166667
 
 *********  Info  ************
 ******  ARM   --  ACTIONS --  WINRATE  *********
-	 [0] -- [6] : [0.233128]
-	 [1] -- [6] : [0.141399]
-	 [2] -- [6] : [0.119692]
-	 [3] -- [6] : [0.141399]
-	 [4] -- [6] : [0.167043]
-	 [5] -- [6] : [0.197338]
-Mean : 11171.5; best : 10934; size : 42stdev: 127.061
-0: mean=11167; stdev=0; current_epoch_win_rate : 1
-1: mean=11331; stdev=0; current_epoch_win_rate : 0
-2: mean=11282; stdev=0; current_epoch_win_rate : 0
-3: mean=11140; stdev=0; current_epoch_win_rate : 1
-4: mean=11139; stdev=0; current_epoch_win_rate : 1
-5: mean=11215; stdev=0; current_epoch_win_rate : 0
+	 [0] -- [6] : [0.18941]
+	 [1] -- [6] : [0.160332]
+	 [2] -- [6] : [0.18941]
+	 [3] -- [6] : [0.135718]
+	 [4] -- [6] : [0.18941]
+	 [5] -- [6] : [0.135718]
+Mean : 9701.98; best : 9533; size : 42stdev: 64.18
+0: mean=9754; stdev=0; current_epoch_win_rate : 0
+1: mean=9707; stdev=0; current_epoch_win_rate : 0
+2: mean=9648; stdev=0; current_epoch_win_rate : 1
+3: mean=9694; stdev=0; current_epoch_win_rate : 1
+4: mean=9626; stdev=0; current_epoch_win_rate : 1
+5: mean=9738; stdev=0; current_epoch_win_rate : 0
 
 *********  Info  ************
 ******  ARM   --  ACTIONS --  WINRATE  *********
-	 [0] -- [7] : [0.212703]
-	 [1] -- [7] : [0.138563]
-	 [2] -- [7] : [0.120117]
-	 [3] -- [7] : [0.159842]
-	 [4] -- [7] : [0.184388]
-	 [5] -- [7] : [0.184388]
-Mean : 11178.1; best : 10934; size : 48stdev: 132.26
-0: mean=11289; stdev=0; current_epoch_win_rate : 0
-1: mean=11270; stdev=0; current_epoch_win_rate : 0
-2: mean=11052; stdev=0; current_epoch_win_rate : 1
-3: mean=11062; stdev=0; current_epoch_win_rate : 1
-4: mean=11509; stdev=0; current_epoch_win_rate : 0
-5: mean=11168; stdev=0; current_epoch_win_rate : 1
+	 [0] -- [7] : [0.172641]
+	 [1] -- [7] : [0.149659]
+	 [2] -- [7] : [0.199153]
+	 [3] -- [7] : [0.149659]
+	 [4] -- [7] : [0.199153]
+	 [5] -- [7] : [0.129736]
+Mean : 9701.58; best : 9533; size : 48stdev: 62.7737
+0: mean=9711; stdev=0; current_epoch_win_rate : 0
+1: mean=9598; stdev=0; current_epoch_win_rate : 1
+2: mean=9668; stdev=0; current_epoch_win_rate : 1
+3: mean=9742; stdev=0; current_epoch_win_rate : 0
+4: mean=9742; stdev=0; current_epoch_win_rate : 0
+5: mean=9732; stdev=0; current_epoch_win_rate : 0
 
