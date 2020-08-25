@@ -65,4 +65,7 @@ tags
 *.script
 *.txt
 7nm_lvt_ff.lib
+
 src/abc
+*.o
+*.d
