@@ -1,0 +1,443 @@
+VPR FPGA Placement and Routing.
+Version: 8.0.0-rc1+unkown
+Revision: v8.0.0-rc1-978-g80ae77e
+Compiled: 2019-09-25T16:06:48
+Compiler: GNU 4.9.2 on Linux-3.10.0-1062.1.1.el7.x86_64 x86_64
+Build Info: Release IPO VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/../vpr/vpr k6_frac_N10_tileable_adder_chain_frac_mem32K_frac_dsp36_40nm.xml ode --circuit_file ode.pre-vpr.blif --route --route_chan_width 88
+
+
+Architecture file: k6_frac_N10_tileable_adder_chain_frac_mem32K_frac_dsp36_40nm.xml
+Circuit name: ode
+
+# Loading Architecture Description
+# Loading Architecture Description took 0.02 seconds (max_rss 3.2 MiB, delta_rss +1.1 MiB)
+# Building complex block graph
+Warning 1: io[0].clock[0] unconnected pin in architecture.
+# Building complex block graph took 0.07 seconds (max_rss 9.3 MiB, delta_rss +6.1 MiB)
+# Load circuit
+Found constant-zero generator 'ode^x1_control~0'
+Found constant-one generator 'vcc'
+Found constant-zero generator 'gnd'
+Found constant-zero generator 'ode.add4_add.u1^fracta_out~0_FF'
+Found constant-zero generator 'ode.add4_add.u1^fracta_out~1_FF'
+Found constant-zero generator 'ode.add4_add.u1^fracta_out~2_FF'
+Found constant-zero generator 'unconn'
+Found constant-zero generator 'ode.sub2_add.u1^fracta_out~0_FF'
+Found constant-zero generator 'ode.sub2_add.u1^fracta_out~1_FF'
+Found constant-zero generator 'ode.sub2_add.u1^fracta_out~2_FF'
+Found constant-zero generator 'ode.add5_add.u1^fracta_out~0_FF'
+Found constant-zero generator 'ode.add5_add.u1^fracta_out~1_FF'
+Found constant-zero generator 'ode.add5_add.u1^fracta_out~2_FF'
+Found constant-one generator 'n9086'
+# Load circuit took 0.22 seconds (max_rss 33.9 MiB, delta_rss +24.6 MiB)
+# Clean circuit
+Absorbing 1845 LUT buffers
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred  290 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 1
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 1994
+Swept block(s)      : 1004
+Constant Pins Marked: 290
+# Clean circuit took 0.19 seconds (max_rss 33.9 MiB, delta_rss +0.0 MiB)
+# Compress circuit
+# Compress circuit took 0.04 seconds (max_rss 33.9 MiB, delta_rss +0.0 MiB)
+# Verify circuit
+# Verify circuit took 0.01 seconds (max_rss 33.9 MiB, delta_rss +0.0 MiB)
+Circuit Statistics:
+  Blocks: 8935
+    .input  :     130
+    .latch  :    1998
+    .output :      72
+    0-LUT   :      13
+    6-LUT   :    6073
+    adder   :     647
+    multiply:       2
+  Nets  : 9506
+    Avg Fanout:     3.6
+    Max Fanout:  1998.0
+    Min Fanout:     1.0
+  Netlist Clocks: 1
+# Build Timing Graph
+  Timing Graph Nodes: 43490
+  Timing Graph Edges: 74055
+  Timing Graph Levels: 122
+# Build Timing Graph took 0.10 seconds (max_rss 36.5 MiB, delta_rss +2.6 MiB)
+Netlist contains 1 clocks
+  Netlist Clock 'ode^clock' Fanout: 1998 pins (4.6%), 1998 blocks (22.4%)
+# Load Timing Constraints
+
+SDC file 'ode.sdc' not found
+Setting default timing constraints:
+   * constrain all primay inputs and primary outputs on netlist clock 'ode^clock'
+   * optimize netlist clock to run as fast as possible
+Timing constraints created 1 clocks
+  Constrained Clock 'ode^clock' Source: 'ode^clock.inpad[0]'
+
+# Load Timing Constraints took 0.01 seconds (max_rss 36.5 MiB, delta_rss +0.0 MiB)
+Timing analysis: ON
+Circuit netlist file: ode.net
+Circuit placement file: ode.place
+Circuit routing file: ode.route
+Circuit SDC file: ode.sdc
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+NetlistOpts.abosrb_buffer_luts            : true
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: PATH_TIMING_DRIVEN_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 88
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 1.000000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
+RouterOpts.fixed_channel_width: 88
+RouterOpts.trim_empty_chan: false
+RouterOpts.trim_obs_chan: false
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.routing_failure_predictor = SAFE
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: false
+
+RoutingArch.directionality: UNI_DIRECTIONAL
+RoutingArch.switch_block_type: WILTON
+RoutingArch.Fs: 3
+
+# Load Packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'ode.net'.
+Detected 13 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 1.16 seconds).
+Warning 2: Treated 15 constant nets as global which will not be routed (to see net names increase packer verbosity).
+# Load Packing took 1.21 seconds (max_rss 93.7 MiB, delta_rss +57.2 MiB)
+Warning 3: Netlist contains 139 global net to non-global architecture pin connections
+Warning 4: Logic block #610 (ode^x1_control~0) has only 1 output pin 'ode^x1_control~0.O[2]'. It may be a constant generator.
+
+Netlist num_nets: 4982
+Netlist num_blocks: 866
+Netlist EMPTY blocks: 0.
+Netlist io blocks: 202.
+Netlist clb blocks: 662.
+Netlist mult_36 blocks: 2.
+Netlist memory blocks: 0.
+Netlist inputs pins: 130
+Netlist output pins: 72
+
+# Create Device
+## Build Device Grid
+FPGA sized to 33 x 33: 1089 grid tiles (auto)
+
+Resource usage...
+	Netlist      0	blocks of type: EMPTY
+	Architecture 0	blocks of type: EMPTY
+	Netlist      202	blocks of type: io
+	Architecture 992	blocks of type: io
+	Netlist      662	blocks of type: clb
+	Architecture 713	blocks of type: clb
+	Netlist      2	blocks of type: mult_36
+	Architecture 28	blocks of type: mult_36
+	Netlist      0	blocks of type: memory
+	Architecture 20	blocks of type: memory
+
+Device Utilization: 0.64 (target 1.00)
+	Block Utilization: 0.00 Type: EMPTY
+	Block Utilization: 0.20 Type: io
+	Block Utilization: 0.93 Type: clb
+	Block Utilization: 0.07 Type: mult_36
+	Block Utilization: 0.00 Type: memory
+
+FPGA size limited by block type(s): clb
+
+## Build Device Grid took 0.01 seconds (max_rss 93.7 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph
+Warning 5: in check_rr_node: RR node: 3925 type: OPIN location: (1,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 6: in check_rr_node: RR node: 8712 type: OPIN location: (3,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 7: in check_rr_node: RR node: 11649 type: OPIN location: (4,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 8: in check_rr_node: RR node: 14586 type: OPIN location: (5,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 9: in check_rr_node: RR node: 19779 type: OPIN location: (7,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 10: in check_rr_node: RR node: 22716 type: OPIN location: (8,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 11: in check_rr_node: RR node: 25653 type: OPIN location: (9,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 12: in check_rr_node: RR node: 30440 type: OPIN location: (11,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 13: in check_rr_node: RR node: 33377 type: OPIN location: (12,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 14: in check_rr_node: RR node: 36314 type: OPIN location: (13,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 15: in check_rr_node: RR node: 41507 type: OPIN location: (15,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 16: in check_rr_node: RR node: 44444 type: OPIN location: (16,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 17: in check_rr_node: RR node: 47381 type: OPIN location: (17,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 18: in check_rr_node: RR node: 52168 type: OPIN location: (19,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 19: in check_rr_node: RR node: 55105 type: OPIN location: (20,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 20: in check_rr_node: RR node: 58042 type: OPIN location: (21,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 21: in check_rr_node: RR node: 63235 type: OPIN location: (23,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 22: in check_rr_node: RR node: 66172 type: OPIN location: (24,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 23: in check_rr_node: RR node: 69109 type: OPIN location: (25,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 24: in check_rr_node: RR node: 73896 type: OPIN location: (27,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 25: in check_rr_node: RR node: 76833 type: OPIN location: (28,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 26: in check_rr_node: RR node: 79770 type: OPIN location: (29,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 27: in check_rr_node: RR node: 84963 type: OPIN location: (31,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 28: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build routing resource graph took 0.57 seconds (max_rss 103.8 MiB, delta_rss +10.1 MiB)
+  RR Graph Nodes: 139287
+  RR Graph Edges: 1013065
+# Create Device took 0.58 seconds (max_rss 103.8 MiB, delta_rss +10.1 MiB)
+
+# Load Placement
+# Load Placement took 0.00 seconds (max_rss 104.0 MiB, delta_rss +0.1 MiB)
+
+# Routing
+RR graph channel widths unchanged, skipping RR graph rebuild
+Confirming router algorithm: TIMING_DRIVEN.
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.4     0.0    0  842700    4966   17406    9197 ( 6.603%)   77691 (44.5%)   20.562     -7231.    -20.562      0.000      0.000      N/A
+   2    0.2     0.5   28  768712    3999   15943    4782 ( 3.433%)   73944 (42.4%)   20.565     -7265.    -20.565      0.000      0.000      N/A
+   3    0.1     0.6    6  640239    2992   12655    4283 ( 3.075%)   74891 (42.9%)   20.569     -7273.    -20.569      0.000      0.000      N/A
+   4    0.1     0.8   14  615169    2562   11644    3694 ( 2.652%)   75795 (43.4%)   20.574     -7288.    -20.574      0.000      0.000      N/A
+   5    0.1     1.1   12  544787    2161   10379    2904 ( 2.085%)   76675 (43.9%)   20.580     -7304.    -20.580      0.000      0.000      N/A
+   6    0.1     1.4   12  498027    1789    9006    2342 ( 1.681%)   78097 (44.7%)   20.576     -7310.    -20.576      0.000      0.000      N/A
+   7    0.1     1.9    7  402673    1447    7596    1698 ( 1.219%)   79218 (45.4%)   20.589     -7322.    -20.589      0.000      0.000      N/A
+   8    0.1     2.4    7  336555    1180    6043    1243 ( 0.892%)   80329 (46.0%)   20.585     -7318.    -20.585      0.000      0.000      N/A
+   9    0.2     3.1    4  289482     938    4953     818 ( 0.587%)   81716 (46.8%)   20.586     -7334.    -20.586      0.000      0.000      N/A
+  10    0.1     4.1    8  185197     649    3044     506 ( 0.363%)   82623 (47.3%)   20.585     -7347.    -20.585      0.000      0.000       30
+  11    0.1     5.3    2  122999     426    1875     286 ( 0.205%)   83264 (47.7%)   20.585     -7346.    -20.585      0.000      0.000       27
+  12    0.1     6.9    1   88726     286    1208     154 ( 0.111%)   83799 (48.0%)   20.585     -7347.    -20.585      0.000      0.000       25
+  13    0.1     9.0    1   51580     167     601      81 ( 0.058%)   84125 (48.2%)   20.585     -7347.    -20.585      0.000      0.000       23
+  14    0.1    11.6    1   23520      90     223      36 ( 0.026%)   84313 (48.3%)   20.585     -7347.    -20.585      0.000      0.000       22
+  15    0.1    15.1    1    9932      47      88      24 ( 0.017%)   84405 (48.3%)   20.585     -7347.    -20.585      0.000      0.000       20
+  16    0.1    19.7    1    4494      38      71      14 ( 0.010%)   84425 (48.4%)   20.585     -7347.    -20.585      0.000      0.000       20
+  17    0.1    25.6    0    1983      21      32      11 ( 0.008%)   84429 (48.4%)   20.585     -7347.    -20.585      0.000      0.000       20
+  18    0.1    33.3    0    2136      18      33       7 ( 0.005%)   84457 (48.4%)   20.580     -7347.    -20.580      0.000      0.000       21
+  19    0.0    43.3    0    1643       9      16       4 ( 0.003%)   84465 (48.4%)   20.580     -7347.    -20.580      0.000      0.000       21
+  20    0.0    56.2    0     882       6       7       2 ( 0.001%)   84466 (48.4%)   20.580     -7347.    -20.580      0.000      0.000       21
+  21    0.0    73.1    0     682       3       3       0 ( 0.000%)   84474 (48.4%)   20.580     -7347.    -20.580      0.000      0.000       21
+Restoring best routing
+Critical path: 20.5804 ns
+Successfully routed after 21 routing iterations.
+Router Stats: total_nets_routed: 23794 total_connections_routed: 102826 total_heap_pushes: 5432118 total_heap_pops: 950075
+# Routing took 2.45 seconds (max_rss 126.7 MiB, delta_rss +16.6 MiB)
+
+Checking to ensure routing is legal...
+Completed routing consistency check successfully.
+
+Serial number (magic cookie) for the routing is: 139821312
+Circuit successfully routed with a channel width factor of 88.
+
+Average number of bends per net: 2.42308  Maximum # of bends: 51
+
+Number of global nets: 16
+Number of routed nets (nonglobal): 4966
+Wire length results (in units of 1 clb segments)...
+	Total wirelength: 84474, average net length: 17.0105
+	Maximum net length: 259
+
+Wire length results in terms of physical segments...
+	Total wiring segments used: 21625, average wire segments per net: 4.35461
+	Maximum segments used by a net: 68
+	Total local nets with reserved CLB opins: 0
+
+Routing channel utilization histogram:
+[        1:      inf)   0 ( 0.0%) |
+[      0.9:        1)   0 ( 0.0%) |
+[      0.8:      0.9)   0 ( 0.0%) |
+[      0.7:      0.8) 576 (28.1%) |***********************************************
+[      0.5:      0.6) 446 (21.8%) |************************************
+[      0.4:      0.5) 388 (18.9%) |********************************
+[      0.3:      0.4) 214 (10.4%) |*****************
+[      0.2:      0.3) 196 ( 9.6%) |****************
+[      0.1:      0.2) 108 ( 5.3%) |*********
+[        0:      0.1) 120 ( 5.9%) |**********
+Maximum routing channel utilization:       0.8 at (7,7)
+
+X - Directed channels:   j max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0      64  30.515       88
+                         1      53  31.455       88
+                         2      54  36.061       88
+                         3      59  40.303       88
+                         4      66  45.485       88
+                         5      62  44.121       88
+                         6      68  47.273       88
+                         7      70  50.697       88
+                         8      67  47.848       88
+                         9      61  45.788       88
+                        10      62  46.242       88
+                        11      66  46.636       88
+                        12      63  43.727       88
+                        13      65  41.970       88
+                        14      61  42.424       88
+                        15      63  43.333       88
+                        16      59  41.970       88
+                        17      61  42.121       88
+                        18      63  44.424       88
+                        19      63  44.939       88
+                        20      64  40.879       88
+                        21      58  41.212       88
+                        22      59  36.576       88
+                        23      57  33.273       88
+                        24      51  34.939       88
+                        25      50  34.970       88
+                        26      56  38.848       88
+                        27      61  37.545       88
+                        28      58  35.000       88
+                        29      61  33.333       88
+                        30      54  26.424       88
+                        31      39  12.212       88
+Y - Directed channels:   i max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0      40  11.242       88
+                         1      43  16.818       88
+                         2      50  29.758       88
+                         3      68  45.030       88
+                         4      73  50.455       88
+                         5      59  40.515       88
+                         6      58  42.727       88
+                         7      72  54.364       88
+                         8      73  50.758       88
+                         9      61  39.848       88
+                        10      67  39.394       88
+                        11      71  42.939       88
+                        12      74  42.545       88
+                        13      63  33.848       88
+                        14      60  40.455       88
+                        15      70  55.091       88
+                        16      69  54.000       88
+                        17      64  42.970       88
+                        18      67  42.364       88
+                        19      65  49.576       88
+                        20      71  54.424       88
+                        21      62  39.879       88
+                        22      72  40.545       88
+                        23      73  51.788       88
+                        24      74  50.758       88
+                        25      65  42.394       88
+                        26      61  42.030       88
+                        27      73  49.879       88
+                        28      66  44.303       88
+                        29      57  30.273       88
+                        30      41  13.697       88
+                        31      34  12.606       88
+
+Total tracks in x-direction: 2816, in y-direction: 2816
+
+Logic area (in minimum width transistor areas, excludes I/Os and empty grid tiles)...
+	Total logic block area (Warning, need to add pitch of routing to blocks with height > 3): 6.0475e+07
+	Total used logic block area: 3.64699e+07
+
+Routing area (in minimum width transistor areas)...
+	Total routing area: 6.17728e+06, per logic tile: 5672.43
+
+Segment usage by type (index): type utilization
+                               ---- -----------
+                                  0       0.452
+
+Segment usage by length: length utilization
+                         ------ -----------
+                              4       0.452
+
+
+Hold Worst Negative Slack (hWNS): 0 ns
+Hold Total Negative Slack (hTNS): 0 ns
+
+Hold slack histogram:
+[  2.9e-10:  5.6e-10) 1129 (54.6%) |**********************************************
+[  5.6e-10:  8.3e-10)  295 (14.3%) |************
+[  8.3e-10:  1.1e-09)  268 (13.0%) |***********
+[  1.1e-09:  1.4e-09)  180 ( 8.7%) |*******
+[  1.4e-09:  1.6e-09)   74 ( 3.6%) |***
+[  1.6e-09:  1.9e-09)   67 ( 3.2%) |***
+[  1.9e-09:  2.2e-09)   48 ( 2.3%) |**
+[  2.2e-09:  2.5e-09)    4 ( 0.2%) |
+[  2.5e-09:  2.7e-09)    1 ( 0.0%) |
+[  2.7e-09:    3e-09)    2 ( 0.1%) |
+
+Final critical path: 20.5804 ns, Fmax: 48.5898 MHz
+Setup Worst Negative Slack (sWNS): -20.5804 ns
+Setup Total Negative Slack (sTNS): -7347.02 ns
+
+Setup slack histogram:
+[ -2.1e-08: -1.9e-08)   56 ( 2.7%) |**
+[ -1.9e-08: -1.7e-08)   54 ( 2.6%) |**
+[ -1.7e-08: -1.5e-08)   62 ( 3.0%) |**
+[ -1.5e-08: -1.3e-08)  129 ( 6.2%) |****
+[ -1.3e-08: -1.1e-08)    7 ( 0.3%) |
+[ -1.1e-08: -8.5e-09)    9 ( 0.4%) |
+[ -8.5e-09: -6.5e-09)   95 ( 4.6%) |***
+[ -6.5e-09: -4.5e-09)   10 ( 0.5%) |
+[ -4.5e-09: -2.5e-09)  145 ( 7.0%) |****
+[ -2.5e-09: -4.4e-10) 1501 (72.6%) |**********************************************
+
+Timing analysis took 1.36788 seconds (1.24394 STA, 0.123945 slack) (22 full updates: 0 setup, 0 hold, 22 combined).
+VPR suceeded
+The entire flow of VPR took 5.50 seconds (max_rss 126.7 MiB)
