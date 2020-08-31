@@ -1,3 +1,12 @@
+### FlowTune Integration in VTR 8.0
+
+#### How to setup ?
+	1) Install VTR 8.0 (https://github.com/verilog-to-routing/vtr-verilog-to-routing)
+	2) Compile FlowTune ABC (see main page README)
+	3) Edit the path in FlowTune-VTR script file and VTR script, in according to your VTR8.0 installation (ftune_vtr_flow.pl and run_vtr_flow.pl)
+		(Specifically, that is Line 57 in ftune_vtr_flow.pl; and Line 52 in run_vtr_flow.pl)
+
+
 #### Comparisons between default VTR vs FTune VTR 
 	Design: bfly.v
 	FPGA Architecture = k6_frac_N10_frac_chain_mem32K_40nm

@@ -44,7 +44,7 @@ Found constant-zero generator 'syn2.add5_add.u1^fracta_out~0_FF'
 Found constant-zero generator 'syn2.add5_add.u1^fracta_out~1_FF'
 Found constant-zero generator 'syn2.add5_add.u1^fracta_out~2_FF'
 Found constant-one generator 'n8955'
-# Load circuit took 0.37 seconds (max_rss 49.4 MiB, delta_rss +40.1 MiB)
+# Load circuit took 0.38 seconds (max_rss 49.4 MiB, delta_rss +40.1 MiB)
 # Clean circuit
 Absorbing 2130 LUT buffers
 Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
@@ -80,7 +80,7 @@ Swept block(s)      : 1818
 Constant Pins Marked: 522
 # Clean circuit took 0.31 seconds (max_rss 49.4 MiB, delta_rss +0.0 MiB)
 # Compress circuit
-# Compress circuit took 0.06 seconds (max_rss 49.4 MiB, delta_rss +0.0 MiB)
+# Compress circuit took 0.05 seconds (max_rss 49.4 MiB, delta_rss +0.0 MiB)
 # Verify circuit
 # Verify circuit took 0.01 seconds (max_rss 49.4 MiB, delta_rss +0.0 MiB)
 Circuit Statistics:
@@ -101,7 +101,7 @@ Circuit Statistics:
   Timing Graph Nodes: 75293
   Timing Graph Edges: 130881
   Timing Graph Levels: 114
-# Build Timing Graph took 0.14 seconds (max_rss 57.2 MiB, delta_rss +7.8 MiB)
+# Build Timing Graph took 0.13 seconds (max_rss 56.8 MiB, delta_rss +7.4 MiB)
 Netlist contains 1 clocks
   Netlist Clock 'syn2^clock' Fanout: 2207 pins (2.9%), 2207 blocks (15.0%)
 # Load Timing Constraints
@@ -113,7 +113,7 @@ Setting default timing constraints:
 Timing constraints created 1 clocks
   Constrained Clock 'syn2^clock' Source: 'syn2^clock.inpad[0]'
 
-# Load Timing Constraints took 0.01 seconds (max_rss 57.2 MiB, delta_rss +0.0 MiB)
+# Load Timing Constraints took 0.01 seconds (max_rss 56.8 MiB, delta_rss +0.0 MiB)
 Timing analysis: ON
 Circuit netlist file: syn2.net
 Circuit placement file: syn2.place
@@ -185,9 +185,9 @@ RoutingArch.Fs: 3
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'syn2.net'.
 Detected 18 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 1.99 seconds).
+Finished loading packed FPGA netlist file (took 1.93 seconds).
 Warning 2: Treated 18 constant nets as global which will not be routed (to see net names increase packer verbosity).
-# Load Packing took 2.07 seconds (max_rss 156.0 MiB, delta_rss +98.8 MiB)
+# Load Packing took 2.01 seconds (max_rss 154.4 MiB, delta_rss +97.6 MiB)
 Warning 3: Netlist contains 234 global net to non-global architecture pin connections
 
 Netlist num_nets: 8581
@@ -225,7 +225,7 @@ Device Utilization: 0.69 (target 1.00)
 
 FPGA size limited by block type(s): clb
 
-## Build Device Grid took 0.01 seconds (max_rss 156.0 MiB, delta_rss +0.0 MiB)
+## Build Device Grid took 0.01 seconds (max_rss 154.4 MiB, delta_rss +0.0 MiB)
 ## Build routing resource graph
 Warning 4: in check_rr_node: RR node: 5005 type: OPIN location: (1,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 5: in check_rr_node: RR node: 10897 type: OPIN location: (3,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
@@ -259,13 +259,13 @@ Warning 32: in check_rr_node: RR node: 135625 type: OPIN location: (39,1) pin: 6
 Warning 33: in check_rr_node: RR node: 139345 type: OPIN location: (40,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 34: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build routing resource graph took 0.98 seconds (max_rss 171.2 MiB, delta_rss +15.2 MiB)
+## Build routing resource graph took 1.46 seconds (max_rss 170.8 MiB, delta_rss +16.4 MiB)
   RR Graph Nodes: 228756
   RR Graph Edges: 1750672
-# Create Device took 0.99 seconds (max_rss 171.2 MiB, delta_rss +15.2 MiB)
+# Create Device took 1.48 seconds (max_rss 170.8 MiB, delta_rss +16.4 MiB)
 
 # Load Placement
-# Load Placement took 0.01 seconds (max_rss 171.2 MiB, delta_rss +0.0 MiB)
+# Load Placement took 0.01 seconds (max_rss 170.8 MiB, delta_rss +0.0 MiB)
 
 # Routing
 RR graph channel widths unchanged, skipping RR graph rebuild
@@ -274,31 +274,31 @@ Confirming router algorithm: TIMING_DRIVEN.
 Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-   1    0.7     0.0    0 1681704    8562   32373   16305 ( 7.128%)  140090 (46.4%)   18.646 -1.162e+04    -18.646      0.000      0.000      N/A
-   2    0.3     0.5   44 1536638    6909   29371    8804 ( 3.849%)  133499 (44.2%)   18.652 -1.167e+04    -18.652      0.000      0.000      N/A
-   3    0.3     0.6   22 1286954    5241   23405    7771 ( 3.397%)  134767 (44.7%)   18.639 -1.168e+04    -18.639      0.000      0.000      N/A
-   4    0.3     0.8   18 1177935    4532   21197    6648 ( 2.906%)  136097 (45.1%)   18.639 -1.171e+04    -18.639      0.000      0.000      N/A
+   1    1.1     0.0    0 1681704    8562   32373   16305 ( 7.128%)  140090 (46.4%)   18.646 -1.162e+04    -18.646      0.000      0.000      N/A
+   2    0.5     0.5   44 1536638    6909   29371    8804 ( 3.849%)  133499 (44.2%)   18.652 -1.167e+04    -18.652      0.000      0.000      N/A
+   3    0.4     0.6   22 1286954    5241   23405    7771 ( 3.397%)  134767 (44.7%)   18.639 -1.168e+04    -18.639      0.000      0.000      N/A
+   4    0.4     0.8   18 1177935    4532   21197    6648 ( 2.906%)  136097 (45.1%)   18.639 -1.171e+04    -18.639      0.000      0.000      N/A
    5    0.3     1.1    9 1109533    3875   19193    5218 ( 2.281%)  138070 (45.8%)   18.653 -1.173e+04    -18.653      0.000      0.000      N/A
-   6    0.2     1.4   10  941278    3187   16273    3928 ( 1.717%)  140425 (46.5%)   18.657 -1.174e+04    -18.657      0.000      0.000      N/A
-   7    0.2     1.9   11  766312    2601   13297    2843 ( 1.243%)  142427 (47.2%)   18.657 -1.174e+04    -18.657      0.000      0.000      N/A
-   8    0.2     2.4    3  608511    2031   10375    2000 ( 0.874%)  144744 (48.0%)   18.657 -1.176e+04    -18.657      0.000      0.000      N/A
-   9    0.2     3.1    5  465489    1531    7683    1245 ( 0.544%)  146638 (48.6%)   18.657 -1.177e+04    -18.657      0.000      0.000      N/A
+   6    0.3     1.4   10  941278    3187   16273    3928 ( 1.717%)  140425 (46.5%)   18.657 -1.174e+04    -18.657      0.000      0.000      N/A
+   7    0.3     1.9   11  766312    2601   13297    2843 ( 1.243%)  142427 (47.2%)   18.657 -1.174e+04    -18.657      0.000      0.000      N/A
+   8    0.3     2.4    3  608511    2031   10375    2000 ( 0.874%)  144744 (48.0%)   18.657 -1.176e+04    -18.657      0.000      0.000      N/A
+   9    0.3     3.1    5  465489    1531    7683    1245 ( 0.544%)  146638 (48.6%)   18.657 -1.177e+04    -18.657      0.000      0.000      N/A
   10    0.2     4.1    6  317415    1129    5401     794 ( 0.347%)  148171 (49.1%)   18.657 -1.177e+04    -18.657      0.000      0.000       29
   11    0.2     5.3    6  207807     761    3334     462 ( 0.202%)  149385 (49.5%)   18.657 -1.177e+04    -18.657      0.000      0.000       27
-  12    0.1     6.9    2  121413     487    1892     232 ( 0.101%)  150147 (49.8%)   18.648 -1.178e+04    -18.648      0.000      0.000       26
+  12    0.2     6.9    2  121413     487    1892     232 ( 0.101%)  150147 (49.8%)   18.648 -1.178e+04    -18.648      0.000      0.000       26
   13    0.1     9.0    0   64900     288     910     100 ( 0.044%)  150771 (50.0%)   18.648 -1.178e+04    -18.648      0.000      0.000       23
   14    0.1    11.6    4   22165     139     320      51 ( 0.022%)  150954 (50.0%)   18.648 -1.178e+04    -18.648      0.000      0.000       22
   15    0.1    15.1    1   10321      75     142      29 ( 0.013%)  150996 (50.0%)   18.648 -1.178e+04    -18.648      0.000      0.000       21
   16    0.1    19.7    1    7916      43     100      11 ( 0.005%)  151112 (50.1%)   18.648 -1.178e+04    -18.648      0.000      0.000       20
   17    0.1    25.6    1    2551      17      30       6 ( 0.003%)  151130 (50.1%)   18.648 -1.178e+04    -18.648      0.000      0.000       20
   18    0.1    33.3    0    1128       7      18       2 ( 0.001%)  151141 (50.1%)   18.648 -1.178e+04    -18.648      0.000      0.000       20
-  19    0.1    43.3    0     955       5      16       2 ( 0.001%)  151141 (50.1%)   18.648 -1.178e+04    -18.648      0.000      0.000       19
+  19    0.2    43.3    0     955       5      16       2 ( 0.001%)  151141 (50.1%)   18.648 -1.178e+04    -18.648      0.000      0.000       19
   20    0.1    56.2    0     347       3       3       0 ( 0.000%)  151149 (50.1%)   18.648 -1.178e+04    -18.648      0.000      0.000       20
 Restoring best routing
 Critical path: 18.6479 ns
 Successfully routed after 20 routing iterations.
 Router Stats: total_nets_routed: 41423 total_connections_routed: 185333 total_heap_pushes: 10331272 total_heap_pops: 1811122
-# Routing took 4.06 seconds (max_rss 212.4 MiB, delta_rss +29.3 MiB)
+# Routing took 5.64 seconds (max_rss 212.0 MiB, delta_rss +29.2 MiB)
 
 Checking to ensure routing is legal...
 Completed routing consistency check successfully.
@@ -468,24 +468,24 @@ Setup slack histogram:
 [ -4.1e-09: -2.3e-09)  202 ( 8.7%) |*******
 [ -2.3e-09: -5.1e-10) 1321 (56.6%) |**********************************************
 
-Timing analysis took 2.27388 seconds (2.05155 STA, 0.222333 slack) (21 full updates: 0 setup, 0 hold, 21 combined).
+Timing analysis took 3.39654 seconds (3.07464 STA, 0.321894 slack) (21 full updates: 0 setup, 0 hold, 21 combined).
 VPR suceeded
-The entire flow of VPR took 9.19 seconds (max_rss 212.5 MiB)
+The entire flow of VPR took 11.79 seconds (max_rss 212.1 MiB)
 	Command being timed: "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/../vpr/vpr k6_frac_N10_tileable_adder_chain_frac_mem32K_frac_dsp36_40nm.xml syn2 --circuit_file syn2.pre-vpr.blif --route --route_chan_width 92"
-	User time (seconds): 8.96
-	System time (seconds): 0.25
+	User time (seconds): 10.84
+	System time (seconds): 0.96
 	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.22
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:11.81
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 217584
+	Maximum resident set size (kbytes): 217168
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 161681
+	Minor (reclaiming a frame) page faults: 271472
 	Voluntary context switches: 1
-	Involuntary context switches: 6
+	Involuntary context switches: 21
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 18528

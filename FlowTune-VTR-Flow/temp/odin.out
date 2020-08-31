@@ -20,7 +20,7 @@ Performing Partial Map to target device
 Outputting the netlist to the specified output format
 Successful High-level synthesis by Odin
 	Blif file available at syn2.odin.blif
-	Ran in 2.7s
+	Ran in 2.6s
 --------------------------------------------------------------------
 
 Hard Multiplier Distribution
@@ -64,12 +64,12 @@ The Number of Hard Block subs in the Longest Chain: 29
 The Total Number of Hard Block subs: 1584
 --------------------------------------------------------------------
 Odin ran with exit status: 0
-Odin II took 2.73 seconds (max_rss 163.5 MiB)
+Odin II took 2.63 seconds (max_rss 163.5 MiB)
 	Command being timed: "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/../ODIN_II/odin_II -c odin_config.xml --adder_type default -U0"
-	User time (seconds): 2.60
-	System time (seconds): 0.14
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.75
+	User time (seconds): 2.39
+	System time (seconds): 0.24
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.64
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
@@ -77,9 +77,9 @@ Odin II took 2.73 seconds (max_rss 163.5 MiB)
 	Maximum resident set size (kbytes): 167492
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 78772
+	Minor (reclaiming a frame) page faults: 78814
 	Voluntary context switches: 1
-	Involuntary context switches: 3
+	Involuntary context switches: 5
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 86344

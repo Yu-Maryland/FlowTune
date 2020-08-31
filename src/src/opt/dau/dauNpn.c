@@ -29,7 +29,6 @@ ABC_NAMESPACE_IMPL_START
 ///                        DECLARATIONS                              ///
 ////////////////////////////////////////////////////////////////////////
 
-//#define USE4VARS 1
 
 ////////////////////////////////////////////////////////////////////////
 ///                     FUNCTION DEFINITIONS                         ///
@@ -46,19 +45,12 @@ ABC_NAMESPACE_IMPL_START
   SeeAlso     []
 
 ***********************************************************************/
-void Dau_TruthEnum()
+void Dau_TruthEnum(int nVars)
 {
     int fUseTable = 1;
     abctime clk = Abc_Clock();
-#ifdef USE4VARS
-    int nVars   = 4;
-    int nSizeW  = 1 << 14;
-    char * pFileName = "tableW14.data";
-#else
-    int nVars   = 5;
-    int nSizeW  = 1 << 30;
-    char * pFileName = "tableW30.data";
-#endif
+    int nSizeLog = (1<<nVars) -2;
+    int nSizeW = 1 << nSizeLog;
     int nPerms  = Extra_Factorial( nVars );
     int nMints  = 1 << nVars;
     int * pPerm = Extra_PermSchedule( nVars );
@@ -121,8 +113,12 @@ void Dau_TruthEnum()
     // write into file
     if ( pTable )
     {
-        FILE * pFile = fopen( pFileName, "wb" );
-        int RetValue = fwrite( pTable, 8, nSizeW, pFile );
+        FILE * pFile;
+        int RetValue;
+        char pFileName[200];
+        sprintf( pFileName, "tableW%d.data", nSizeLog );
+        pFile = fopen( pFileName, "wb" );
+        RetValue = fwrite( pTable, 8, nSizeW, pFile );
         RetValue = 0;
         fclose( pFile );
         ABC_FREE( pTable );
@@ -177,25 +173,21 @@ int Dau_AddFunction( word tCur, int nVars, unsigned * pTable, Vec_Int_t * vNpns,
     }
     return 0;
 }
-void Dau_NetworkEnum()
+void Dau_NetworkEnum(int nVars)
 {
     abctime clk = Abc_Clock();
     int Limit = 2;
     int UseTwo = 0;
-#ifdef USE4VARS
-    int nVars = 4;
-    int nSizeW  = 1 << 14;
-    char * pFileName = "tableW14.data";
-#else
-    int nVars = 5;
-    int nSizeW  = 1 << 30;
-    char * pFileName = "tableW30.data";
-#endif
-    unsigned * pTable  = Dau_ReadFile( pFileName, nSizeW );
+    int nSizeLog = (1<<nVars) -2;
+    int nSizeW = 1 << nSizeLog;
+    char pFileName[200];
+    unsigned * pTable;
     Vec_Wec_t * vNpns  = Vec_WecStart( 32 );
     Vec_Wec_t * vNpns_ = Vec_WecStart( 32 );
     int i, v, u, g, k, m, n, Res, Entry;
     unsigned Inv = (unsigned)Abc_Tt6Mask(1 << (nVars-1));
+    sprintf( pFileName, "tableW%d.data", nSizeLog );
+    pTable  = Dau_ReadFile( pFileName, nSizeW );
     // create constant function and buffer/inverter function
     pTable[0]   |= (1 << 31);
     pTable[Inv] |= (1 << 31);
@@ -380,8 +372,8 @@ void Dau_NetworkEnum()
 }
 void Dau_NetworkEnumTest()
 {
-    //Dau_TruthEnum();
-    Dau_NetworkEnum();
+    //Dau_TruthEnum(3);
+    Dau_NetworkEnum(4);
 }
 
 

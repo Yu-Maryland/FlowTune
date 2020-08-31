@@ -1,4 +1,4 @@
-# Benchmark "or1200_flat" written by ABC on Sat Aug 22 12:48:17 2020
+# Benchmark "or1200_flat" written by ABC on Tue Aug 25 18:46:00 2020
 .model or1200_flat
 .inputs or1200_flat^clk or1200_flat^rst or1200_flat^icpu_dat_i~0 \
  or1200_flat^icpu_dat_i~1 or1200_flat^icpu_dat_i~2 or1200_flat^icpu_dat_i~3 \

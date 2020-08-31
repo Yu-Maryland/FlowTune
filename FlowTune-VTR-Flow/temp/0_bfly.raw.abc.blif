@@ -1,4 +1,4 @@
-# Benchmark "bfly" written by ABC on Sat Aug 22 12:39:53 2020
+# Benchmark "bfly" written by ABC on Tue Aug 25 18:38:02 2020
 .model bfly
 .inputs bfly^clock bfly^reset bfly^re_w~0 bfly^re_w~1 bfly^re_w~2 \
  bfly^re_w~3 bfly^re_w~4 bfly^re_w~5 bfly^re_w~6 bfly^re_w~7 bfly^re_w~8 \

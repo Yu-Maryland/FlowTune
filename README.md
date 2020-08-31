@@ -43,15 +43,15 @@ year={2020},
 ## Required Packages:
 	- readline: sudo apt-get install libreadline6 libreadline6-dev (Ubuntu)
 	- readline: sudo yum install readline-devel (CentOS 7)
-	- -stdc++11 
-	- OpenMP (https://www.openmp.org/resources/openmp-compilers-tools/)
+	- -stdc++11 (tested on gcc4.9 and gcc7.0) 
+	- OpenMP (https://www.openmp.org/resources/openmp-compilers-tools/ version tested 4.0.1 -- https://download.open-mpi.org/release/open-mpi/v4.0/openmpi-4.0.1.tar.gz)
 		- wget https://download.open-mpi.org/release/open-mpi/v4.0/openmpi-4.0.1.tar.gz; tar -xvf openmpi-4.0.1.tar.gz
 		- cd openmpi-4.0.1; ./configure; make -j12 all install
 	- Yosys -- https://github.com/YosysHQ/yosys
 	- export "abc" and "yosys" PATH TO .bashrc to have a global access
 		- Instruction:  echo "export PATH=$(pwd):\${PATH}" >> ~/.bashrc; source ~/.bashrc
 		- Testing : If PATH added succesfully, you should be able to type "abc" and "yosys" at any location of your LINUX system 
-
+	- VTR 8.0 -- https://github.com/verilog-to-routing/vtr-verilog-to-routing
 
 
 ## FlowTune implementation in ABC

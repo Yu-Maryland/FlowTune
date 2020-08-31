@@ -1,4 +1,4 @@
-Netlist_File: dscg.net Netlist_ID: SHA256:748bdb25dfc1cbbfd566334b94693aee0b181ab188fa6282ad57668603691546
+Netlist_File: dscg.net Netlist_ID: SHA256:0c1c25e8cf17cadc756f557f7000721626ceb60d6f77a3a8d637bff67648eb70
 Array size: 40 x 40 logic blocks
 
 #block name	x	y	subblk	block number

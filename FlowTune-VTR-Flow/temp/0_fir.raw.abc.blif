@@ -1,4 +1,4 @@
-# Benchmark "fir" written by ABC on Sat Aug 22 12:45:12 2020
+# Benchmark "fir" written by ABC on Tue Aug 25 18:43:01 2020
 .model fir
 .inputs fir^clock fir^reset fir^x~0 fir^x~1 fir^x~2 fir^x~3 fir^x~4 fir^x~5 \
  fir^x~6 fir^x~7 fir^x~8 fir^x~9 fir^x~10 fir^x~11 fir^x~12 fir^x~13 \

@@ -1,4 +1,4 @@
-# Benchmark "syn2" written by ABC on Sat Aug 22 12:49:44 2020
+# Benchmark "syn2" written by ABC on Tue Aug 25 18:47:18 2020
 .model syn2
 .inputs syn2^clock syn2^reset syn2^in1~0 syn2^in1~1 syn2^in1~2 syn2^in1~3 \
  syn2^in1~4 syn2^in1~5 syn2^in1~6 syn2^in1~7 syn2^in1~8 syn2^in1~9 \

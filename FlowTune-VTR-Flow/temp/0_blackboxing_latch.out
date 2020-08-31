@@ -13,10 +13,10 @@ Black Boxed Latches:
 	-None-
 
 	Command being timed: "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/scripts/blackbox_latches.pl --clk_list latch_^_re_^_syn2^clock_^_0 --input syn2.odin.blif --output 0_syn2.odin.blif"
-	User time (seconds): 3.06
-	System time (seconds): 0.01
-	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.08
+	User time (seconds): 2.81
+	System time (seconds): 0.03
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.84
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
@@ -26,7 +26,7 @@ Black Boxed Latches:
 	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 845
 	Voluntary context switches: 1
-	Involuntary context switches: 9
+	Involuntary context switches: 3
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 31112

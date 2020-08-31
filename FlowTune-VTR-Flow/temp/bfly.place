@@ -1,4 +1,4 @@
-Netlist_File: bfly.net Netlist_ID: SHA256:8970e34a6ff014b2cd10e496b150156794be1bbfd383a3f06326e6817b8603e2
+Netlist_File: bfly.net Netlist_ID: SHA256:e2990a3f31365e468803e12584889d3f59309359b6ef2133c23f0856db4fe395
 Array size: 41 x 41 logic blocks
 
 #block name	x	y	subblk	block number

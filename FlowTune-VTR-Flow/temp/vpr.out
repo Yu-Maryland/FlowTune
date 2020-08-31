@@ -20,10 +20,10 @@ Architecture file: k6_frac_N10_tileable_adder_chain_frac_mem32K_frac_dsp36_40nm.
 Circuit name: syn2
 
 # Loading Architecture Description
-# Loading Architecture Description took 0.01 seconds (max_rss 3.2 MiB, delta_rss +1.1 MiB)
+# Loading Architecture Description took 0.00 seconds (max_rss 3.2 MiB, delta_rss +1.1 MiB)
 # Building complex block graph
 Warning 1: io[0].clock[0] unconnected pin in architecture.
-# Building complex block graph took 0.04 seconds (max_rss 9.3 MiB, delta_rss +6.1 MiB)
+# Building complex block graph took 0.02 seconds (max_rss 9.3 MiB, delta_rss +6.1 MiB)
 # Load circuit
 Found constant-zero generator 'syn2.add1_add.u1^fracta_out~0_FF'
 Found constant-zero generator 'syn2.add1_add.u1^fracta_out~1_FF'
@@ -44,7 +44,7 @@ Found constant-zero generator 'syn2.add5_add.u1^fracta_out~0_FF'
 Found constant-zero generator 'syn2.add5_add.u1^fracta_out~1_FF'
 Found constant-zero generator 'syn2.add5_add.u1^fracta_out~2_FF'
 Found constant-one generator 'n8955'
-# Load circuit took 0.26 seconds (max_rss 49.4 MiB, delta_rss +40.1 MiB)
+# Load circuit took 0.21 seconds (max_rss 49.4 MiB, delta_rss +40.1 MiB)
 # Clean circuit
 Absorbing 2130 LUT buffers
 Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
@@ -78,7 +78,7 @@ Swept output(s)     : 0 (0 dangling, 0 constant)
 Swept net(s)        : 3618
 Swept block(s)      : 1818
 Constant Pins Marked: 522
-# Clean circuit took 0.18 seconds (max_rss 49.4 MiB, delta_rss +0.0 MiB)
+# Clean circuit took 0.17 seconds (max_rss 49.4 MiB, delta_rss +0.0 MiB)
 # Compress circuit
 # Compress circuit took 0.04 seconds (max_rss 49.4 MiB, delta_rss +0.0 MiB)
 # Verify circuit
@@ -101,7 +101,7 @@ Circuit Statistics:
   Timing Graph Nodes: 75293
   Timing Graph Edges: 130881
   Timing Graph Levels: 114
-# Build Timing Graph took 0.13 seconds (max_rss 56.8 MiB, delta_rss +7.4 MiB)
+# Build Timing Graph took 0.10 seconds (max_rss 56.8 MiB, delta_rss +7.4 MiB)
 Netlist contains 1 clocks
   Netlist Clock 'syn2^clock' Fanout: 2207 pins (2.9%), 2207 blocks (15.0%)
 # Load Timing Constraints
@@ -1764,14 +1764,14 @@ Device Utilization: 0.69 (target 1.00)
 
 Netlist conversion complete.
 
-# Packing took 28.55 seconds (max_rss 183.9 MiB, delta_rss +127.2 MiB)
+# Packing took 26.01 seconds (max_rss 183.9 MiB, delta_rss +127.2 MiB)
 # Load Packing
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'syn2.net'.
 Detected 18 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 1.72 seconds).
+Finished loading packed FPGA netlist file (took 1.8 seconds).
 Warning 10: Treated 18 constant nets as global which will not be routed (to see net names increase packer verbosity).
-# Load Packing took 1.78 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
+# Load Packing took 1.88 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
 Warning 11: Netlist contains 234 global net to non-global architecture pin connections
 
 Netlist num_nets: 8581
@@ -1843,10 +1843,10 @@ Warning 40: in check_rr_node: RR node: 135625 type: OPIN location: (39,1) pin: 6
 Warning 41: in check_rr_node: RR node: 139345 type: OPIN location: (40,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 42: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build routing resource graph took 1.01 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph took 1.21 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 235808
   RR Graph Edges: 1893468
-# Create Device took 1.03 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
+# Create Device took 1.23 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
 
 # Placement
 ## Computing placement delta delay look-up
@@ -1883,12 +1883,12 @@ Warning 71: in check_rr_node: RR node: 135625 type: OPIN location: (39,1) pin: 6
 Warning 72: in check_rr_node: RR node: 139345 type: OPIN location: (40,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 73: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-### Build routing resource graph took 0.93 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
+### Build routing resource graph took 1.11 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 232284
   RR Graph Edges: 1822152
 ### Computing delta delays
-### Computing delta delays took 0.28 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
-## Computing placement delta delay look-up took 1.24 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
+### Computing delta delays took 0.33 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
+## Computing placement delta delay look-up took 1.47 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
 
 There are 32373 point to point connections in this circuit.
 
@@ -2065,7 +2065,7 @@ Aborted Move Reasons:
   duplicate block move to location: 12
   macro move to location illegal: 2
   macro_from swap to location illegal: 1063
-# Placement took 24.61 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
+# Placement took 22.50 seconds (max_rss 183.9 MiB, delta_rss +0.0 MiB)
 
 # Routing
 Initializing minimum channel width search based on maximum CLB pins
@@ -2104,7 +2104,7 @@ Warning 103: in check_rr_node: RR node: 135625 type: OPIN location: (39,1) pin: 
 Warning 104: in check_rr_node: RR node: 139345 type: OPIN location: (40,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 105: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build routing resource graph took 0.64 seconds (max_rss 219.9 MiB, delta_rss +23.0 MiB)
+## Build routing resource graph took 0.57 seconds (max_rss 219.9 MiB, delta_rss +23.0 MiB)
   RR Graph Nodes: 204076
   RR Graph Edges: 1250668
 Confirming router algorithm: TIMING_DRIVEN.
@@ -2112,13 +2112,13 @@ Confirming router algorithm: TIMING_DRIVEN.
 Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-   1    0.7     0.0    0 1561032    8562   32373   17222 ( 8.439%)  140012 (66.7%)   18.799 -1.162e+04    -18.799      0.000      0.000      N/A
+   1    0.6     0.0    0 1561032    8562   32373   17222 ( 8.439%)  140012 (66.7%)   18.799 -1.162e+04    -18.799      0.000      0.000      N/A
    2    0.3     0.5   57 1443174    7270   30112   10935 ( 5.358%)  133569 (63.6%)   18.779 -1.168e+04    -18.779      0.000      0.000      N/A
    3    0.3     0.6   18 1420199    6105   26092   10717 ( 5.251%)  136030 (64.8%)   18.797 -1.173e+04    -18.797      0.000      0.000      N/A
    4    0.3     0.8   27 1647350    5658   25408    9829 ( 4.816%)  138495 (66.0%)   18.808 -1.175e+04    -18.808      0.000      0.000      N/A
-   5    0.4     1.1   48 1750273    5178   24267    8153 ( 3.995%)  140951 (67.1%)   18.804 -1.180e+04    -18.804      0.000      0.000      N/A
+   5    0.3     1.1   48 1750273    5178   24267    8153 ( 3.995%)  140951 (67.1%)   18.804 -1.180e+04    -18.804      0.000      0.000      N/A
    6    0.3     1.4   57 1773781    4592   22313    6877 ( 3.370%)  143481 (68.4%)   18.801 -1.184e+04    -18.801      0.000      0.000      N/A
-   7    0.4     1.9   50 1806813    3999   20252    5698 ( 2.792%)  146402 (69.7%)   18.827 -1.187e+04    -18.827      0.000      0.000      N/A
+   7    0.3     1.9   50 1806813    3999   20252    5698 ( 2.792%)  146402 (69.7%)   18.827 -1.187e+04    -18.827      0.000      0.000      N/A
    8    0.3     2.4   53 1609556    3504   18059    4533 ( 2.221%)  149460 (71.2%)   18.865 -1.189e+04    -18.865      0.000      0.000      N/A
    9    0.3     3.1   51 1585336    3038   15820    3555 ( 1.742%)  152454 (72.6%)   18.854 -1.195e+04    -18.854      0.000      0.000      N/A
   10    0.3     4.1   40 1362003    2527   12963    2679 ( 1.313%)  156122 (74.4%)   18.854 -1.198e+04    -18.854      0.000      0.000       48
@@ -2138,7 +2138,7 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
   24    0.3   160.6    5 1202951     626    2526     218 ( 0.107%)  173740 (82.8%)   18.868 -1.230e+04    -18.868      0.000      0.000       60
   25    0.3   208.8    6 1074943     596    2341     188 ( 0.092%)  174077 (82.9%)   19.361 -1.241e+04    -19.361      0.000      0.000       67
   26    0.3   271.4    7 1032272     537    2077     189 ( 0.093%)  174295 (83.0%)   18.868 -1.237e+04    -18.868      0.000      0.000       68
-  27    0.2   352.8    6 1011951     632    2630     177 ( 0.087%)  174634 (83.2%)   19.237 -1.239e+04    -19.237      0.000      0.000       75
+  27    0.3   352.8    6 1011951     632    2630     177 ( 0.087%)  174634 (83.2%)   19.237 -1.239e+04    -19.237      0.000      0.000       75
   28    0.2   458.7    7  871469     557    2214     173 ( 0.085%)  175019 (83.4%)   18.868 -1.246e+04    -18.868      0.000      0.000       76
   29    0.2   596.3    3  943265     630    2684     164 ( 0.080%)  174958 (83.3%)   19.244 -1.248e+04    -19.244      0.000      0.000       84
   30    0.3   775.1    2 1002280     542    2227     157 ( 0.077%)  175232 (83.5%)   19.111 -1.247e+04    -19.111      0.000      0.000       86
@@ -2189,7 +2189,7 @@ Warning 134: in check_rr_node: RR node: 135625 type: OPIN location: (39,1) pin: 
 Warning 135: in check_rr_node: RR node: 139345 type: OPIN location: (40,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 136: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build routing resource graph took 1.49 seconds (max_rss 262.8 MiB, delta_rss +42.9 MiB)
+## Build routing resource graph took 1.34 seconds (max_rss 263.0 MiB, delta_rss +43.1 MiB)
   RR Graph Nodes: 260492
   RR Graph Edges: 2396576
 Confirming router algorithm: TIMING_DRIVEN.
@@ -2201,13 +2201,13 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
    2    0.3     0.5   51 1681287    6727   28903    7613 ( 2.923%)  134181 (32.0%)   18.761 -1.167e+04    -18.761      0.000      0.000      N/A
    3    0.3     0.6   18 1247509    4725   21266    6329 ( 2.430%)  135141 (32.2%)   18.755 -1.167e+04    -18.755      0.000      0.000      N/A
    4    0.3     0.8    6 1055453    3829   18175    5210 ( 2.000%)  136469 (32.5%)   18.763 -1.168e+04    -18.763      0.000      0.000      N/A
-   5    0.4     1.1    6  925533    3183   16044    3857 ( 1.481%)  137973 (32.9%)   18.763 -1.168e+04    -18.763      0.000      0.000      N/A
-   6    0.3     1.4    3  708962    2550   12769    2813 ( 1.080%)  139896 (33.3%)   18.763 -1.169e+04    -18.763      0.000      0.000      N/A
-   7    0.3     1.9    1  569781    2046   10336    2029 ( 0.779%)  141595 (33.7%)   18.769 -1.169e+04    -18.769      0.000      0.000      N/A
+   5    0.2     1.1    6  925533    3183   16044    3857 ( 1.481%)  137973 (32.9%)   18.763 -1.168e+04    -18.763      0.000      0.000      N/A
+   6    0.2     1.4    3  708962    2550   12769    2813 ( 1.080%)  139896 (33.3%)   18.763 -1.169e+04    -18.763      0.000      0.000      N/A
+   7    0.2     1.9    1  569781    2046   10336    2029 ( 0.779%)  141595 (33.7%)   18.769 -1.169e+04    -18.769      0.000      0.000      N/A
    8    0.2     2.4    1  452321    1570    8178    1309 ( 0.503%)  143327 (34.1%)   18.769 -1.170e+04    -18.769      0.000      0.000      N/A
    9    0.2     3.1    1  336001    1132    5550     823 ( 0.316%)  144969 (34.5%)   18.769 -1.170e+04    -18.769      0.000      0.000      N/A
   10    0.2     4.1    2  207016     767    3463     412 ( 0.158%)  146090 (34.8%)   18.769 -1.170e+04    -18.769      0.000      0.000       27
-  11    0.2     5.3    0  121919     459    1785     210 ( 0.081%)  146759 (35.0%)   18.770 -1.170e+04    -18.770      0.000      0.000       23
+  11    0.1     5.3    0  121919     459    1785     210 ( 0.081%)  146759 (35.0%)   18.770 -1.170e+04    -18.770      0.000      0.000       23
   12    0.1     6.9    0   53610     244     807      91 ( 0.035%)  147192 (35.1%)   18.770 -1.170e+04    -18.770      0.000      0.000       22
   13    0.1     9.0    0   19951     130     298      51 ( 0.020%)  147353 (35.1%)   18.770 -1.170e+04    -18.770      0.000      0.000       20
   14    0.1    11.6    0   16673      82     234      31 ( 0.012%)  147404 (35.1%)   18.770 -1.170e+04    -18.770      0.000      0.000       19
@@ -2255,7 +2255,7 @@ Warning 165: in check_rr_node: RR node: 135625 type: OPIN location: (39,1) pin: 
 Warning 166: in check_rr_node: RR node: 139345 type: OPIN location: (40,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 167: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build routing resource graph took 1.25 seconds (max_rss 270.1 MiB, delta_rss +7.1 MiB)
+## Build routing resource graph took 0.91 seconds (max_rss 270.1 MiB, delta_rss +7.1 MiB)
   RR Graph Nodes: 232284
   RR Graph Edges: 1822152
 Confirming router algorithm: TIMING_DRIVEN.
@@ -2264,11 +2264,11 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
    1    0.4     0.0    0 2163692    8562   32373   16918 ( 7.283%)  145303 (46.1%)   18.765 -1.166e+04    -18.765      0.000      0.000      N/A
-   2    0.4     0.5   65 1828294    6934   29396    9062 ( 3.901%)  135882 (43.2%)   18.770 -1.170e+04    -18.770      0.000      0.000      N/A
+   2    0.3     0.5   65 1828294    6934   29396    9062 ( 3.901%)  135882 (43.2%)   18.770 -1.170e+04    -18.770      0.000      0.000      N/A
    3    0.3     0.6   19 1473377    5285   23168    8005 ( 3.446%)  137649 (43.7%)   18.764 -1.171e+04    -18.764      0.000      0.000      N/A
    4    0.3     0.8   16 1450806    4562   21776    6963 ( 2.998%)  139442 (44.3%)   18.757 -1.173e+04    -18.757      0.000      0.000      N/A
    5    0.3     1.1   17 1345108    3971   19452    5464 ( 2.352%)  141284 (44.9%)   18.766 -1.175e+04    -18.766      0.000      0.000      N/A
-   6    0.2     1.4   16 1106380    3244   16946    4277 ( 1.841%)  143869 (45.7%)   18.771 -1.177e+04    -18.771      0.000      0.000      N/A
+   6    0.3     1.4   16 1106380    3244   16946    4277 ( 1.841%)  143869 (45.7%)   18.771 -1.177e+04    -18.771      0.000      0.000      N/A
    7    0.2     1.9   10  856494    2663   13851    3174 ( 1.366%)  146224 (46.4%)   18.774 -1.179e+04    -18.774      0.000      0.000      N/A
    8    0.2     2.4   16  716061    2216   11472    2317 ( 0.997%)  148623 (47.2%)   18.774 -1.181e+04    -18.774      0.000      0.000      N/A
    9    0.2     3.1    8  544436    1677    8647    1519 ( 0.654%)  150964 (47.9%)   18.774 -1.180e+04    -18.774      0.000      0.000      N/A
@@ -2321,7 +2321,7 @@ Warning 196: in check_rr_node: RR node: 135625 type: OPIN location: (39,1) pin: 
 Warning 197: in check_rr_node: RR node: 139345 type: OPIN location: (40,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 198: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build routing resource graph took 0.93 seconds (max_rss 270.1 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph took 0.72 seconds (max_rss 270.1 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 218180
   RR Graph Edges: 1536360
 Confirming router algorithm: TIMING_DRIVEN.
@@ -2329,19 +2329,19 @@ Confirming router algorithm: TIMING_DRIVEN.
 Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-   1    0.5     0.0    0 1646540    8562   32373   16793 ( 7.697%)  139543 (53.2%)   18.791 -1.161e+04    -18.791      0.000      0.000      N/A
-   2    0.4     0.5   41 1469721    7118   29734    9586 ( 4.394%)  133332 (50.8%)   18.783 -1.168e+04    -18.783      0.000      0.000      N/A
+   1    0.3     0.0    0 1646540    8562   32373   16793 ( 7.697%)  139543 (53.2%)   18.791 -1.161e+04    -18.791      0.000      0.000      N/A
+   2    0.3     0.5   41 1469721    7118   29734    9586 ( 4.394%)  133332 (50.8%)   18.783 -1.168e+04    -18.783      0.000      0.000      N/A
    3    0.3     0.6   22 1346614    5743   24893    8940 ( 4.098%)  135315 (51.6%)   18.797 -1.168e+04    -18.797      0.000      0.000      N/A
    4    0.3     0.8   23 1378418    5007   23196    7993 ( 3.663%)  137545 (52.4%)   18.801 -1.171e+04    -18.801      0.000      0.000      N/A
    5    0.3     1.1   24 1311087    4444   21246    6345 ( 2.908%)  139375 (53.1%)   18.804 -1.174e+04    -18.804      0.000      0.000      N/A
    6    0.3     1.4   14 1154132    3740   18648    5053 ( 2.316%)  141965 (54.1%)   18.813 -1.176e+04    -18.813      0.000      0.000      N/A
-   7    0.3     1.9   23 1039934    3144   16224    3894 ( 1.785%)  144530 (55.1%)   18.820 -1.179e+04    -18.820      0.000      0.000      N/A
+   7    0.2     1.9   23 1039934    3144   16224    3894 ( 1.785%)  144530 (55.1%)   18.820 -1.179e+04    -18.820      0.000      0.000      N/A
    8    0.2     2.4   14  818511    2497   13196    2767 ( 1.268%)  146751 (55.9%)   18.818 -1.181e+04    -18.818      0.000      0.000      N/A
-   9    0.3     3.1   12  645921    1914   10226    1825 ( 0.836%)  149301 (56.9%)   18.818 -1.182e+04    -18.818      0.000      0.000      N/A
-  10    0.3     4.1   18  496776    1420    7299    1128 ( 0.517%)  151409 (57.7%)   18.818 -1.182e+04    -18.818      0.000      0.000       33
+   9    0.2     3.1   12  645921    1914   10226    1825 ( 0.836%)  149301 (56.9%)   18.818 -1.182e+04    -18.818      0.000      0.000      N/A
+  10    0.2     4.1   18  496776    1420    7299    1128 ( 0.517%)  151409 (57.7%)   18.818 -1.182e+04    -18.818      0.000      0.000       33
   11    0.2     5.3    7  327186     982    4536     632 ( 0.290%)  153082 (58.3%)   18.818 -1.183e+04    -18.818      0.000      0.000       29
-  12    0.2     6.9    9  165965     644    2421     338 ( 0.155%)  154214 (58.8%)   18.818 -1.183e+04    -18.818      0.000      0.000       27
-  13    0.2     9.0    2   91626     387    1258     187 ( 0.086%)  154815 (59.0%)   18.818 -1.183e+04    -18.818      0.000      0.000       24
+  12    0.1     6.9    9  165965     644    2421     338 ( 0.155%)  154214 (58.8%)   18.818 -1.183e+04    -18.818      0.000      0.000       27
+  13    0.1     9.0    2   91626     387    1258     187 ( 0.086%)  154815 (59.0%)   18.818 -1.183e+04    -18.818      0.000      0.000       24
   14    0.1    11.6    3   66129     239     778     100 ( 0.046%)  155336 (59.2%)   18.818 -1.183e+04    -18.818      0.000      0.000       23
   15    0.1    15.1    3   28700     133     381      52 ( 0.024%)  155478 (59.3%)   18.818 -1.184e+04    -18.818      0.000      0.000       22
   16    0.1    19.7    3   28535      67     152      21 ( 0.010%)  155618 (59.3%)   18.818 -1.184e+04    -18.818      0.000      0.000       22
@@ -2388,7 +2388,7 @@ Warning 227: in check_rr_node: RR node: 135625 type: OPIN location: (39,1) pin: 
 Warning 228: in check_rr_node: RR node: 139345 type: OPIN location: (40,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 229: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build routing resource graph took 0.71 seconds (max_rss 270.1 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph took 0.63 seconds (max_rss 270.1 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 211128
   RR Graph Edges: 1396244
 Confirming router algorithm: TIMING_DRIVEN.
@@ -2400,16 +2400,16 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
    2    0.3     0.5   65 1610048    7253   30064   10606 ( 5.023%)  135223 (57.3%)   18.916 -1.171e+04    -18.916      0.000      0.000      N/A
    3    0.3     0.6   26 1619021    5933   25674   10180 ( 4.822%)  138353 (58.6%)   18.929 -1.173e+04    -18.929      0.000      0.000      N/A
    4    0.3     0.8   33 1688191    5436   24875    9145 ( 4.331%)  141087 (59.7%)   18.930 -1.179e+04    -18.930      0.000      0.000      N/A
-   5    0.4     1.1   42 1719249    4884   23448    7440 ( 3.524%)  143438 (60.7%)   18.931 -1.183e+04    -18.931      0.000      0.000      N/A
+   5    0.3     1.1   42 1719249    4884   23448    7440 ( 3.524%)  143438 (60.7%)   18.931 -1.183e+04    -18.931      0.000      0.000      N/A
    6    0.3     1.4   55 1554035    4217   20857    5963 ( 2.824%)  146053 (61.8%)   18.933 -1.189e+04    -18.933      0.000      0.000      N/A
    7    0.3     1.9   45 1478896    3547   18061    4696 ( 2.224%)  148885 (63.0%)   18.934 -1.193e+04    -18.934      0.000      0.000      N/A
    8    0.3     2.4   30 1234841    2982   15497    3663 ( 1.735%)  151771 (64.3%)   18.934 -1.194e+04    -18.934      0.000      0.000      N/A
-   9    0.3     3.1   27 1049162    2466   12858    2682 ( 1.270%)  154941 (65.6%)   18.934 -1.196e+04    -18.934      0.000      0.000      N/A
+   9    0.2     3.1   27 1049162    2466   12858    2682 ( 1.270%)  154941 (65.6%)   18.934 -1.196e+04    -18.934      0.000      0.000      N/A
   10    0.2     4.1   25  853404    1903    9744    1801 ( 0.853%)  157799 (66.8%)   18.934 -1.199e+04    -18.934      0.000      0.000       40
   11    0.2     5.3   17  679976    1427    7003    1173 ( 0.556%)  160432 (67.9%)   18.934 -1.201e+04    -18.934      0.000      0.000       36
   12    0.2     6.9   16  447186    1084    4869     753 ( 0.357%)  162310 (68.7%)   18.934 -1.203e+04    -18.934      0.000      0.000       33
   13    0.2     9.0   18  371499     787    3146     472 ( 0.224%)  163696 (69.3%)   18.934 -1.204e+04    -18.934      0.000      0.000       30
-  14    0.1    11.6   16  267263     547    2030     275 ( 0.130%)  165337 (70.0%)   18.934 -1.206e+04    -18.934      0.000      0.000       29
+  14    0.2    11.6   16  267263     547    2030     275 ( 0.130%)  165337 (70.0%)   18.934 -1.206e+04    -18.934      0.000      0.000       29
   15    0.1    15.1    6  172010     359    1132     144 ( 0.068%)  166021 (70.3%)   18.934 -1.207e+04    -18.934      0.000      0.000       27
   16    0.1    19.7    7  129502     207     675      84 ( 0.040%)  166965 (70.7%)   18.934 -1.207e+04    -18.934      0.000      0.000       26
   17    0.1    25.6   10   85448     122     317      55 ( 0.026%)  167255 (70.8%)   18.934 -1.208e+04    -18.934      0.000      0.000       25
@@ -2424,9 +2424,9 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
   26    0.1   271.4    0  102462     156     283       3 ( 0.001%)  168069 (71.2%)   18.934 -1.211e+04    -18.934      0.000      0.000       27
   27    0.1   352.8    1   57942     154     255       3 ( 0.001%)  168061 (71.2%)   18.934 -1.211e+04    -18.934      0.000      0.000       27
   28    0.1   458.7    0   72281     153     261       2 ( 0.001%)  168085 (71.2%)   18.934 -1.211e+04    -18.934      0.000      0.000       28
-  29    0.2   596.3    1   59508     152     250       2 ( 0.001%)  168065 (71.2%)   18.934 -1.211e+04    -18.934      0.000      0.000       29
-  30    0.2   775.1    0   86197     152     265       2 ( 0.001%)  168039 (71.2%)   18.934 -1.211e+04    -18.934      0.000      0.000       30
-  31    0.2  1007.7    0   39878     152     251       0 ( 0.000%)  168047 (71.2%)   18.934 -1.211e+04    -18.934      0.000      0.000       31
+  29    0.1   596.3    1   59508     152     250       2 ( 0.001%)  168065 (71.2%)   18.934 -1.211e+04    -18.934      0.000      0.000       29
+  30    0.1   775.1    0   86197     152     265       2 ( 0.001%)  168039 (71.2%)   18.934 -1.211e+04    -18.934      0.000      0.000       30
+  31    0.1  1007.7    0   39878     152     251       0 ( 0.000%)  168047 (71.2%)   18.934 -1.211e+04    -18.934      0.000      0.000       31
 Restoring best routing
 Critical path: 18.9342 ns
 Successfully routed after 31 routing iterations.
@@ -2466,7 +2466,7 @@ Warning 258: in check_rr_node: RR node: 135625 type: OPIN location: (39,1) pin: 
 Warning 259: in check_rr_node: RR node: 139345 type: OPIN location: (40,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 260: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build routing resource graph took 0.86 seconds (max_rss 270.1 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph took 0.60 seconds (max_rss 270.1 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 207600
   RR Graph Edges: 1321924
 Confirming router algorithm: TIMING_DRIVEN.
@@ -2478,13 +2478,13 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
    2    0.3     0.5   59 1585989    7254   30118   11184 ( 5.387%)  137950 (61.8%)   18.715 -1.169e+04    -18.715      0.000      0.000      N/A
    3    0.3     0.6   31 1616882    6051   26186   10594 ( 5.103%)  140757 (63.1%)   18.703 -1.174e+04    -18.703      0.000      0.000      N/A
    4    0.3     0.8   43 1764679    5546   25403    9502 ( 4.577%)  143525 (64.3%)   18.688 -1.181e+04    -18.688      0.000      0.000      N/A
-   5    0.4     1.1   53 1786191    4908   23737    7647 ( 3.684%)  146033 (65.5%)   18.691 -1.183e+04    -18.691      0.000      0.000      N/A
+   5    0.3     1.1   53 1786191    4908   23737    7647 ( 3.684%)  146033 (65.5%)   18.691 -1.183e+04    -18.691      0.000      0.000      N/A
    6    0.3     1.4   65 1748316    4287   21337    6161 ( 2.968%)  148494 (66.6%)   18.694 -1.187e+04    -18.694      0.000      0.000      N/A
    7    0.3     1.9   50 1704098    3697   18771    4956 ( 2.387%)  150983 (67.7%)   18.694 -1.191e+04    -18.694      0.000      0.000      N/A
    8    0.3     2.4   51 1527900    3066   16027    3784 ( 1.823%)  154061 (69.1%)   18.695 -1.195e+04    -18.695      0.000      0.000      N/A
    9    0.3     3.1   49 1265685    2568   13486    2819 ( 1.358%)  156719 (70.3%)   18.685 -1.200e+04    -18.685      0.000      0.000      N/A
   10    0.3     4.1   41 1089914    2049   10770    2011 ( 0.969%)  159231 (71.4%)   18.696 -1.203e+04    -18.696      0.000      0.000       41
-  11    0.3     5.3   40  920559    1667    8191    1435 ( 0.691%)  161625 (72.5%)   18.696 -1.204e+04    -18.696      0.000      0.000       37
+  11    0.2     5.3   40  920559    1667    8191    1435 ( 0.691%)  161625 (72.5%)   18.696 -1.204e+04    -18.696      0.000      0.000       37
   12    0.2     6.9   28  774428    1336    6164     939 ( 0.452%)  163959 (73.5%)   18.696 -1.207e+04    -18.696      0.000      0.000       36
   13    0.2     9.0   29  655744     989    4112     633 ( 0.305%)  166052 (74.4%)   18.696 -1.209e+04    -18.696      0.000      0.000       33
   14    0.2    11.6   21  634855     745    2915     437 ( 0.211%)  167537 (75.1%)   18.696 -1.211e+04    -18.696      0.000      0.000       32
@@ -2497,7 +2497,7 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
   21    0.2    73.1    7  377097     117     417      56 ( 0.027%)  172036 (77.1%)   18.696 -1.226e+04    -18.696      0.000      0.000       32
   22    0.2    95.0    6  289767      95     278      48 ( 0.023%)  172161 (77.2%)   18.696 -1.236e+04    -18.696      0.000      0.000       33
   23    0.1   123.5    2  261958      72     199      40 ( 0.019%)  172279 (77.2%)   18.696 -1.236e+04    -18.696      0.000      0.000       34
-  24    0.1   160.6    3  292570      72     182      32 ( 0.015%)  172370 (77.3%)   18.696 -1.236e+04    -18.696      0.000      0.000       35
+  24    0.2   160.6    3  292570      72     182      32 ( 0.015%)  172370 (77.3%)   18.696 -1.236e+04    -18.696      0.000      0.000       35
   25    0.1   208.8    3  206295      56     171      28 ( 0.013%)  172446 (77.3%)   18.696 -1.236e+04    -18.696      0.000      0.000       36
   26    0.1   271.4    3  203197      54     111      26 ( 0.013%)  172575 (77.4%)   18.696 -1.236e+04    -18.696      0.000      0.000       37
   27    0.1   352.8    1  141532      49     100      22 ( 0.011%)  172633 (77.4%)   18.696 -1.236e+04    -18.696      0.000      0.000       39
@@ -2561,7 +2561,7 @@ Warning 289: in check_rr_node: RR node: 135625 type: OPIN location: (39,1) pin: 
 Warning 290: in check_rr_node: RR node: 139345 type: OPIN location: (40,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 291: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build routing resource graph took 0.70 seconds (max_rss 270.1 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph took 0.62 seconds (max_rss 270.1 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 209364
   RR Graph Edges: 1361044
 Confirming router algorithm: TIMING_DRIVEN.
@@ -2578,13 +2578,13 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
    7    0.3     1.9   50 1365831    3427   17857    4541 ( 2.169%)  148204 (64.5%)   18.718 -1.189e+04    -18.718      0.000      0.000      N/A
    8    0.3     2.4   38 1131600    2880   15094    3424 ( 1.635%)  150752 (65.7%)   18.723 -1.195e+04    -18.723      0.000      0.000      N/A
    9    0.3     3.1   34 1064753    2405   13002    2598 ( 1.241%)  153843 (67.0%)   18.723 -1.200e+04    -18.723      0.000      0.000      N/A
-  10    0.3     4.1   33  958488    1839   10029    1778 ( 0.849%)  156817 (68.3%)   18.723 -1.203e+04    -18.723      0.000      0.000       40
+  10    0.2     4.1   33  958488    1839   10029    1778 ( 0.849%)  156817 (68.3%)   18.723 -1.203e+04    -18.723      0.000      0.000       40
   11    0.2     5.3   24  791225    1438    7221    1187 ( 0.567%)  159412 (69.4%)   18.722 -1.203e+04    -18.722      0.000      0.000       36
   12    0.2     6.9   14  576781    1063    5021     755 ( 0.361%)  161419 (70.3%)   18.722 -1.208e+04    -18.722      0.000      0.000       34
   13    0.2     9.0   22  388921     789    3180     481 ( 0.230%)  162974 (71.0%)   18.723 -1.208e+04    -18.723      0.000      0.000       31
   14    0.2    11.6    8  319351     548    2040     274 ( 0.131%)  163983 (71.4%)   18.721 -1.209e+04    -18.721      0.000      0.000       30
-  15    0.1    15.1    8  251622     354    1141     166 ( 0.079%)  164807 (71.8%)   18.721 -1.210e+04    -18.721      0.000      0.000       28
-  16    0.1    19.7    8  223041     233     818      95 ( 0.045%)  165422 (72.0%)   18.721 -1.214e+04    -18.721      0.000      0.000       27
+  15    0.2    15.1    8  251622     354    1141     166 ( 0.079%)  164807 (71.8%)   18.721 -1.210e+04    -18.721      0.000      0.000       28
+  16    0.2    19.7    8  223041     233     818      95 ( 0.045%)  165422 (72.0%)   18.721 -1.214e+04    -18.721      0.000      0.000       27
   17    0.1    25.6    8  158607     140     433      58 ( 0.028%)  165802 (72.2%)   18.721 -1.213e+04    -18.721      0.000      0.000       26
   18    0.1    33.3    5  163565      93     260      36 ( 0.017%)  166127 (72.4%)   18.721 -1.214e+04    -18.721      0.000      0.000       26
   19    0.1    43.3    2  109272      71     216      23 ( 0.011%)  166284 (72.4%)   18.721 -1.214e+04    -18.721      0.000      0.000       25
@@ -2635,11 +2635,11 @@ Warning 320: in check_rr_node: RR node: 135625 type: OPIN location: (39,1) pin: 
 Warning 321: in check_rr_node: RR node: 139345 type: OPIN location: (40,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
 Warning 322: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
-## Build routing resource graph took 0.70 seconds (max_rss 270.1 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph took 0.69 seconds (max_rss 270.1 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 209364
   RR Graph Edges: 1361044
 Best routing used a channel width factor of 70.
-# Routing took 52.72 seconds (max_rss 270.1 MiB, delta_rss +73.4 MiB)
+# Routing took 49.57 seconds (max_rss 270.1 MiB, delta_rss +73.4 MiB)
 
 Checking to ensure routing is legal...
 Completed routing consistency check successfully.
@@ -2809,14 +2809,14 @@ Setup slack histogram:
 [ -4.2e-09: -2.3e-09)  173 ( 7.4%) |******
 [ -2.3e-09: -5.2e-10) 1310 (56.1%) |**********************************************
 
-Timing analysis took 21.812 seconds (18.917 STA, 2.89503 slack) (325 full updates: 117 setup, 0 hold, 208 combined).
+Timing analysis took 21.4323 seconds (18.2854 STA, 3.14693 slack) (325 full updates: 117 setup, 0 hold, 208 combined).
 VPR suceeded
-The entire flow of VPR took 110.48 seconds (max_rss 270.2 MiB)
+The entire flow of VPR took 102.86 seconds (max_rss 270.2 MiB)
 	Command being timed: "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/../vpr/vpr k6_frac_N10_tileable_adder_chain_frac_mem32K_frac_dsp36_40nm.xml syn2 --circuit_file syn2.pre-vpr.blif"
-	User time (seconds): 109.99
-	System time (seconds): 0.50
+	User time (seconds): 102.41
+	System time (seconds): 0.48
 	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:50.51
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:42.89
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
@@ -2824,12 +2824,12 @@ The entire flow of VPR took 110.48 seconds (max_rss 270.2 MiB)
 	Maximum resident set size (kbytes): 276664
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 435190
+	Minor (reclaiming a frame) page faults: 254602
 	Voluntary context switches: 3
-	Involuntary context switches: 171
+	Involuntary context switches: 89
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 99400
+	File system outputs: 99512
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0

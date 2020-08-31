@@ -132,7 +132,7 @@ int Abc_TruthNpnCountUniqueSort( Abc_TtStore_t * p )
     // sort them by value
     nWords = p->nWords;
     assert( nWords > 0 );
-    qsort( (void *)p->pFuncs, p->nFuncs, sizeof(word *), (int(*)(const void *,const void *))Abc_TruthCompare );
+    qsort( (void *)p->pFuncs, (size_t)p->nFuncs, sizeof(word *), (int(*)(const void *,const void *))Abc_TruthCompare );
     // count the number of unqiue functions
     for ( i = k = 1; i < p->nFuncs; i++ )
         if ( memcmp( p->pFuncs[i-1], p->pFuncs[i], sizeof(word) * nWords ) )
@@ -185,23 +185,29 @@ void Abc_TruthNpnPerform( Abc_TtStore_t * p, int NpnType, int fVerbose )
 
     char * pAlgoName = NULL;
     if ( NpnType == 0 )
-        pAlgoName = "uniqifying         ";
+        pAlgoName = "uniqifying          ";
     else if ( NpnType == 1 )
-        pAlgoName = "exact NPN          ";
+        pAlgoName = "exact NPN           ";
     else if ( NpnType == 2 )
-        pAlgoName = "counting 1s        ";
+        pAlgoName = "counting 1s         ";
     else if ( NpnType == 3 )
-        pAlgoName = "Jake's hybrid fast ";
+        pAlgoName = "Jake's hybrid fast  ";
     else if ( NpnType == 4 )
-        pAlgoName = "Jake's hybrid good ";
+        pAlgoName = "Jake's hybrid good  ";
     else if ( NpnType == 5 )
-        pAlgoName = "new hybrid fast    ";
+        pAlgoName = "new hybrid fast     ";
     else if ( NpnType == 6 )
-        pAlgoName = "new phase flipping ";
+        pAlgoName = "new phase flipping  ";
     else if ( NpnType == 7 )
-        pAlgoName = "new hier. matching ";
+        pAlgoName = "new hier. matching  ";
     else if ( NpnType == 8 )
-        pAlgoName = "new adap. matching ";
+        pAlgoName = "new adap. matching  ";
+    else if ( NpnType == 9 )
+        pAlgoName = "adjustable algorithm (heuristic) ";
+    else if ( NpnType == 10 )
+        pAlgoName = "adjustable algorithm (exact)     ";
+    else if ( NpnType == 11 )
+        pAlgoName = "new cost-aware exact algorithm   ";
 
     assert( p->nVars <= 16 );
     if ( pAlgoName )
@@ -311,7 +317,7 @@ void Abc_TruthNpnPerform( Abc_TtStore_t * p, int NpnType, int fVerbose )
     }
     else if ( NpnType == 8 )
     {
-        typedef unsigned(*TtCanonicizeFunc)(Abc_TtHieMan_t * p, word * pTruth, int nVars, char * pCanonPerm, int flag);
+//        typedef unsigned(*TtCanonicizeFunc)(Abc_TtHieMan_t * p, word * pTruth, int nVars, char * pCanonPerm, int flag);
         unsigned Abc_TtCanonicizeWrap(TtCanonicizeFunc func, Abc_TtHieMan_t * p, word * pTruth, int nVars, char * pCanonPerm, int flag);
         unsigned Abc_TtCanonicizeAda(Abc_TtHieMan_t * p, word * pTruth, int nVars, char * pCanonPerm, int iThres);
 		
@@ -322,6 +328,29 @@ void Abc_TruthNpnPerform( Abc_TtStore_t * p, int NpnType, int fVerbose )
             if ( fVerbose )
                 printf( "%7d : ", i );
             uCanonPhase = Abc_TtCanonicizeWrap(Abc_TtCanonicizeAda, pMan, p->pFuncs[i], p->nVars, pCanonPerm, fHigh*100 + iEnumThres);
+            if ( fVerbose )
+                Extra_PrintHex( stdout, (unsigned *)p->pFuncs[i], p->nVars ), Abc_TruthNpnPrint(pCanonPerm, uCanonPhase, p->nVars), printf( "\n" );
+        }
+		Abc_TtHieManStop(pMan);
+    }
+    else if ( NpnType == 9 || NpnType == 10 || NpnType == 11 )
+    {
+//        typedef unsigned(*TtCanonicizeFunc)(Abc_TtHieMan_t * p, word * pTruth, int nVars, char * pCanonPerm, int flag);
+        unsigned Abc_TtCanonicizeWrap(TtCanonicizeFunc func, Abc_TtHieMan_t * p, word * pTruth, int nVars, char * pCanonPerm, int flag);
+        unsigned Abc_TtCanonicizeAda(Abc_TtHieMan_t * p, word * pTruth, int nVars, char * pCanonPerm, int iThres);
+        unsigned Abc_TtCanonicizeCA(Abc_TtHieMan_t * p, word * pTruth, int nVars, char * pCanonPerm, int iThres);
+		
+		Abc_TtHieMan_t * pMan = Abc_TtHieManStart(p->nVars, 5);
+		for ( i = 0; i < p->nFuncs; i++ )
+        {
+            if ( fVerbose )
+                printf( "%7d : ", i );
+            if ( NpnType == 9 )
+                uCanonPhase = Abc_TtCanonicizeWrap(Abc_TtCanonicizeAda, pMan, p->pFuncs[i], p->nVars, pCanonPerm,  125); // -A 8, adjustable algorithm (heuristic)
+            else if ( NpnType == 10 )
+                uCanonPhase = Abc_TtCanonicizeWrap(Abc_TtCanonicizeAda, pMan, p->pFuncs[i], p->nVars, pCanonPerm, 1199); // -A 9, adjustable algorithm (exact)
+            else if ( NpnType == 11 )
+                uCanonPhase = Abc_TtCanonicizeWrap(Abc_TtCanonicizeCA,  pMan, p->pFuncs[i], p->nVars, pCanonPerm,    1); // -A 10, new cost-aware exact algorithm
             if ( fVerbose )
                 Extra_PrintHex( stdout, (unsigned *)p->pFuncs[i], p->nVars ), Abc_TruthNpnPrint(pCanonPerm, uCanonPhase, p->nVars), printf( "\n" );
         }
@@ -390,7 +419,7 @@ int Abc_NpnTest( char * pFileName, int NpnType, int nVarNum, int fDumpRes, int f
 {
     if ( fVerbose )
         printf( "Using truth tables from file \"%s\"...\n", pFileName );
-    if ( NpnType >= 0 && NpnType <= 8 )
+    if ( NpnType >= 0 && NpnType <= 11 )
         Abc_TruthNpnTest( pFileName, NpnType, nVarNum, fDumpRes, fBinary, fVerbose );
     else
         printf( "Unknown canonical form value (%d).\n", NpnType );

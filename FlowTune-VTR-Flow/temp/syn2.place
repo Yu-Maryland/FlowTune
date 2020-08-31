@@ -1,4 +1,4 @@
-Netlist_File: syn2.net Netlist_ID: SHA256:a31e788815b83ae4017b8ea2eb8327a374b5880af84fbbffc3b243f543b8697c
+Netlist_File: syn2.net Netlist_ID: SHA256:699c39f2a1d182e89c12f8dba3d70fa774f3f8b6fb11944ff38a05f007cd35e9
 Array size: 42 x 42 logic blocks
 
 #block name	x	y	subblk	block number

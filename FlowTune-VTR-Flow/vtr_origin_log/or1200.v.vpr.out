@@ -1,0 +1,497 @@
+VPR FPGA Placement and Routing.
+Version: 8.0.0-rc1+unkown
+Revision: v8.0.0-rc1-978-g80ae77e
+Compiled: 2019-09-25T16:06:48
+Compiler: GNU 4.9.2 on Linux-3.10.0-1062.1.1.el7.x86_64 x86_64
+Build Info: Release IPO VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/../vpr/vpr k6_frac_N10_tileable_adder_chain_frac_mem32K_frac_dsp36_40nm.xml or1200 --circuit_file or1200.pre-vpr.blif --route --route_chan_width 128
+
+
+Architecture file: k6_frac_N10_tileable_adder_chain_frac_mem32K_frac_dsp36_40nm.xml
+Circuit name: or1200
+
+# Loading Architecture Description
+# Loading Architecture Description took 0.00 seconds (max_rss 3.2 MiB, delta_rss +1.1 MiB)
+# Building complex block graph
+Warning 1: io[0].clock[0] unconnected pin in architecture.
+# Building complex block graph took 0.02 seconds (max_rss 9.3 MiB, delta_rss +6.1 MiB)
+# Load circuit
+Found constant-one generator 'or1200_flat^icpu_sel_o~0'
+Found constant-one generator 'or1200_flat^icpu_sel_o~1'
+Found constant-one generator 'or1200_flat^icpu_sel_o~2'
+Found constant-one generator 'or1200_flat^icpu_sel_o~3'
+Found constant-one generator 'or1200_flat^icpu_tag_o~0'
+Found constant-zero generator 'or1200_flat^icpu_tag_o~1'
+Found constant-zero generator 'or1200_flat^icpu_tag_o~2'
+Found constant-zero generator 'or1200_flat^icpu_tag_o~3'
+Found constant-zero generator 'or1200_flat^du_except~2'
+Found constant-zero generator 'or1200_flat^dcpu_tag_o~1'
+Found constant-zero generator 'or1200_flat^dcpu_tag_o~2'
+Found constant-zero generator 'or1200_flat^dcpu_tag_o~3'
+Found constant-zero generator 'gnd'
+Found constant-one generator 'vcc'
+Found constant-zero generator 'unconn'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11698'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11699'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11700'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11701'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11702'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11703'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11704'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11705'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11706'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11707'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11708'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11709'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11710'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11711'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11712'
+Found constant-zero generator 'or1200_flat.or1200_genpc^nMUX~133^MUX_2~11713'
+# Load circuit took 0.05 seconds (max_rss 20.0 MiB, delta_rss +10.7 MiB)
+# Clean circuit
+Absorbing 417 LUT buffers
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred   98 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 3
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 207
+Swept block(s)      : 65
+Constant Pins Marked: 98
+# Clean circuit took 0.12 seconds (max_rss 20.0 MiB, delta_rss +0.0 MiB)
+# Compress circuit
+# Compress circuit took 0.01 seconds (max_rss 20.0 MiB, delta_rss +0.0 MiB)
+# Verify circuit
+# Verify circuit took 0.00 seconds (max_rss 20.0 MiB, delta_rss +0.0 MiB)
+Circuit Statistics:
+  Blocks: 4540
+    .input       :     385
+    .latch       :     671
+    .output      :     394
+    0-LUT        :      30
+    6-LUT        :    2494
+    adder        :     501
+    dual_port_ram:      64
+    multiply     :       1
+  Nets  : 4676
+    Avg Fanout:     3.2
+    Max Fanout:   735.0
+    Min Fanout:     1.0
+  Netlist Clocks: 1
+# Build Timing Graph
+  Timing Graph Nodes: 19545
+  Timing Graph Edges: 34777
+  Timing Graph Levels: 138
+# Build Timing Graph took 0.02 seconds (max_rss 21.9 MiB, delta_rss +1.9 MiB)
+Netlist contains 1 clocks
+  Netlist Clock 'or1200_flat^clk' Fanout: 735 pins (3.8%), 735 blocks (16.2%)
+# Load Timing Constraints
+
+SDC file 'or1200.sdc' not found
+Setting default timing constraints:
+   * constrain all primay inputs and primary outputs on netlist clock 'or1200_flat^clk'
+   * optimize netlist clock to run as fast as possible
+Timing constraints created 1 clocks
+  Constrained Clock 'or1200_flat^clk' Source: 'or1200_flat^clk.inpad[0]'
+
+# Load Timing Constraints took 0.00 seconds (max_rss 21.9 MiB, delta_rss +0.0 MiB)
+Timing analysis: ON
+Circuit netlist file: or1200.net
+Circuit placement file: or1200.place
+Circuit routing file: or1200.route
+Circuit SDC file: or1200.sdc
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+NetlistOpts.abosrb_buffer_luts            : true
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: PATH_TIMING_DRIVEN_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 128
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 1.000000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
+RouterOpts.fixed_channel_width: 128
+RouterOpts.trim_empty_chan: false
+RouterOpts.trim_obs_chan: false
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.routing_failure_predictor = SAFE
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: false
+
+RoutingArch.directionality: UNI_DIRECTIONAL
+RoutingArch.switch_block_type: WILTON
+RoutingArch.Fs: 3
+
+# Load Packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'or1200.net'.
+Detected 30 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 0.39 seconds).
+Warning 2: Treated 44 constant nets as global which will not be routed (to see net names increase packer verbosity).
+# Load Packing took 0.41 seconds (max_rss 48.0 MiB, delta_rss +26.1 MiB)
+Warning 3: Netlist contains 172 global net to non-global architecture pin connections
+Warning 4: Logic block #290 (or1200_flat^icpu_sel_o~0) has only 1 output pin 'or1200_flat^icpu_sel_o~0.O[2]'. It may be a constant generator.
+Warning 5: Logic block #291 (or1200_flat^icpu_sel_o~1) has only 1 output pin 'or1200_flat^icpu_sel_o~1.O[2]'. It may be a constant generator.
+Warning 6: Logic block #292 (or1200_flat^icpu_sel_o~2) has only 1 output pin 'or1200_flat^icpu_sel_o~2.O[2]'. It may be a constant generator.
+Warning 7: Logic block #293 (or1200_flat^icpu_sel_o~3) has only 1 output pin 'or1200_flat^icpu_sel_o~3.O[2]'. It may be a constant generator.
+Warning 8: Logic block #294 (or1200_flat^icpu_tag_o~0) has only 1 output pin 'or1200_flat^icpu_tag_o~0.O[2]'. It may be a constant generator.
+Warning 9: Logic block #295 (or1200_flat^icpu_tag_o~1) has only 1 output pin 'or1200_flat^icpu_tag_o~1.O[2]'. It may be a constant generator.
+Warning 10: Logic block #296 (or1200_flat^icpu_tag_o~2) has only 1 output pin 'or1200_flat^icpu_tag_o~2.O[2]'. It may be a constant generator.
+Warning 11: Logic block #297 (or1200_flat^icpu_tag_o~3) has only 1 output pin 'or1200_flat^icpu_tag_o~3.O[2]'. It may be a constant generator.
+Warning 12: Logic block #298 (or1200_flat^du_except~2) has only 1 output pin 'or1200_flat^du_except~2.O[2]'. It may be a constant generator.
+Warning 13: Logic block #299 (or1200_flat^dcpu_tag_o~1) has only 1 output pin 'or1200_flat^dcpu_tag_o~1.O[2]'. It may be a constant generator.
+Warning 14: Logic block #300 (or1200_flat^dcpu_tag_o~2) has only 1 output pin 'or1200_flat^dcpu_tag_o~2.O[2]'. It may be a constant generator.
+Warning 15: Logic block #301 (or1200_flat^dcpu_tag_o~3) has only 1 output pin 'or1200_flat^dcpu_tag_o~3.O[2]'. It may be a constant generator.
+Warning 16: Logic block #302 (gnd) has only 1 output pin 'gnd.O[2]'. It may be a constant generator.
+Warning 17: Logic block #303 (vcc) has only 1 output pin 'vcc.O[2]'. It may be a constant generator.
+
+Netlist num_nets: 2422
+Netlist num_blocks: 1034
+Netlist EMPTY blocks: 0.
+Netlist io blocks: 779.
+Netlist clb blocks: 252.
+Netlist mult_36 blocks: 1.
+Netlist memory blocks: 2.
+Netlist inputs pins: 385
+Netlist output pins: 394
+
+# Create Device
+## Build Device Grid
+FPGA sized to 27 x 27: 729 grid tiles (auto)
+
+Resource usage...
+	Netlist      0	blocks of type: EMPTY
+	Architecture 0	blocks of type: EMPTY
+	Netlist      779	blocks of type: io
+	Architecture 800	blocks of type: io
+	Netlist      252	blocks of type: clb
+	Architecture 475	blocks of type: clb
+	Netlist      1	blocks of type: mult_36
+	Architecture 18	blocks of type: mult_36
+	Netlist      2	blocks of type: memory
+	Architecture 12	blocks of type: memory
+
+Device Utilization: 0.50 (target 1.00)
+	Block Utilization: 0.00 Type: EMPTY
+	Block Utilization: 0.97 Type: io
+	Block Utilization: 0.53 Type: clb
+	Block Utilization: 0.06 Type: mult_36
+	Block Utilization: 0.17 Type: memory
+
+FPGA size limited by block type(s): io
+
+## Build Device Grid took 0.00 seconds (max_rss 48.0 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph
+Warning 18: in check_rr_node: RR node: 3205 type: OPIN location: (1,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 19: in check_rr_node: RR node: 7148 type: OPIN location: (3,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 20: in check_rr_node: RR node: 9563 type: OPIN location: (4,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 21: in check_rr_node: RR node: 11978 type: OPIN location: (5,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 22: in check_rr_node: RR node: 16361 type: OPIN location: (7,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 23: in check_rr_node: RR node: 18776 type: OPIN location: (8,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 24: in check_rr_node: RR node: 21191 type: OPIN location: (9,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 25: in check_rr_node: RR node: 25134 type: OPIN location: (11,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 26: in check_rr_node: RR node: 27549 type: OPIN location: (12,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 27: in check_rr_node: RR node: 29964 type: OPIN location: (13,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 28: in check_rr_node: RR node: 34347 type: OPIN location: (15,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 29: in check_rr_node: RR node: 36762 type: OPIN location: (16,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 30: in check_rr_node: RR node: 39177 type: OPIN location: (17,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 31: in check_rr_node: RR node: 43120 type: OPIN location: (19,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 32: in check_rr_node: RR node: 45535 type: OPIN location: (20,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 33: in check_rr_node: RR node: 47950 type: OPIN location: (21,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 34: in check_rr_node: RR node: 52333 type: OPIN location: (23,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 35: in check_rr_node: RR node: 54748 type: OPIN location: (24,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 36: in check_rr_node: RR node: 57163 type: OPIN location: (25,1) pin: 61 pin_name: clb.cout[0] has no out-going edges.
+Warning 37: in check_rr_graph: fringe node 24 IPIN at (0,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build routing resource graph took 0.51 seconds (max_rss 69.6 MiB, delta_rss +21.6 MiB)
+  RR Graph Nodes: 108965
+  RR Graph Edges: 954341
+# Create Device took 0.52 seconds (max_rss 69.6 MiB, delta_rss +21.6 MiB)
+
+# Load Placement
+# Load Placement took 0.00 seconds (max_rss 69.6 MiB, delta_rss +0.0 MiB)
+
+# Routing
+RR graph channel widths unchanged, skipping RR graph rebuild
+Confirming router algorithm: TIMING_DRIVEN.
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.2     0.0    0  882943    2377    6589    3801 ( 3.488%)   43752 (26.3%)    8.901 -1.023e+04     -8.901      0.000      0.000      N/A
+   2    0.1     0.5   28  680565    1820    5803    1626 ( 1.492%)   41603 (25.0%)    8.901 -1.042e+04     -8.901      0.000      0.000      N/A
+   3    0.1     0.6   13  444707    1275    4327    1381 ( 1.267%)   41971 (25.2%)    8.901 -1.047e+04     -8.901      0.000      0.000      N/A
+   4    0.1     0.8    3  416185    1011    3645    1145 ( 1.051%)   42157 (25.3%)    8.901 -1.046e+04     -8.901      0.000      0.000      N/A
+   5    0.1     1.1    2  315505     858    3338     885 ( 0.812%)   42378 (25.5%)    8.902 -1.047e+04     -8.902      0.000      0.000      N/A
+   6    0.0     1.4    6  208185     706    2731     603 ( 0.553%)   42712 (25.7%)    8.902 -1.048e+04     -8.902      0.000      0.000      N/A
+   7    0.0     1.9    2  207952     538    2293     424 ( 0.389%)   43118 (25.9%)    8.902 -1.048e+04     -8.902      0.000      0.000      N/A
+   8    0.0     2.4    2  137875     388    1662     280 ( 0.257%)   43554 (26.2%)    8.902 -1.043e+04     -8.902      0.000      0.000      N/A
+   9    0.0     3.1    2   90808     278    1210     150 ( 0.138%)   43821 (26.3%)    8.901 -1.044e+04     -8.901      0.000      0.000      N/A
+  10    0.0     4.1    0   57666     159     791      75 ( 0.069%)   44117 (26.5%)    8.901 -1.049e+04     -8.901      0.000      0.000       21
+  11    0.0     5.3    1   35867      84     442      35 ( 0.032%)   44275 (26.6%)    8.901 -1.049e+04     -8.901      0.000      0.000       19
+  12    0.0     6.9    0   20719      43     208      14 ( 0.013%)   44351 (26.7%)    8.901 -1.049e+04     -8.901      0.000      0.000       18
+  13    0.0     9.0    0   12570      19     135       5 ( 0.005%)   44415 (26.7%)    8.901 -1.049e+04     -8.901      0.000      0.000       16
+  14    0.0    11.6    2    3910       6      39       3 ( 0.003%)   44423 (26.7%)    8.901 -1.049e+04     -8.901      0.000      0.000       16
+  15    0.0    15.1    0    4656       5      52       1 ( 0.001%)   44439 (26.7%)    8.901 -1.049e+04     -8.901      0.000      0.000       15
+  16    0.0    19.7    0    2142       2      23       0 ( 0.000%)   44447 (26.7%)    8.901 -1.049e+04     -8.901      0.000      0.000       15
+Restoring best routing
+Critical path: 8.90087 ns
+Successfully routed after 16 routing iterations.
+Router Stats: total_nets_routed: 9569 total_connections_routed: 33288 total_heap_pushes: 3522255 total_heap_pops: 677258
+# Routing took 0.86 seconds (max_rss 72.8 MiB, delta_rss +3.2 MiB)
+
+Checking to ensure routing is legal...
+Completed routing consistency check successfully.
+
+Serial number (magic cookie) for the routing is: -35123050
+Circuit successfully routed with a channel width factor of 128.
+
+Average number of bends per net: 2.50947  Maximum # of bends: 78
+
+Number of global nets: 45
+Number of routed nets (nonglobal): 2377
+Wire length results (in units of 1 clb segments)...
+	Total wirelength: 44447, average net length: 18.6988
+	Maximum net length: 381
+
+Wire length results in terms of physical segments...
+	Total wiring segments used: 11427, average wire segments per net: 4.80732
+	Maximum segments used by a net: 96
+	Total local nets with reserved CLB opins: 0
+
+Routing channel utilization histogram:
+[        1:      inf)   0 ( 0.0%) |
+[      0.9:        1)   0 ( 0.0%) |
+[      0.8:      0.9)   0 ( 0.0%) |
+[      0.7:      0.8) 128 ( 9.5%) |*************
+[      0.5:      0.6) 130 ( 9.6%) |*************
+[      0.4:      0.5) 116 ( 8.6%) |************
+[      0.3:      0.4) 132 ( 9.8%) |*************
+[      0.2:      0.3) 172 (12.7%) |*****************
+[      0.1:      0.2) 200 (14.8%) |********************
+[        0:      0.1) 474 (35.1%) |***********************************************
+Maximum routing channel utilization:      0.73 at (16,16)
+
+X - Directed channels:   j max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0      49  31.444      128
+                         1       9   3.519      128
+                         2      10   3.667      128
+                         3       8   4.333      128
+                         4      29  15.704      128
+                         5      53  27.370      128
+                         6      57  33.741      128
+                         7      68  44.370      128
+                         8      73  47.259      128
+                         9      79  47.926      128
+                        10      85  53.889      128
+                        11      91  53.444      128
+                        12      87  53.852      128
+                        13      87  51.630      128
+                        14      84  49.222      128
+                        15      81  48.593      128
+                        16      94  50.222      128
+                        17      82  39.667      128
+                        18      87  39.926      128
+                        19      74  33.926      128
+                        20      54  23.741      128
+                        21      38  14.222      128
+                        22      17   5.926      128
+                        23      12   5.259      128
+                        24       9   4.111      128
+                        25      40  27.037      128
+Y - Directed channels:   i max occ ave occ capacity
+                      ---- ------- ------- --------
+                         0      39  27.333      128
+                         1       8   5.519      128
+                         2       6   2.296      128
+                         3      21   8.333      128
+                         4      32  13.926      128
+                         5      22  10.630      128
+                         6      41  22.852      128
+                         7      80  38.222      128
+                         8      70  36.963      128
+                         9      71  35.556      128
+                        10      75  40.481      128
+                        11     102  54.111      128
+                        12      85  47.111      128
+                        13      89  40.444      128
+                        14      76  40.333      128
+                        15      96  53.519      128
+                        16     100  50.852      128
+                        17      79  41.778      128
+                        18      79  40.111      128
+                        19      96  49.889      128
+                        20      92  46.407      128
+                        21      75  33.111      128
+                        22      78  27.519      128
+                        23      66  21.222      128
+                        24      24  10.222      128
+                        25      47  33.444      128
+
+Total tracks in x-direction: 3328, in y-direction: 3328
+
+Logic area (in minimum width transistor areas, excludes I/Os and empty grid tiles)...
+	Total logic block area (Warning, need to add pitch of routing to blocks with height > 3): 3.93038e+07
+	Total used logic block area: 1.50733e+07
+
+Routing area (in minimum width transistor areas)...
+	Total routing area: 5.68448e+06, per logic tile: 7797.64
+
+Segment usage by type (index): type utilization
+                               ---- -----------
+                                  0       0.245
+
+Segment usage by length: length utilization
+                         ------ -----------
+                              4       0.245
+
+
+Hold Worst Negative Slack (hWNS): 0 ns
+Hold Total Negative Slack (hTNS): 0 ns
+
+Hold slack histogram:
+[  2.9e-10:  5.3e-10) 542 (29.8%) |***********************************************
+[  5.3e-10:  7.7e-10) 285 (15.7%) |*************************
+[  7.7e-10:    1e-09) 224 (12.3%) |*******************
+[    1e-09:  1.2e-09) 416 (22.8%) |************************************
+[  1.2e-09:  1.5e-09) 104 ( 5.7%) |*********
+[  1.5e-09:  1.7e-09) 132 ( 7.2%) |***********
+[  1.7e-09:  1.9e-09)  89 ( 4.9%) |********
+[  1.9e-09:  2.2e-09)  16 ( 0.9%) |*
+[  2.2e-09:  2.4e-09)  12 ( 0.7%) |*
+[  2.4e-09:  2.7e-09)   1 ( 0.1%) |
+
+Final critical path: 8.90087 ns, Fmax: 112.349 MHz
+Setup Worst Negative Slack (sWNS): -8.90087 ns
+Setup Total Negative Slack (sTNS): -10494.5 ns
+
+Setup slack histogram:
+[ -8.9e-09: -8.1e-09)  42 ( 2.3%) |***
+[ -8.1e-09: -7.3e-09) 130 ( 7.1%) |*********
+[ -7.3e-09: -6.4e-09) 681 (37.4%) |***********************************************
+[ -6.4e-09: -5.6e-09) 308 (16.9%) |*********************
+[ -5.6e-09: -4.8e-09) 255 (14.0%) |******************
+[ -4.8e-09:   -4e-09) 153 ( 8.4%) |***********
+[   -4e-09: -3.2e-09)  64 ( 3.5%) |****
+[ -3.2e-09: -2.3e-09)  48 ( 2.6%) |***
+[ -2.3e-09: -1.5e-09)  53 ( 2.9%) |****
+[ -1.5e-09:   -7e-10)  87 ( 4.8%) |******
+
+Timing analysis took 0.452258 seconds (0.429786 STA, 0.0224718 slack) (17 full updates: 0 setup, 0 hold, 17 combined).
+VPR suceeded
+The entire flow of VPR took 2.28 seconds (max_rss 72.9 MiB)

@@ -1,4 +1,4 @@
-Netlist_File: fir.net Netlist_ID: SHA256:9612d27197589b2ee1b10b073e9204108bcd10b1c222e0135a65454b5b355fcb
+Netlist_File: fir.net Netlist_ID: SHA256:7eff71623db0e86693a261db711f570c9fb811eef265850e2422dc56b4ffae52
 Array size: 39 x 39 logic blocks
 
 #block name	x	y	subblk	block number
