@@ -53,9 +53,11 @@ use File::Find;
 use File::Basename;
 use Time::HiRes;
 
-# Your path here
+## YOU NEED TO CHANGE THE NEXT 4 LINES ACCORDING TO YOUR VTR INSTALLATION
 use lib "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/scripts/perl_libs/XML-TreePP-0.41/lib";
 use XML::TreePP;
+# your vpr path
+my $vtr_flow_path = "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow";
 
 my $vtr_flow_start_time = Time::HiRes::gettimeofday();
 
@@ -63,16 +65,14 @@ my $vtr_flow_start_time = Time::HiRes::gettimeofday();
 my $number_arguments = @ARGV;
 if ( $number_arguments < 2 ) {
 	print(
-		"usage: run_vtr_flow.pl <circuit_file> <architecture_file> [OPTIONS]\n"
+		"usage: ftune_vtr_flow.pl <circuit_file> <architecture_file> [OPTIONS]\n"
 	);
 	exit(-1);
 }
 
 # Get Absoluate Path of 'vtr_flow
 Cwd::abs_path($0) =~ m/(.*\/vtr_flow)\//;
-#my $vtr_flow_path = $1;
-# your vpr path
-my $vtr_flow_path = "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow";
+
 
 sub stage_index;
 sub file_ext_for_stage;
@@ -382,7 +382,7 @@ my $abc_path;
 my $abc_rc_path;
 if ( $stage_idx_abc >= $starting_stage or $stage_idx_vpr <= $ending_stage ) {
     #Need ABC for either synthesis or post-VPR verification
-    my $abc_dir_path = "/home/cunxi/cunxi/FreeTune-abc";
+    my $abc_dir_path = ".";
     #my $abc_dir_path = "$vtr_flow_path/../abc_ftune/";
 
     if ($use_old_abc) {

@@ -53,7 +53,32 @@ year={2020},
 		- Testing : If PATH added succesfully, you should be able to type "abc" and "yosys" at any location of your LINUX system 
 	- VTR 8.0 -- https://github.com/verilog-to-routing/vtr-verilog-to-routing
 
-## Installation 
+## Installation Demo on Ubuntu 20.x.x
+	git clone https://github.com/Yu-Utah/FlowTune;
+	sudo apt-get install libreadline-dev g++ make flex bison libgtk-3-dev;
+
+	# wget https://download.open-mpi.org/release/open-mpi/v4.0/openmpi-4.0.1.tar.gz; tar -xvf openmpi-4.0.1.tar.gz
+	# cd openmpi-4.0.1; ./configure; make -j12 all install;
+	# you can skip this OpenMP installation if you have OpenMP library
+	# you can check whether you have OpenMP or the version using "echo |cpp -fopenmp -dM |grep -i open"
+	# Ubuntu 20.x.x includes OpenMP automatically
+	cd FlowTune/src/; mkdir build; cd build; cmake ..;
+	make -j12; export PATH=$PATH:$(pwd)
+
+	# A quick test see if FlowTune has been installed correctly
+	cd ../FlowTune-AIG-Optimization/
+	./single_design.sh adder2 adder2.blif 1 1 0 1 1
+
+	# Now let's setup FlowTune + VTR 8.0
+	cd FlowTune;
+	git clone https://github.com/verilog-to-routing/vtr-verilog-to-routing;
+	cd vtr-verilog-to-routing; make; # follow VTR installation instruction to install other packages if you cannot compile VTR
+
+	# Setup the ftune_vtr_flow.pl
+	# IMPORTANT !! - You need to change ftune_vtr_flow.pl from line 56 - 60 according to your VTR installation
+	# 1) Line 56: use lib "YourPath2VTR/vtr-verilog-to-routing/vtr_flow/scripts/perl_libs/XML-TreePP-0.41/lib"; (you need the complete path)
+	# 2) Line 60: my $vtr_flow_path = "YourPath2VTR/vtr-verilog-to-routing/vtr_flow"; (you need the complete path)
+	# To run FlowTune with VTR, just run "./ftune_vtr_flow.pl <circuit_file> <architecture_file>"
 
 
 ## FlowTune implementation in ABC
