@@ -81,7 +81,7 @@ fi
 # NOTE: Let's compile FlowTune with ABC
 cd src/; mkdir build; cd build; cmake3 ..;
 abc_dir_path="my \$abc_dir_path = \"$(pwd)\"" 
-#make -j12; export PATH=$PATH:$(pwd)
+make -j12; export PATH=$PATH:$(pwd)
 
 # NOTE: A quick test see if FlowTune has been installed correctly
 cd ../../FlowTune-AIG-Optimization/
@@ -90,7 +90,7 @@ cd ../../FlowTune-AIG-Optimization/
 # NOTE: Now let's setup FlowTune + VTR 8.0
 cd ../; pwd
 git clone https://github.com/verilog-to-routing/vtr-verilog-to-routing;
-cd vtr-verilog-to-routing; #make -j12;
+cd vtr-verilog-to-routing; make -j12;
 cd vtr_flow;
 vtr_flow_pth="my \$vtr_flow_path = \"$(pwd)\""
 cd scripts/perl_libs/XML-TreePP-0.41/lib;
