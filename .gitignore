@@ -67,3 +67,4 @@ tags
 src/abc
 *.o
 *.d
+*.dot
