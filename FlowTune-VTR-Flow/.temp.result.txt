@@ -1,24 +1,24 @@
-(Warning)Mean : 11395; best : 10971; size : 36stdev: 180.936
-0: mean=11282.8; stdev=113.275; current_epoch_win_rate : 0.833333
-1: mean=11384.8; stdev=193.453; current_epoch_win_rate : 0.333333
-2: mean=11491.3; stdev=180.6; current_epoch_win_rate : 0.333333
-3: mean=11457.2; stdev=87.9326; current_epoch_win_rate : 0.166667
-4: mean=11407.5; stdev=266.327; current_epoch_win_rate : 0.333333
-5: mean=11346.3; stdev=80.8716; current_epoch_win_rate : 0.666667
+(Warning)Mean : 11164.6; best : 10934; size : 36stdev: 132.787
+0: mean=11078.3; stdev=87.9747; current_epoch_win_rate : 0.833333
+1: mean=11156.8; stdev=98.6364; current_epoch_win_rate : 0.333333
+2: mean=11322.2; stdev=184.279; current_epoch_win_rate : 0.166667
+3: mean=11155.7; stdev=107.995; current_epoch_win_rate : 0.333333
+4: mean=11156.8; stdev=63.8238; current_epoch_win_rate : 0.5
+5: mean=11118; stdev=63.1585; current_epoch_win_rate : 0.666667
 
 *********  Info  ************
 ******  ARM   --  ACTIONS --  WINRATE  *********
-	 [0] -- [6] : [0.246942]
-	 [1] -- [6] : [0.149778]
-	 [2] -- [6] : [0.149778]
-	 [3] -- [6] : [0.126784]
-	 [4] -- [6] : [0.149778]
-	 [5] -- [6] : [0.176941]
-Mean : 11391.3; best : 10971; size : 42stdev: 168.928
-0: mean=11393; stdev=0; current_epoch_win_rate : 0
-1: mean=11358; stdev=0; current_epoch_win_rate : 1
-2: mean=11258; stdev=0; current_epoch_win_rate : 1
-3: mean=11412; stdev=0; current_epoch_win_rate : 0
-4: mean=11404; stdev=0; current_epoch_win_rate : 0
-5: mean=11389; stdev=0; current_epoch_win_rate : 1
+	 [0] -- [6] : [0.233128]
+	 [1] -- [6] : [0.141399]
+	 [2] -- [6] : [0.119692]
+	 [3] -- [6] : [0.141399]
+	 [4] -- [6] : [0.167043]
+	 [5] -- [6] : [0.197338]
+Mean : 11171.5; best : 10934; size : 42stdev: 127.061
+0: mean=11167; stdev=0; current_epoch_win_rate : 1
+1: mean=11331; stdev=0; current_epoch_win_rate : 0
+2: mean=11282; stdev=0; current_epoch_win_rate : 0
+3: mean=11140; stdev=0; current_epoch_win_rate : 1
+4: mean=11139; stdev=0; current_epoch_win_rate : 1
+5: mean=11215; stdev=0; current_epoch_win_rate : 0
 

@@ -68,3 +68,5 @@ src/abc
 *.o
 *.d
 *.dot
+.*
+*.result
