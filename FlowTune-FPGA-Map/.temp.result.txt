@@ -1,0 +1,8 @@
+(Warning)Mean : 8231.56; best : 8048; size : 36stdev: 66.431
+0: mean=8244.17; stdev=57.889; current_epoch_win_rate : 0.333333
+1: mean=8275.17; stdev=60.3253; current_epoch_win_rate : 0.166667
+2: mean=8246.33; stdev=76.6196; current_epoch_win_rate : 0.333333
+3: mean=8217.33; stdev=23.4568; current_epoch_win_rate : 0.5
+4: mean=8239.33; stdev=47.811; current_epoch_win_rate : 0.333333
+5: mean=8167; stdev=63.8122; current_epoch_win_rate : 0.833333
+

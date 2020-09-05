@@ -1,0 +1,208 @@
+(Warning)Mean : 120280; best : 115769; size : 36stdev: 2227.87
+0: mean=119164; stdev=1632.34; current_epoch_win_rate : 0.666667
+1: mean=119513; stdev=1227.84; current_epoch_win_rate : 0.833333
+2: mean=121208; stdev=2508.26; current_epoch_win_rate : 0.166667
+3: mean=119119; stdev=1604.53; current_epoch_win_rate : 0.666667
+4: mean=119544; stdev=1982.05; current_epoch_win_rate : 0.666667
+5: mean=123129; stdev=333.154; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [6] : [0.164436]
+	 [1] -- [6] : [0.229489]
+	 [2] -- [6] : [0.117824]
+	 [3] -- [6] : [0.194258]
+	 [4] -- [6] : [0.194258]
+	 [5] -- [6] : [0.0997354]
+Mean : 120173; best : 115769; size : 42stdev: 2282.97
+0: mean=119495; stdev=0; current_epoch_win_rate : 1
+1: mean=121195; stdev=0; current_epoch_win_rate : 0
+2: mean=119807; stdev=0; current_epoch_win_rate : 1
+3: mean=117289; stdev=0; current_epoch_win_rate : 1
+4: mean=115872; stdev=0; current_epoch_win_rate : 1
+5: mean=123543; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [7] : [0.177831]
+	 [1] -- [7] : [0.177831]
+	 [2] -- [7] : [0.133636]
+	 [3] -- [7] : [0.205139]
+	 [4] -- [7] : [0.205139]
+	 [5] -- [7] : [0.100424]
+Mean : 120142; best : 114172; size : 48stdev: 2387.47
+0: mean=114172; stdev=0; current_epoch_win_rate : 1
+1: mean=120700; stdev=0; current_epoch_win_rate : 0
+2: mean=121490; stdev=0; current_epoch_win_rate : 0
+3: mean=117993; stdev=0; current_epoch_win_rate : 1
+4: mean=122228; stdev=0; current_epoch_win_rate : 0
+5: mean=122956; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [8] : [0.190905]
+	 [1] -- [8] : [0.168473]
+	 [2] -- [8] : [0.131207]
+	 [3] -- [8] : [0.216324]
+	 [4] -- [8] : [0.190905]
+	 [5] -- [8] : [0.102184]
+Mean : 120157; best : 114172; size : 54stdev: 2446.33
+0: mean=115804; stdev=0; current_epoch_win_rate : 1
+1: mean=117922; stdev=0; current_epoch_win_rate : 1
+2: mean=122483; stdev=0; current_epoch_win_rate : 0
+3: mean=123188; stdev=0; current_epoch_win_rate : 0
+4: mean=118992; stdev=0; current_epoch_win_rate : 1
+5: mean=123264; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [9] : [0.198042]
+	 [1] -- [9] : [0.177216]
+	 [2] -- [9] : [0.126981]
+	 [3] -- [9] : [0.198042]
+	 [4] -- [9] : [0.198042]
+	 [5] -- [9] : [0.101678]
+Mean : 120104; best : 114172; size : 60stdev: 2521.82
+0: mean=118973; stdev=0; current_epoch_win_rate : 1
+1: mean=116345; stdev=0; current_epoch_win_rate : 1
+2: mean=122754; stdev=0; current_epoch_win_rate : 0
+3: mean=122200; stdev=0; current_epoch_win_rate : 0
+4: mean=115024; stdev=0; current_epoch_win_rate : 1
+5: mean=122477; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [10] : [0.20355]
+	 [1] -- [10] : [0.18418]
+	 [2] -- [10] : [0.123459]
+	 [3] -- [10] : [0.18418]
+	 [4] -- [10] : [0.20355]
+	 [5] -- [10] : [0.10108]
+Mean : 120032; best : 114172; size : 66stdev: 2562.43
+0: mean=114319; stdev=0; current_epoch_win_rate : 1
+1: mean=116650; stdev=0; current_epoch_win_rate : 1
+2: mean=120883; stdev=0; current_epoch_win_rate : 0
+3: mean=120669; stdev=0; current_epoch_win_rate : 0
+4: mean=121031; stdev=0; current_epoch_win_rate : 0
+5: mean=122328; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [11] : [0.214023]
+	 [1] -- [11] : [0.195425]
+	 [2] -- [11] : [0.113264]
+	 [3] -- [11] : [0.178442]
+	 [4] -- [11] : [0.195425]
+	 [5] -- [11] : [0.103421]
+Mean : 8.34433e+07; best : 114172; size : 72stdev: 2.76352e+08
+0: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+1: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+2: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+3: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+4: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+5: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [12] : [0.166667]
+	 [1] -- [12] : [0.166667]
+	 [2] -- [12] : [0.166667]
+	 [3] -- [12] : [0.166667]
+	 [4] -- [12] : [0.166667]
+	 [5] -- [12] : [0.166667]
+Mean : 1.53948e+08; best : 114172; size : 78stdev: 3.60758e+08
+0: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+1: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+2: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+3: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+4: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+5: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [13] : [0.166667]
+	 [1] -- [13] : [0.166667]
+	 [2] -- [13] : [0.166667]
+	 [3] -- [13] : [0.166667]
+	 [4] -- [13] : [0.166667]
+	 [5] -- [13] : [0.166667]
+Mean : 2.1438e+08; best : 114172; size : 84stdev: 4.10277e+08
+0: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+1: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+2: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+3: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+4: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+5: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [14] : [0.166667]
+	 [1] -- [14] : [0.166667]
+	 [2] -- [14] : [0.166667]
+	 [3] -- [14] : [0.166667]
+	 [4] -- [14] : [0.166667]
+	 [5] -- [14] : [0.166667]
+Mean : 2.66755e+08; best : 114172; size : 90stdev: 4.42164e+08
+0: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+1: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+2: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+3: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+4: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+5: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [15] : [0.166667]
+	 [1] -- [15] : [0.166667]
+	 [2] -- [15] : [0.166667]
+	 [3] -- [15] : [0.166667]
+	 [4] -- [15] : [0.166667]
+	 [5] -- [15] : [0.166667]
+Mean : 3.12582e+08; best : 114172; size : 96stdev: 4.63457e+08
+0: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+1: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+2: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+3: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+4: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+5: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [16] : [0.166667]
+	 [1] -- [16] : [0.166667]
+	 [2] -- [16] : [0.166667]
+	 [3] -- [16] : [0.166667]
+	 [4] -- [16] : [0.166667]
+	 [5] -- [16] : [0.166667]
+Mean : 3.53019e+08; best : 114172; size : 102stdev: 4.77827e+08
+0: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+1: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+2: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+3: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+4: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+5: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [17] : [0.166667]
+	 [1] -- [17] : [0.166667]
+	 [2] -- [17] : [0.166667]
+	 [3] -- [17] : [0.166667]
+	 [4] -- [17] : [0.166667]
+	 [5] -- [17] : [0.166667]
+Mean : 3.88962e+08; best : 114172; size : 108stdev: 4.8744e+08
+0: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+1: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+2: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+3: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+4: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+5: mean=1e+09; stdev=0; current_epoch_win_rate : 0
+
+*********  Info  ************
+******  ARM   --  ACTIONS --  WINRATE  *********
+	 [0] -- [18] : [0.166667]
+	 [1] -- [18] : [0.166667]
+	 [2] -- [18] : [0.166667]
+	 [3] -- [18] : [0.166667]
+	 [4] -- [18] : [0.166667]
+	 [5] -- [18] : [0.166667]
