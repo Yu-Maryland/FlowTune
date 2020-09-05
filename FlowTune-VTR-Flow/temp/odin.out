@@ -64,12 +64,12 @@ The Number of Hard Block subs in the Longest Chain: 29
 The Total Number of Hard Block subs: 1404
 --------------------------------------------------------------------
 Odin ran with exit status: 0
-Odin II took 2.19 seconds (max_rss 146.2 MiB)
+Odin II took 2.24 seconds (max_rss 146.2 MiB)
 	Command being timed: "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/../ODIN_II/odin_II -c odin_config.xml --adder_type default"
-	User time (seconds): 2.08
-	System time (seconds): 0.12
+	User time (seconds): 2.11
+	System time (seconds): 0.14
 	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.20
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.26
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
@@ -77,7 +77,7 @@ Odin II took 2.19 seconds (max_rss 146.2 MiB)
 	Maximum resident set size (kbytes): 149764
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 69579
+	Minor (reclaiming a frame) page faults: 70095
 	Voluntary context switches: 1
 	Involuntary context switches: 3
 	Swaps: 0

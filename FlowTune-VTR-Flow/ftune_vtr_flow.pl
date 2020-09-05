@@ -56,8 +56,9 @@ use Time::HiRes;
 ## YOU NEED TO CHANGE THE NEXT 4 LINES ACCORDING TO YOUR VTR INSTALLATION
 use lib "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow/scripts/perl_libs/XML-TreePP-0.41/lib";
 use XML::TreePP;
-# your vpr path
+# your vpr and flowtune-abc path
 my $vtr_flow_path = "/home/cunxi/cunxi/tools/vtr-verilog-to-routing/vtr_flow";
+my $abc_dir_path = "/home/cunxi/cunxi/ftune-iccad2020/src/build";
 
 my $vtr_flow_start_time = Time::HiRes::gettimeofday();
 
@@ -382,7 +383,6 @@ my $abc_path;
 my $abc_rc_path;
 if ( $stage_idx_abc >= $starting_stage or $stage_idx_vpr <= $ending_stage ) {
     #Need ABC for either synthesis or post-VPR verification
-    my $abc_dir_path = ".";
     #my $abc_dir_path = "$vtr_flow_path/../abc_ftune/";
 
     if ($use_old_abc) {
