@@ -1,6 +1,4 @@
-## This is an installation script (tested) for Ubuntu system to setup FlowTune+VTR8.0
-
-```bash
+# NOTE: This is an installation script (tested) for Ubuntu system
 git clone https://github.com/Yu-Utah/FlowTune;
 
 # NOTE: Let's first install the required packages
