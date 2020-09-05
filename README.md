@@ -54,9 +54,7 @@ year={2020},
 	- VTR 8.0 -- https://github.com/verilog-to-routing/vtr-verilog-to-routing
 
 ## Installation Demo on Ubuntu 20.x.x
-
 [install.sh](install.md)
-
 #### This is an installation script (tested) for Ubuntu system to setup FlowTune+VTR8.0
 
 ```bash
