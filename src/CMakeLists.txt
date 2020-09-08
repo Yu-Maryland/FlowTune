@@ -5,7 +5,7 @@ include(CheckCCompilerFlag)
 include(CheckCXXCompilerFlag)
 
 #OPTION (USE_OpenMP "Use OpenMP" ON)
-FIND_PACKAGE(OpenMP REQUIRED /opt/)
+#FIND_PACKAGE(OpenMP REQUIRED /opt/)
 function(addprefix var prefix)
     foreach( s ${ARGN} )
         list(APPEND tmp "-I${s}")
