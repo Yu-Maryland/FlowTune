@@ -18,8 +18,8 @@ then
     exit
 fi
 
-# NOTE: Let's compile FlowTune with ABC
-cd src/; mkdir build; cd build; cmake3 ..;
+# NOTE: Let's compile FlowTune with ABC and copy abc.rc into build
+cd src/; mkdir build; cd build; cp ../../abc.rc/ .; cmake3 ..;
 abc_dir_path="my \$abc_dir_path = \"$(pwd)\"" 
 make -j12; export PATH=$PATH:$(pwd)
 
@@ -40,7 +40,8 @@ cd ../../../../;
 echo $vtr_flow_pth # check your vtr flow path
 echo $abc_dir_path # check your flowtune-abc path
 
-cd ../../FlowTune-VTR-Flow;ls ftune_vtr_flow.pl
+cd ../../FlowTune-VTR-Flow;ls ftune_vtr_flow.pl;
+cp ../vtr-verilog-to-routing/vtr_flow/arch/timing/k6_frac_N10_frac_chain_mem32K_40nm.xml .; # copy a vtr arch for testing 
 echo "IMPORTANT !! - You need to change ftune_vtr_flow.pl from line 56 - 60 accordingly"
 echo "1) change the use lib path using <$vtr_flow_xml_lib_path>"
 echo "2) change the vtr_flow_path using <$vtr_flow_pth>"
@@ -53,3 +54,4 @@ echo "3) change abc_dir_path using <$abc_dir_path>"
 # 3) change abc_dir_path using "$abc_dir_path"
 
 # To run FlowTune with VTR, just run "./ftune_vtr_flow.pl <circuit_file> <architecture_file>"
+# For example,  ./ftune_vtr_flow.pl Verilog/diffeq1.v k6_frac_N10_frac_chain_mem32K_40nm.xml
