@@ -1,4 +1,4 @@
-## FlowTune (Under construction more to come; source code is coming soon)
+## FlowTune 
 
 <img src="./docs/overview.png" alt="FlowTune Overview" width="450" class="center" /></a>
 
@@ -8,7 +8,7 @@
 
 - Push-button tool/script for various QoR metrics are included
 
-	- #AIG minimization 
+	- #AIG minimization (Boolean network minimization) 
 	- #LUT minimization (ABC LUT mapper "if -K")
 	- STD Technology mapping Delay and Area optimization
 	- STA-Aware STD Technology mapping Delay optimization
@@ -20,14 +20,13 @@
 
 - A set of seqeuntial FPU benchmarks in BLIF (original benchmarks from <a href="https://github.com/verilog-to-routing/vtr-verilog-to-routing">VTR 8.0</a> Thanks!@VTR Team)
 
-- Push-button FlowTune for AIG, LUT, STD mapping optimizations (within ABC) are included.
+- Push-button FlowTune for Boolean Networks, LUT (FPGA mapping), STD (ASIC) mapping optimizations.
 
-- FlowTune push-button integration with <a href="https://github.com/verilog-to-routing/vtr-verilog-to-routing">VTR 8.0</a>. End-to-end evaluation of FlowTune till post-PnR stage is included.
+- FlowTune full integration with <a href="https://github.com/verilog-to-routing/vtr-verilog-to-routing">VTR 8.0</a> (see bash script install.sh). End-to-end evaluation of FlowTune up to post-PnR stage is enabled! (Thanks @VTR team).
 
-- FlowTune push-button integration with <a href="https://github.com/YosysHQ/yosys">Yosys</a> (Thanks! @Yosys Team)
+- FlowTune full integration with <a href="https://github.com/YosysHQ/yosys">Yosys</a> (Thanks! @Yosys Team)
 
-- FlowTune Vivado demo is included.
-
+- FlowTune -> Vivado demo and FlowTune -> Cadence Genus demo are included.
 
 
 ### Reference 
