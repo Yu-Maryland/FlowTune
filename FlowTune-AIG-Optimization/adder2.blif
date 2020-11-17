@@ -1,0 +1,25 @@
+# Benchmark "ADD2" written by ABC on Tue Nov 17 10:40:53 2020
+.model ADD2
+.inputs a0 a1 b0 b1
+.outputs s0 s1 s2
+.names a0 b0 n8
+11 1
+.names a0 b0 n9
+00 1
+.names n8 n9 s0
+00 1
+.names a1 b1 n11
+11 1
+.names a1 b1 n12
+00 1
+.names n11 n12 n13
+00 1
+.names n8 n13 n14
+11 1
+.names n8 n13 n15
+00 1
+.names n14 n15 s1
+00 1
+.names n11 n14 s2
+00 0
+.end

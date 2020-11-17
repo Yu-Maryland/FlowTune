@@ -25,10 +25,14 @@ make -j12; export PATH=$PATH:$(pwd)
 
 # NOTE: A quick test see if FlowTune has been installed correctly
 cd ../../FlowTune-AIG-Optimization/
+./abc -c "gen -N 2 -a adder2.blif;st;write adder2.blif"
 ./single_design.sh adder2 adder2.blif 1 1 0 1 1
 
 # NOTE: Now let's setup FlowTune + VTR 8.0
 cd ../; pwd
+# remove fetal folders
+rm -r -f vtr-verilog-to-routing
+# get VTR 8.0
 git clone https://github.com/verilog-to-routing/vtr-verilog-to-routing;
 cd vtr-verilog-to-routing; make -j12;
 cd vtr_flow;

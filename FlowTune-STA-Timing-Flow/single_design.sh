@@ -11,7 +11,7 @@ stage=$7
 liberty="7nm_lvt_ff.lib"
 if [ "$#" -ne 7 ]; then
     echo "*********** Illegal number of parameters. Please read the help message below.*************"
-    echo "Usage: ./dac19.sh design_name design_file repeat(# cmd apperances) iteration target samples stage(multi-stage MAB)"
+    echo "Usage: ./yourscript.sh design_name design_file repeat(# cmd apperances) iteration target samples stage(multi-stage MAB)"
     echo "-t    : Targeted metric (default = 0, i.e., AIG Minization targeting number of AIG nodes)
 	      : t=0 AIG Minization - Minimizing AIG nodes                       :  ftune -d i10.aig -r 4 -t 0 -p 1 -i 10 -s 5 -L [other options]
 	      : t=1 AIG Minization - minimizing AIG levels                      :  ftune -d i10.aig -r 4 -t 1 -p 1 -i 10 -s 5 -L [other options]
