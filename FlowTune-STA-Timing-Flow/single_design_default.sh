@@ -9,7 +9,7 @@ target=2
 sample=5
 stage=20
 liberty="7nm_lvt_ff.lib"
-if [ "$#" -ne 7 ]; then
+if [ "$#" -ne 2 ]; then
     echo "*********** Illegal number of parameters. Please read the help message below.*************"
     echo "Usage: ./yourscript.sh design_name design_file repeat(# cmd apperances) iteration target samples stage(multi-stage MAB)"
     echo "-t    : Targeted metric (default = 0, i.e., AIG Minization targeting number of AIG nodes)
@@ -42,7 +42,7 @@ do
 	echo -e "ftune -d internal.aig -r $repeat -t $target -p 1 -i $iteration -s $sample -L $liberty" | ./abc
 	## randomly pick one of the ftune script
 	shuf -n 1 internal.aig.script > $design.script
-	echo -e "read internal.aig; source $design.script;strash;write internal.aig;write $design.ftune.v" | ./abc
+	echo -e "read internal.aig; source $design.script; write $design.ftune.v; strash;write internal.aig" | ./abc
 done
 
 #rm result_all.log

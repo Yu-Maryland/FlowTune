@@ -43,7 +43,7 @@ do
 	## randomly pick one of the ftune script
 	shuf -n 1 internal.aig.script > $design.script
 	#echo -e "read internal.aig; source $design.script;strash;write internal.aig" | ./abc
-	echo -e "read internal.aig; source $design.script;strash;write internal.aig;write $design.ftune.v" | ./abc
+	echo -e "read internal.aig; source $design.script; write $design.ftune.v; strash;write internal.aig" | ./abc
 done
 
 #rm result_all.log
