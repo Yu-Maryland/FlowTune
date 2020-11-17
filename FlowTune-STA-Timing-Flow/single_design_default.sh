@@ -3,11 +3,11 @@
 
 design=$1
 ftune_input=$2
-repeat=$3
-iteration=$4
-target=$5
-sample=$6
-stage=$7
+repeat=5
+iteration=3
+target=2
+sample=5
+stage=20
 liberty="7nm_lvt_ff.lib"
 if [ "$#" -ne 7 ]; then
     echo "*********** Illegal number of parameters. Please read the help message below.*************"
@@ -42,7 +42,6 @@ do
 	echo -e "ftune -d internal.aig -r $repeat -t $target -p 1 -i $iteration -s $sample -L $liberty" | ./abc
 	## randomly pick one of the ftune script
 	shuf -n 1 internal.aig.script > $design.script
-	#echo -e "read internal.aig; source $design.script;strash;write internal.aig" | ./abc
 	echo -e "read internal.aig; source $design.script;strash;write internal.aig;write $design.ftune.v" | ./abc
 done
 
