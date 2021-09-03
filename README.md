@@ -150,7 +150,7 @@ echo "3) change abc_dir_path using <$abc_dir_path>"
 
 ### (a) -- AIG Node Minimization 
 	Design: bfly.v
-	Baseline: resyn (default abc flow) applied 25 times
+	Baseline: resyn (default abc flow) **applied 25 times consecutively**
 	Result: FlowTune provides 20%+ more AIG reduction compared to resyn*25 
 	(see video below)
 	
@@ -158,7 +158,7 @@ echo "3) change abc_dir_path using <$abc_dir_path>"
 
 <img src="./docs/baseline.gif" alt="bfly-baseline" /></a>
 
-#### FlowTune (20% more AIG reductions compared to 25+ resyn)
+#### FlowTune (20% more AIG reductions compared to resyn **applied 25 times consecutively**)
 
 <img src="./docs/ftune.gif" alt="bfly-ftune" /></a>
 
