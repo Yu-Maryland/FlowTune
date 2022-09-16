@@ -1,6 +1,6 @@
 ## FlowTune 
 
-<img src="./docs/FlowTune-TCAD22.pdf" alt="FlowTune Overview" width="550" class="center" /></a>
+<img src="./docs/FlowTune-TCAD22.png" alt="FlowTune Overview" width="550" class="center" /></a>
 
 ## What FlowTune does?
 
@@ -178,7 +178,7 @@ See <b><i>./FlowTune-Integration-VTR/ftune_vtr_flow.pl</i></b> for details
 
 ### (c) -- Post-PnR evaluation in OpenFPGA and VTR
 
-<img src="./docs/Area_VTR.pdf" alt="FlowTune Overview" width="250" class="center" /> <img src="./docs/TNS_VTR.pdf" alt="FlowTune Overview" width="250" class="center" /> 
+<img src="./docs/Area_VTR.png" alt="FlowTune Overview" width="250" class="center" /> <img src="./docs/TNS_VTR.png" alt="FlowTune Overview" width="250" class="center" /> 
 
 Results present up to 10.0% area improvement (average 4.5%) post-routing area reduction, and consistent post-routing timing improvements (average 7%).
 
