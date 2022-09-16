@@ -1,8 +1,10 @@
 ## FlowTune 
 
-<img src="./docs/overview.png" alt="FlowTune Overview" width="450" class="center" /></a>
+<img src="./docs/FlowTune-TCAD22.pdf" alt="FlowTune Overview" width="550" class="center" /></a>
 
 ## What FlowTune does?
+
+- **09/15/2022** Update: Post-PnR demonstrated integration with OpenFPGA and VTR tooflow (see TCAD 2022 paper)
 
 - Efficiently explore ABC synthesis flows (sequential decision making)
 
@@ -174,7 +176,10 @@ See <b><i>./FlowTune-Integration-VTR/ftune_vtr_flow.pl</i></b> for details
 <img src="./docs/vtr-integration-demo.png" alt="bfly-ftune" /></a>
 
 
-### (c) -- More can be found in the listed folders in this repo.
+### (c) -- Post-PnR evaluation in OpenFPGA and VTR
 
+<img src="./docs/Area_VTR.pdf" alt="FlowTune Overview" width="250" class="center" /> <img src="./docs/TNS_VTR.pdf" alt="FlowTune Overview" width="250" class="center" /> 
+
+Results present up to 10.0% area improvement (average 4.5%) post-routing area reduction, and consistent post-routing timing improvements (average 7%).
 
 
