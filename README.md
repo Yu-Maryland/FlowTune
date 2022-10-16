@@ -33,6 +33,14 @@
 
 ### Reference 
 ```shell
+@article{yu2022flowtune,
+  title={FlowTune: End-to-end Automatic Logic Optimization Exploration via Domain-specific Multi-armed Bandit},
+  author={Neto, Walter Lau and Li, Yingjie and Gaillardon, Pierre-Emmanuel and Yu, Cunxi},
+  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)},
+  year={2022},
+  publisher={IEEE}
+}
+
 @inproceedings{yu-mab-iccad2020,
 title={Practical Multi-armed Bandits in Boolean Optimization},
 author={Cunxi Yu},
