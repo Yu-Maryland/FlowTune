@@ -1,8 +1,18 @@
-## FlowTune 
+## FlowTune - A Light-weight Reinforcement Learning Solution to Synthesis[x]
 
 <img src="./docs/FlowTune-TCAD22.png" alt="FlowTune Overview" width="550" class="center" /></a>
 
+&check; 
+
 ## What FlowTune does?
+
+| Obj Supported by FlowTune |   ABC   |   VTR   |  Yosys  | ABC to Commercial (Verilog) |
+|:-------------------------:|:-------:|:-------:|:-------:|:---------------------------:|
+|            AIG            | &check; |         | &check; |                             |
+|          CNF(SAT)         | &check; |         |         |                             |
+|            LUT            | &check; | &check; | &check; |                             |
+|          Techmap          | &check; |         | &check; |           &check;           |
+|        Place&Route        |         | &check; |         |           &check;           |
 
 - **09/15/2022** Update: Post-PnR demonstrated integration with OpenFPGA and VTR tooflow (see TCAD 2022 paper)
 
@@ -10,11 +20,7 @@
 
 - Push-button tool/script for various QoR metrics are included
 
-	- #AIG minimization (Boolean network minimization) 
-	- #LUT minimization (ABC LUT mapper "if -K")
-	- STD Technology mapping Delay and Area optimization
-	- STA-Aware STD Technology mapping Delay optimization
-	- SAT-CNF minimization (#clauses)
+ 
 
 ## What is included in this repo?
 
@@ -189,5 +195,4 @@ See <b><i>./FlowTune-Integration-VTR/ftune_vtr_flow.pl</i></b> for details
 <img src="./docs/Area_VTR.png" alt="FlowTune Overview" width="250" class="center" /> <img src="./docs/TNS_VTR.png" alt="FlowTune Overview" width="250" class="center" /> 
 
 Results present up to 10.0% area improvement (average 4.5%) post-routing area reduction, and consistent post-routing timing improvements (average 7%).
-
 
