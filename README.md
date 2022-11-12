@@ -2,7 +2,6 @@
 
 <img src="./docs/FlowTune-TCAD22.png" alt="FlowTune Overview" width="550" class="center" /></a>
 
-&check; 
 
 ## What FlowTune does?
 
